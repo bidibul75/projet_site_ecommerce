@@ -1,0 +1,41 @@
+Toman
+bax
+
+Architecture site  guitare :
+1. Bandeau pré barre de navigation : info contact mail/tel, blog guide d'achat / info commerciale (politique frais de port), connexion
+2. pré barre de navigation : Logo, barre de recherche, panier, info langues
+3. barre de navigation : différentes catégories, sur une ou deux lignes
+parfois avec un petit carroussel
+4. Une barre de navigation avec un menu déroulant 
+
+5. un carroussel 
+6. des infos SAV/Réassurance (garantie, condition rbt souple )
+7. (C) catégories : icone + texte 
+8. (C) Produits phares : icone + notes + nom +prix
+9. (C) Marques populaires : icone + texte
+10. (C) Offres : Hot Deals / Prix cassés + produits en carrousel avec barre
+11. (C) Feedbacks
+12. Actualités
+13. Pré footer : RS + feedbacks + dernier élément consulté
+14. Footer 
+
+Liste produits :
+0. Barre de navigation
+1. (C) Fil d'ariane 
+2. Titre
+3. Menu d'ancre + icone contact
+4. Liste produits
+5. Meilleures ventes
+6. Actuellement populaires
+7. Nouveautés 
+8. Marques populaires
+9. Hot Deals
+10. Prix cassés
+11. Ressources 
+12. Découvrir plus
+13. Footer
+
+Pages produits :
+1. Barre de navigation
+2. (C) fil d'ariane
+3. 
