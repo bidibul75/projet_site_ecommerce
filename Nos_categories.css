@@ -1,0 +1,39 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.titre{
+    text-align: center;
+    font-size: 20px;
+}
+ .grid-container-nos_categories {
+    display: grid;
+    grid-template-columns: repeat(3, 4fr);
+    gap: 20px;
+  }
+  
+  .grid-item-nos_categories {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    
+  }
+  
+  .grid-item-nos_categories img {
+    max-width: 100px; 
+    margin-right: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .grid-item-nos_categories p {
+    display: flex;
+    align-items: flex-end;
+    margin: 0;
+    width: 100%;
+    font-size: 20px;
+    margin-top: 50px;
+
+    
+  }
