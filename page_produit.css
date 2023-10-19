@@ -1,15 +1,10 @@
 html body{
     font-family: Mooli;
-    background-color: rgb(148, 101, 101, 0.6);
 }
 
-header{
-    border-bottom: 1px black solid;
-}
-
-nav{
-    border-bottom: 1px black solid;
-    margin-bottom: 50px
+.constructeur > img{
+    max-width: 15vw;
+    margin-bottom: 2vw
 }
 
 a:hover{
@@ -20,10 +15,20 @@ a:hover{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    text-overflow: ellipsis;
 }
 
-.droite{
+.droite, .droite > h3{
+    text-overflow: ellipsis;
+    justify-content: space-between;
+}
 
+.titre_droite{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 1vw;
 }
 
 
@@ -45,12 +50,13 @@ a:hover{
 .droite, .photo_produits_droite{
     display: flex;
     flex-direction: row;
+    align-items: center;
 
 }
 
 .droite, .gauche{
-    margin: 2vw;
-
+    margin: 1vw;
+    margin-top: 1vw;
 }
 
 
@@ -64,13 +70,6 @@ a:hover{
     justify-content: center;
 }
 
-.pagination{
-    border-radius: 100%;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 10px;
-}
-
 a{
     text-decoration: none;
 }
@@ -82,3 +81,10 @@ a{
     max-height: 10vw;
     contain: content;
 }
+
+/* .pagination{
+    border-radius: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+} */
