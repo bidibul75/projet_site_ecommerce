@@ -12,30 +12,90 @@ html body{
     background: lightgray;
 }
 .upper-zone{
-    border: 1px red solid;
 }
 
 .upper-zone-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin:10px;
+    gap: 5px;
+    align-items: center;
+    padding-left: 40px;
+}
+
+.upper-zone-content a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.zone-1-upper {
+    grid-column: 1/2;
+    align-items: center;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    gap: 4.5rem;
+}
+
+.zone-1-lower {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+.zone-1-lower a {
+    padding-top: 0.55vw;
+}
+
+.icons {
+	font-size: 2rem;
+	color: #fff;
+	cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.zone-2-upper {
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 5px; 
+}
+
+.img-logo{
+    border-radius: 3px;
+}
+
+.zone-2-lower {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.zone-3-upper{
+    grid-column: 3/4;
     align-items: center;
-    border: 1px green dotted;
-    margin:10px;
+    display: flex;
+    flex-direction: row;
+    gap: 4.5rem;
 }
 
-.zone-1 {
+.zone-3-lower {
+    grid-column: 3/4;
+    grid-row: 2/3;
     align-items: center;
-    align-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 4.5rem;
+    margin-left: 70px;
 }
 
-.zone-1 span {
-    border: 1px blue solid;
-    margin-right: 2.5em;
-}
-
-.zone-2 {
-    
+.zone-3-lower #side-icons{
+    margin: 0px 50px 0px 0;
+    gap: 4.5rem;
+    font-size: 1.7rem;
+    color: #000;
 }
 
 .bloc-image-entete{
@@ -71,10 +131,11 @@ html body{
 .champ-recherche button {
     float: left;
     width: 20%;
-    padding: 10px;
+    padding-right: 10px;
+    margin-top: 5px;
     background: #f1f1f1;
     align-items: baseline;
-    font-size: 17px;
+    font-size: 20px;
     border :none;
     border-radius: 10px 0px 0px 10px;
     cursor: pointer;
@@ -90,10 +151,6 @@ html body{
     display: table;
   } */
 
-.zone-3{
-    align-items: center;
-    align-content: center;
-}
 .menu-nav {
     /* display: inline; */
     align-content: center;
