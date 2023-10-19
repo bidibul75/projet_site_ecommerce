@@ -1,7 +1,7 @@
 body, html {
     margin: 20px;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: Mooli;
 }
 
 .titre{
@@ -22,6 +22,7 @@ body, html {
   }
   
   .grid-item-nos_categories img {
+    display: block;
     max-width: 15vw; 
     margin-right: 20px;
     margin-bottom: 5px;
@@ -54,6 +55,12 @@ body, html {
 
     }
 
+  }
+  a{
+    text-decoration: none;
+  }
+  a:hover{
+    opacity: 50%;
   }
 
     
