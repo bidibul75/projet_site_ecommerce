@@ -11,6 +11,13 @@ a:hover{
     opacity: 50%;
 }
 
+h1{
+    font-family: 'Shadows Into Light', cursive;
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+}
+
 .gauche{
     display: flex;
     flex-direction: row;
@@ -29,6 +36,14 @@ a:hover{
     flex-direction: row;
     justify-content: flex-end;
     margin-right: 1vw;
+    margin-top: 4vw;
+}
+
+.titre_gauche{
+    display: flex;
+    flex-direction: row;
+    margin-left: 1vw;
+    margin-top: 4vw;
 }
 
 
@@ -78,7 +93,7 @@ a{
     max-width: 60vw;
     display: flex;
     border-bottom: 1px black solid;
-    max-height: 10vw;
+    /* max-height: 10vw; */
     contain: content;
 }
 
