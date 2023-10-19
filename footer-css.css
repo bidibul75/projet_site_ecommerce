@@ -26,6 +26,8 @@ html body{
     display: flex;
     flex-direction:column;
     flex: 1 1 auto;
+    width: 100%;
+    padding-right: 16px;
 
 }
 
@@ -34,6 +36,16 @@ html body{
     flex-direction: column;
     flex: 1 1 auto;
     margin-right: 15px;
+    width: 100%;
+}
+
+.avantages li{
+    list-style: lower-greek;
+}
+
+
+.test-icone{
+    float: left;
 }
 
 .services {
@@ -41,6 +53,7 @@ html body{
     flex-direction: column;
     flex: 1 1 auto;
     padding-left: 15px;
+    width: 100%;
 }
 
 .foot-lower-container{
