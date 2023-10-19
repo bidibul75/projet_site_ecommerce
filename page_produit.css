@@ -1,29 +1,49 @@
 html body{
     font-family: Mooli;
-    background-color: rgb(148, 101, 101, 0.6);
 }
 
-header{
-    border-bottom: 1px black solid;
-}
-
-nav{
-    border-bottom: 1px black solid;
-    margin-bottom: 50px
+.constructeur > img{
+    max-width: 15vw;
+    margin-bottom: 2vw
 }
 
 a:hover{
     opacity: 50%;
 }
 
+h1{
+    font-family: 'Shadows Into Light', cursive;
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+}
+
 .gauche{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    text-overflow: ellipsis;
 }
 
-.droite{
+.droite, .droite > h3{
+    text-overflow: ellipsis;
+    justify-content: space-between;
+}
 
+.titre_droite{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 1vw;
+    margin-top: 4vw;
+}
+
+.titre_gauche{
+    display: flex;
+    flex-direction: row;
+    margin-left: 1vw;
+    margin-top: 4vw;
 }
 
 
@@ -45,12 +65,13 @@ a:hover{
 .droite, .photo_produits_droite{
     display: flex;
     flex-direction: row;
+    align-items: center;
 
 }
 
 .droite, .gauche{
-    margin: 2vw;
-
+    margin: 1vw;
+    margin-top: 1vw;
 }
 
 
@@ -64,13 +85,6 @@ a:hover{
     justify-content: center;
 }
 
-.pagination{
-    border-radius: 100%;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 10px;
-}
-
 a{
     text-decoration: none;
 }
@@ -79,6 +93,13 @@ a{
     max-width: 60vw;
     display: flex;
     border-bottom: 1px black solid;
-    max-height: 10vw;
+    /* max-height: 10vw; */
     contain: content;
 }
+
+/* .pagination{
+    border-radius: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+} */
