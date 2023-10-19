@@ -4,29 +4,95 @@
     box-sizing: border-box;
 }
 
-div {
-
+html body{
+    font-family: Mooli;
 }
 
+.container-entete{
+    background: lightgray;
+}
 .upper-zone{
-    display: flex;
     border: 1px red solid;
 }
 
 .upper-zone-content{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
     border: 1px green dotted;
+    margin:10px;
 }
 
-.zone-1-upper p {
-    display: inline;
+.zone-1 {
+    align-items: center;
+    align-content: center;
+}
+
+.zone-1 span {
     border: 1px blue solid;
+    margin-right: 2.5em;
 }
 
 .zone-2 {
-    border: 1px rebeccapurple solid;
+    
+}
+
+.bloc-image-entete{
+    justify-content: center;
+}
+
+.champ-recherche{
+    background: #f1f1f1;
+    display: flex;
+    padding: 2px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.champ-recherche:hover{
+    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.champ-recherche input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: none;
+    float: left;
+    width: 80%;
+    border-radius: 0px 10px 10px 0px;
+    background: #f1f1f1;
+  }
+
+  input:focus {
+    outline:  none;
+}
+.champ-recherche button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #f1f1f1;
+    align-items: baseline;
+    font-size: 17px;
+    border :none;
+    border-radius: 10px 0px 0px 10px;
+    cursor: pointer;
+  }
+
+::placeholder{
+    justify-content: center;
+}
+
+/* .champ-recherche::after {
+    content: "";
+    clear: both;
+    display: table;
+  } */
+
+.zone-3{
+    align-items: center;
+    align-content: center;
 }
 .menu-nav {
     /* display: inline; */
@@ -36,20 +102,23 @@ div {
 .list-nav{
     list-style-type: none;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
     
 }
 
 .list-nav li {
-    /* display: inline-block; */
+    display: inline-block;
     flex-direction: row;
-
+    transition: all .7s ease ;
+    border-radius: 10px;
+    margin: 5px;
     padding: 5px;
 }
 
 .list-nav li:hover{
-    background-color: blueviolet;
-    border-radius: 30px;
+    background: blueviolet;
+    border-radius: 10px;
     
 }
 
