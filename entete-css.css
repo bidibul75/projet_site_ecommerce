@@ -141,8 +141,9 @@ html body{
     cursor: pointer;
   }
 
-::placeholder{
-    justify-content: center;
+.bottom-zone{
+    background: #000;
+    color: #fff;
 }
 
 /* .champ-recherche::after {
