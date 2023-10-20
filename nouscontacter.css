@@ -1,0 +1,59 @@
+html body{
+    font-family: Mooli;
+    background-image: url(/projet_site_ecommerce/images/starsmusic50.jpg);
+    
+}
+
+h1{
+    font-family: 'Shadows Into Light', cursive;
+    display: flex;
+    justify-content: center;
+}
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    grid-template-rows: 2fr;
+    gap: 2vw;
+    margin: 2vw;
+    position: relative;
+    left: 5vw;
+}
+
+ul{
+    position: relative;
+    left: 2vw;
+}
+
+.paragraphe_contact{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vw;
+}
+
+.adresse{
+    position: relative;
+    right: 2vw;
+    margin-bottom: 1.5vw
+}
+
+.numero{
+    position: relative;
+    right: 3vw;
+    top: 2vw;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    min-width: 40vw;
+}
+
+textarea{
+    resize: none;
+}
+
+button{
+    max-width: 5vw;
+}

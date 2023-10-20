@@ -92,6 +92,7 @@
 .active,
 .dot:hover {
   background-color: #111111;
+  opacity: 100%;
 }
 
 .fade {
