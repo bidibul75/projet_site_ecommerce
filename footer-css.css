@@ -19,7 +19,9 @@ html body{
 
 .footer-autopromo{
     display: flex;
-    flex: wrap;
+    gap: 1rem;
+    padding: 4px;
+    /* flex-wrap: wrap; */
 }
 
 .option-paiement{
@@ -31,6 +33,49 @@ html body{
 
 }
 
+h4{
+    margin-bottom: 16px;
+    line-height: 24px;
+    letter-spacing: -0.26px;
+}
+
+.icon-paiement{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 16px;
+    justify-content: flex-start;
+    gap: 0.3rem;
+}
+
+.payment-icon{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1 1 auto;
+    padding: 4px;
+    border-radius: 4px;
+    cursor: default;
+}
+
+.icon-footer{
+    width: 27px;
+    height: 27px;
+    filter:grayscale(100%);
+    transition: all 0.4s ease;
+}
+
+.icon-footer:hover{
+    filter: none;
+    cursor:pointer;
+    box-shadow: black;
+}
+
+.option-paiement-conclusion{
+    font-size: 14px;
+    
+}
+
 .avantages{
     display: flex;
     flex-direction: column;
@@ -39,13 +84,28 @@ html body{
     width: 100%;
 }
 
-.avantages li{
-    list-style: lower-greek;
+.svg{
+    font-size: 15px;
+}
+
+.li-display {
+
+}
+.avantages ul li {
+    font-size: 14px;
+    list-style-type: none;
+    margin-bottom: 1em;
 }
 
 
+.avantages ul li::before {
+    font-size: 1em;
+    content: '✓';
+}
+
 .test-icone{
     float: left;
+
 }
 
 .services {
@@ -56,7 +116,19 @@ html body{
     width: 100%;
 }
 
-.foot-lower-container{
-    background: black;
+.services ul li {
+    font-size: 14px;
+    list-style-type: none;
+    margin-bottom: 1em;
 }
 
+.foot-lower-container{
+    background: black;
+    background-color: black;
+    height: 300px;
+}
+
+.footer-lower-with-margins{
+    margin: 0px 40px 0px 40px;
+    max-width: 1512px;
+}
