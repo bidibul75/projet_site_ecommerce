@@ -5,9 +5,7 @@
 .titre{
   text-align: center;
   box-shadow: 0px 67px 80px rgba(0, 0, 0, 0.354);
-  background-color: none;
-  
-;
+  background-color: transparent;
 
 }
 .horizontal-scroll {
@@ -35,7 +33,7 @@
 }
 
 .image {
-  height: 72%;  /* Ajuste la largeur */
+  height: 72%;  /* on peut ajuster la largeur */
   padding: 3%;
   border: 5px solid #ccc;
   border-radius: 3%;
@@ -44,13 +42,49 @@
 .image img{
   display: block;
   margin: auto;
-  max-width: 80%;   /* Ajuste la largeur */
+  max-width: 80%;   /* on peut ajuster la largeur */
   height: auto; 
  } 
 
 .product-item p {
   font-size: 14px;
 } 
+
+/* Mode responsive */
+@media (max-width: 750px) {
+  .horizontal-scroll {
+      max-width: 100%;
+      overflow-x: auto;
+      white-space: nowrap;
+  }
+
+  .product-menu {
+      width: auto;
+      height: auto;
+      display: block;
+  }
+
+  .product-item {
+      width: 100%;
+      display: inline-block;
+  }
+
+  .image {
+      width: 90%;
+      /* margin: auto; */
+  }
+
+  .image img {
+      max-width: 100%;
+      height: auto;
+  }
+}
+
+
+
+
+
+
 
 
 
