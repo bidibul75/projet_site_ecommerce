@@ -9,28 +9,36 @@ h1{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 100px 100px;
     text-align: center;
+    margin-bottom: 10vw;
 }
 
 .photo_luthier{
-    max-width: 10vw;
+    max-height: 12vw;
     margin: 2vw;
+    position: relative;
+    bottom: 1.5vw;
 }
 
 .photo_cariste{
-    max-width: 15vw;
+    max-width: 12vw;
+    position: relative;
+    top: 1vw;
 }
 
 .photo_manutentionnaire{
     max-width: 12vw;
+    position: relative;
+    top: 1vw;
 }
 
 .photo_commerciale{
-    max-width: 15vw;
+    max-height: 12vw;
     margin: 0.8vw;
+
 }
 
 .photo_cariste, .photo_commerciale, .photo_luthier, .photo_manutentionnaire{
-    border: 3px solid yellow;
+    border: 5px rgb(131, 140, 255) solid;
     border-radius: 100%;
     margin-bottom: 2vw;
 }
@@ -39,4 +47,65 @@ h1{
     display: flex;
     justify-content: center;
     margin: 8vw;
+}
+
+.photo_meeting{
+    border-right: 5px rgb(131, 140, 255) solid;
+    border-top: 5px rgb(131, 140, 255) solid;
+    border-bottom: 5px rgb(131, 140, 255) solid;
+    border-radius: 100%;
+    max-width: 25vw;
+}
+
+a, a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+h1{
+    margin-bottom: 2vw;
+}
+
+ul{
+    /* padding: 3vw; */
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    max-width: 35vw;
+    max-height: 12vw;
+    overflow: scroll;
+    overflow-x: hidden;
+    border: 5px solid rgb(131, 140, 255);
+    border-radius: 5%;
+
+}
+.timeline_box > h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2vw
+}
+
+.titre_gauche{
+    margin-left: 25vw;
+}
+.timeline_box{
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    bottom: 3vw;
+
+}
+.titre_droite{
+    padding-bottom: 3vw;
+}
+
+.jean{
+    position: relative;
+    bottom: 1.8vw;
+}
+
+.michael{
+    position: relative;
+    bottom: 0.5vw;
 }

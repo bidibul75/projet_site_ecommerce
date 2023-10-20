@@ -35,14 +35,14 @@ h1{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    margin-right: 1vw;
+    margin-right: 25vw;
     margin-top: 4vw;
 }
 
 .titre_gauche{
     display: flex;
     flex-direction: row;
-    margin-left: 1vw;
+    /* margin-left: 20vw; */
     margin-top: 4vw;
 }
 
@@ -95,6 +95,13 @@ a{
     border-bottom: 1px black solid;
     /* max-height: 10vw; */
     contain: content;
+    margin-bottom: 2vw;
+
+}
+p{
+    margin-bottom: 1vw;
+    display: flex;
+    justify-content: center;
 }
 
 
