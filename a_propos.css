@@ -4,3 +4,39 @@ h1{
     justify-content: center;
     font-size: 3em;
 }
+.guithub_crew{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px;
+    text-align: center;
+}
+
+.photo_luthier{
+    max-width: 10vw;
+    margin: 2vw;
+}
+
+.photo_cariste{
+    max-width: 15vw;
+}
+
+.photo_manutentionnaire{
+    max-width: 12vw;
+}
+
+.photo_commerciale{
+    max-width: 15vw;
+    margin: 0.8vw;
+}
+
+.photo_cariste, .photo_commerciale, .photo_luthier, .photo_manutentionnaire{
+    border: 3px solid yellow;
+    border-radius: 100%;
+    margin-bottom: 2vw;
+}
+
+.crew{
+    display: flex;
+    justify-content: center;
+    margin: 8vw;
+}
