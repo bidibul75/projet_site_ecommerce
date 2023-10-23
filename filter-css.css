@@ -33,6 +33,29 @@ html body{
     margin-top: 10px;
 }
 
+.liste-deroulante-extra{
+    list-style-type: none;
+}
+
+.liste-deroulante-extra + li{
+    list-style-type: none;
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+}
+
+.checkbox-lvl-0::before{
+    content: '+';
+    margin-right: 10px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.checkbox-lvl-0{
+    display: none;
+}
+
 .input-price{
     height: 50px;
     width: 60px;
@@ -115,4 +138,11 @@ input[type=number] {
 
 .liste-deroulante .checkbox-lvl-1:checked + label::before{
     content: '-';
+}
+
+@media (width <= 375px){
+    .filter-options-container {
+        width: 55vw;
+        height: 100vh;
+    }
 }
