@@ -20,7 +20,7 @@ a:link {
     background: lightgrey;
 }
 
-.fil_ariane div:hover {
+.fil_ariane div:hover, #onglets button:hover {
     background: darkgrey;
     color: black;
 }
@@ -49,7 +49,6 @@ a:link {
 
 .pages_produits {
     display: flex;
-    flex-direction: column;
     flex-wrap: nowrap;
 }
 
@@ -66,6 +65,8 @@ a:link {
     overflow-wrap: break-word;
     hyphens: auto;
     text-align: justify;
+    width: 1200px;
+
 
 }
 
@@ -91,6 +92,7 @@ margin: auto;
     flex-flow: column wrap;
     padding-left: 5%;
     padding-right: 5%;
+    width: 100%;
 
 }
 
@@ -192,26 +194,6 @@ margin: auto;
 }
 
 
-/* .descriptif_pages_produits_vignettes {
-    display: flex;
-    flex-flow: row wrap;
-
-    margin: auto;
-    gap: 10px;
-    padding-top: 25px;
-}
-
-.descriptif_pages_produits_vignettes_1 {
-    box-shadow: 5px 5px 5px lightgray;
-    border: solid 1px;
-    border-radius: 5%;
-    padding: 5px;
-    inline-size: 10%;
-    overflow-wrap: break-word;
-    hyphens: auto;
-    padding: 10px;
-} */
-
 .descriptif_pages_produits h1 {
     text-align: center;
     padding-bottom: 1rem;
@@ -233,6 +215,35 @@ margin: auto;
     text-align: center;
     padding-bottom: 10px;
 }
+
+
+
+#onglets button {
+    -webkit-appearance: none;
+    border: 0px;
+    border-radius: 5px 5px 0 0;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+}
+.actif {
+    background: lightgrey;
+
+}
+
+.tab-content {
+    border: 1px solid lightgrey;
+    border-radius: 0 5px 5px 5px;
+    background-color: lightgrey;
+    display: none;
+    
+}
+
+.tab-content {
+    justify-content: left;
+padding: 20px;
+
+}
+
 
 @media screen and (max-width : 768px) {
 
