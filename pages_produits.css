@@ -1,11 +1,10 @@
-* {
+html, body {
     font-family: Mooli; /* pb sur page index : n'est pas en font familly mooli*/
 }
 
 a:link {
     color: black;
 }
-
 
 .fil_ariane {
     display: flex;
@@ -26,8 +25,6 @@ a:link {
     color: black;
 }
 
-
-
 .fil_ariane a {
     display: block;
     padding: 0.5em 2em;
@@ -36,8 +33,6 @@ a:link {
     transform: skew(25deg);
     /* On redresse le texte des cases du fil d'ariane de 25 degrés */
 }
-
-
 
 .fil_ariane div:first-child {
     border-radius: 7px 0 0 7px;
@@ -192,7 +187,8 @@ margin: auto;
 } 
 
 .descriptif_pages_produits_droite div:nth-of-type(5) div:nth-child(2) a:hover {
-    background-color: #7e00f3;
+    background-color: blueviolet;
+    opacity: 100%;
 }
 
 
