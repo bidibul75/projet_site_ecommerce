@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A propos - GuitHub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="entete-css.css">
+    <link rel="stylesheet" href="carrousel.css">
+    <link rel="stylesheet" href="Nos_categories.css">
+    <link rel="stylesheet" href="liste_produits.css">
+    <link rel="stylesheet" href="a_propos.css">
+
+
+      <!-- chargement responsif des favicons selon le type de device-->
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Demande au robot de Google de ne pas archiver le site, 
+    qui pourrait au moment de l'archivage contenir une erreur (prix...).-->
+    <meta name="googlebot" content="noarchive">
+</head>
+<body onLoad="currentSlide(1)">
+  <header>
+    <div class="container-entete">
+        <div class="upper-zone">
+            <div class="upper-zone-content">
+                <div class="zone-1-upper">
+                <a href="#">Nous contacter</a>
+                <a href="a_propos.html">A propos</a>
+                </div>
+                <div class="zone-1-lower">
+                    <label for="check" class="icons">
+                        <i class="bx bx-menu" id="menu-icon"></i>
+                    </label>
+                        <a href="#">Nouveautés</a>
+                        <a href="#">Best-seller</a>
+                </div>
+                <div class="zone-2-upper">
+                    <div class="bloc-image-entete">
+                      <a href="index.html">
+                        <img src="/projet_site_ecommerce/images/guit_hub.png" alt="" class="img-logo">
+                      </a>
+                    </div>
+                </div>
+                <div class="zone-2-lower">
+                    <form action="" class="champ-recherche">
+                        <button type="submit"><i class='bx bx-search'></i></button>
+                        <input type="text" class="barre-recherche" placeholder="Rechercher">
+                    </form>
+                </div>
+                <div class="zone-3-upper">
+                    <a href="#">Politique de retour</a>
+                    <a href="#">TVA réduite</a>
+                </div>
+                <div class="zone-3-lower">
+                    <label for="check" class="icons">
+                        <i class='bx bxs-flag-alt' id="side-icons"></i>
+                        <a href="#"> <i class='bx bxs-user-account' id="side-icons"></i></a> 
+                        <a href="#"> <i class='bx bx-cart' id="side-icons"></i></a> 
+                </div>
+            </div>
+        </div>
+        <div class="bottom-zone">
+            <nav class="menu-nav">
+                <ol class="list-nav">
+                    <li>Guitare</li>
+                    <li>Basse</li>
+                    <li>Batteries</li>
+                    <li>Clavier</li>
+                    <li>Studio</li>
+                    <li>Logiciels</li>
+                    <li>Sono</li>
+                    <li>Eclairage</li>
+                    <li>Deejay</li>
+                    <li>Vidéos</li>
+                    <li>Micros</li>
+                    <li>Effets</li>
+                    <li>Vents</li>
+                    <li>Instr. Trad.</li>
+                    <li>Librairie</li>
+                    <li>Cases</li>
+                    <li>Câbles</li>
+                    <li>Accessoires</li>
+                </ol>
+            </nav>
+        </div>
+    </div> 
+  </header> 
+    <br>
+    <br>
+    <br>
+    <h1>A propos de nous</h1>
+    <br>
+    <br>
+    <h3 class="titre_gauche">L'histoire de GuitHub</h3>
+    <section class="gauche">    
+        <div class="aligner_voirplus">
+            <p>Il y a quelques années, des amis passionnés de guitare, ont lancé GuitHub, un site de vente de guitares en ligne. 
+                Ils étaient frustrés par la difficulté de trouver la guitare parfaite et ont créé une plateforme conviviale et sécurisée. 
+                GuitHub est rapidement devenu un lieu de prédilection pour les amoureux de la guitare, 
+                offrant une variété d'instruments et de ressources pour les musiciens du monde entier. 
+                Grâce à leur passion et leur dévouement, 
+                ils ont transformé GuitHub en la principale destination en ligne pour les amateurs de guitare.</p>
+            </div>
+            <div class="timeline_box">
+                <h3>Chronologie de GuitHub</h3>
+                <ul>
+                    <li>2013 - Rencontre des associés a un festival d'été</li>
+                    <br>
+                    <li>2014 - L'idée de GuitHub emmerge</li>
+                    <br>
+                    <li>2015 - GuitHub naît et commence a vendre des guitares d'occasion recupérées de leurs connaisances</li>
+                    <br>
+                    <li>2016 - Achat du premier entrepot GuitHub</li>
+                    <br>
+                    <li>2017 - Premier contrat avec un constructeur</li>
+                    <br>
+                    <li>2018 - GuitHub arrete de vendre des guitares d'occasion pour se concentrer sur du neuf</li>
+                    <br>
+                    <li>2019 - 1er magasin physique ouvert</li>
+                    <br>
+                    <li>2020 - Prix du magasin reconnu le moins chere</li>
+                    <br>
+                    <li>2021 - GuitHub devient 1ere plateforme de la guitare Française</li>
+                    <br>
+                    <li>2022 - L'equipe passe de 4 personnes a pres de 50</li>
+                    <br>
+                    <li>2023 - Arrestation d'un des associés pour tentative d'escroquerie</li>
+                    <br>
+                </ul>
+            </div> 
+    </section>
+    <section class="mission_vision">
+        <h3 class="titre_droite">La vision GuitHub</h3>
+        <section class="droite">
+            <a href="">
+                <img src="images/meeting_guithub.jpg" alt="Photo d'une reunion chez GuitHub" class="photo_meeting">
+            </a>
+            <div class="aligner_voirplus">
+                <p>Chez GuitHub, notre vision est de créer une communauté mondiale unie par une passion commune : la guitare. Nous croyons que la musique transcende les frontières et que la guitare est un instrument puissant capable d'inspirer, de connecter et d'exprimer l'âme de chacun.
+                    Notre objectif est de faire de GuitHub bien plus qu'une simple plateforme de vente de guitares. Nous aspirons à devenir un havre de ressources pour les musiciens de tous niveaux, un lieu où l'exploration musicale est encouragée, où les talents sont découverts et perfectionnés.
+                    Nous nous engageons à offrir une expérience utilisateur exceptionnelle, en veillant à ce que l'achat ou la vente d'une guitare sur GuitHub soit simple, sécurisé et gratifiant. Nous travaillons sans relâche pour garantir que chaque instrument répertorié sur notre plateforme soit de qualité, et nous sommes déterminés à soutenir les musiciens dans leur quête de l'instrument de leurs rêves.
+                    Chez GuitHub, nous croyons en l'apprentissage continu et nous offrons des ressources pédagogiques de qualité, des cours en ligne, des tutoriels et des conseils pour aider les musiciens à progresser et à s'épanouir.
+                    Enfin, nous cherchons à créer une communauté solidaire où les musiciens partagent leurs histoires, leurs compétences et leur passion. Nous croyons que la musique a le pouvoir de rapprocher les gens, de transcender les différences culturelles et de célébrer la diversité.
+                    Notre vision est de devenir le point de convergence de la musique et de la guitare, un lieu où les rêves musicaux se réalisent et où les musiciens trouvent un foyer virtuel. Chez GuitHub, nous faisons vibrer le monde, une guitare à la fois.</p>
+            </div>
+    </section>
+    <h3 class="crew">l'Equipe GuitHub</h3>
+    <section class="guithub_crew">
+        <div>
+            <img src="/projet_site_ecommerce/images/cariste.jpg" class="photo_cariste"alt="Photo de Jacques, cariste de GuitHub">
+            <div class="jacques"><p>Jacques, Cariste chez GuitHub</p></div>
+        </div>
+        <div>
+            <img src="/projet_site_ecommerce/images/Manutentionnaire.jpg" class="photo_manutentionnaire" alt="Photo de Patrick, manutentionnaire de GuitHub">
+            <div class="patrick"><p>Patrick, manutentionnaire chez GuitHub</p></div>
+        </div>
+        <div>
+            <img src="/projet_site_ecommerce/images/Commercial.jpg" class="photo_commerciale" alt="Photo de Michael, commercial de GuitHub">
+            <div class="michael"><p>Michael, commercial chez GuitHub</p></div>
+        </div>
+        <div>
+            <img src="/projet_site_ecommerce/images/luthier.jpg" class="photo_luthier" alt="Photo de Jean, luthier de GuitHub">
+            <div class="jean"><p>Jean, luthier chez GuitHub</p></div>
+        </div>
+
+    </section>
+    
+
+    </section>
+</body>
+</html>

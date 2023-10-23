@@ -17,7 +17,6 @@ html body{
 .upper-zone-content{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin:10px;
     gap: 5px;
     align-items: center;
     padding-left: 40px;
@@ -67,6 +66,7 @@ html body{
 
 .img-logo{
     border-radius: 3px;
+    max-width: 5.5vw;
 }
 
 .zone-2-lower {
@@ -161,7 +161,7 @@ html body{
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     
 }
 

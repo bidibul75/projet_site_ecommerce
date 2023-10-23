@@ -1,7 +1,7 @@
 body, html {
-    margin: 20px;
+    /* margin: 20px; */
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: Mooli;
 }
 
 .titre{
@@ -10,18 +10,20 @@ body, html {
 }
  .grid-container-nos_categories {
     display: grid;
-    grid-template-columns: repeat(3, 4fr);
+    grid-template-columns: repeat(3, 2fr);
     gap: 20px;
+    margin: 4vw;
   }
   
   .grid-item-nos_categories {
     display: flex;
     align-items: center;
     border-bottom: 1px solid gray;
-    
+    padding: 3vw;    
   }
   
   .grid-item-nos_categories img {
+    display: block;
     max-width: 15vw; 
     margin-right: 20px;
     margin-bottom: 5px;
@@ -55,6 +57,13 @@ body, html {
     }
 
   }
+  a{
+    text-decoration: none;
+  }
+
 
     
-  
+  .titre{
+    
+
+  }
