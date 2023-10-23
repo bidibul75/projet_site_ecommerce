@@ -10,16 +10,20 @@ body, html {
 }
  .grid-container-nos_categories {
     display: grid;
-    grid-template-columns: repeat(3, 2fr);
-    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    gap: 1.5vw;
     margin: 4vw;
+    max-width: 30vw;
+
   }
   
   .grid-item-nos_categories {
     display: flex;
     align-items: center;
     border-bottom: 1px solid gray;
-    padding: 3vw;    
+    padding: 3vw; 
+    max-width: 30vw;   
   }
   
   .grid-item-nos_categories img {

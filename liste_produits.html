@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +16,7 @@
     <link rel="stylesheet" href="liste_produits.css">
 
 
-      <!-- chargement responsif des favicons selon le type de device-->
+    <!-- chargement responsif des favicons selon le type de device-->
     <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
@@ -25,7 +26,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
@@ -37,73 +38,63 @@
     qui pourrait au moment de l'archivage contenir une erreur (prix...).-->
     <meta name="googlebot" content="noarchive">
 </head>
+
 <body onLoad="currentSlide(1)">
-  <header>
-    <div class="container-entete">
-        <div class="upper-zone">
-            <div class="upper-zone-content">
-                <div class="zone-1-upper">
-                <a href="#">Nous contacter</a>
-                <a href="a_propos.html">A propos</a>
-                </div>
-                <div class="zone-1-lower">
-                    <label for="check" class="icons">
-                        <i class="bx bx-menu" id="menu-icon"></i>
-                    </label>
-                        <a href="#">Nouveautés</a>
-                        <a href="#">Best-seller</a>
-                </div>
-                <div class="zone-2-upper">
-                    <div class="bloc-image-entete">
-                      <a href="index.html">
-                        <img src="/projet_site_ecommerce/images/guit_hub.png" alt="" class="img-logo">
-                      </a>
+    <header>
+        <div class="container-entete">
+            <div class="upper-zone">
+                <div class="upper-zone-content">
+                    <div class="zone-1-upper">
+                        <a href="nouscontacter.html">Nous contacter</a>
+                        <a href="a_propos.html">A propos</a>
+                    </div>
+                    <div class="zone-1-lower">
+                        <label for="check" class="icons">
+                            <i class="bx bx-menu" id="menu-icon"></i>
+                        </label>
+                        <a href="index.html#nouveautes">Nouveautés</a>
+                        <a href="index.html#best_sellers">Best-seller</a>
+                    </div>
+                    <div class="zone-2-upper">
+                        <div class="bloc-image-entete">
+                            <a href="index.html">
+                                <img src="/projet_site_ecommerce/images/guit_hub.png" alt="" class="img-logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="zone-2-lower">
+                        <form action="" class="champ-recherche">
+                            <button type="submit"><i class='bx bx-search'></i></button>
+                            <input type="text" class="barre-recherche" placeholder="Rechercher">
+                        </form>
+                    </div>
+                    <div class="zone-3-upper">
+                        <a href="#">Politique de retour</a>
+                        <a href="#">TVA réduite</a>
+                    </div>
+                    <div class="zone-3-lower">
+                        <label for="check" class="icons">
+                            <i class='bx bxs-flag-alt' id="side-icons"></i>
+                            <a href="#"> <i class='bx bxs-user-account' id="side-icons"></i></a>
+                            <a href="#"> <i class='bx bx-cart' id="side-icons"></i></a>
                     </div>
                 </div>
-                <div class="zone-2-lower">
-                    <form action="" class="champ-recherche">
-                        <button type="submit"><i class='bx bx-search'></i></button>
-                        <input type="text" class="barre-recherche" placeholder="Rechercher">
-                    </form>
-                </div>
-                <div class="zone-3-upper">
-                    <a href="#">Politique de retour</a>
-                    <a href="#">TVA réduite</a>
-                </div>
-                <div class="zone-3-lower">
-                    <label for="check" class="icons">
-                        <i class='bx bxs-flag-alt' id="side-icons"></i>
-                        <a href="#"> <i class='bx bxs-user-account' id="side-icons"></i></a> 
-                        <a href="#"> <i class='bx bx-cart' id="side-icons"></i></a> 
-                </div>
+            </div>
+            <div class="bottom-zone">
+                <nav class="menu-nav">
+                    <ol class="list-nav">
+                        <li>Tous nos produits</li>
+                        <li>Guitare Acoustique</li>
+                        <li>Guitare Electrique</li>
+                        <li>Basse</li>
+                        <li>Ampli</li>
+                        <li>Effets</li>
+                        <li>Accessoires</li>
+                    </ol>
+                </nav>
             </div>
         </div>
-        <div class="bottom-zone">
-            <nav class="menu-nav">
-                <ol class="list-nav">
-                    <li>Guitare</li>
-                    <li>Basse</li>
-                    <li>Batteries</li>
-                    <li>Clavier</li>
-                    <li>Studio</li>
-                    <li>Logiciels</li>
-                    <li>Sono</li>
-                    <li>Eclairage</li>
-                    <li>Deejay</li>
-                    <li>Vidéos</li>
-                    <li>Micros</li>
-                    <li>Effets</li>
-                    <li>Vents</li>
-                    <li>Instr. Trad.</li>
-                    <li>Librairie</li>
-                    <li>Cases</li>
-                    <li>Câbles</li>
-                    <li>Accessoires</li>
-                </ol>
-            </nav>
-        </div>
-    </div> 
-  </header> 
+    </header>
     <br>
     <br>
     <br>
@@ -111,65 +102,80 @@
     <br>
     <br>
     <section class="constructeur">
-        
+
         <img src="images/Gibson_logo.png" alt="logo de la marque Gibson">
 
     </section>
     <h3 class="titre_gauche">Gibson Artist Collection Slash Les Paul Standard LH November</h3>
     <section class="gauche">
         <div class="aligner_voirplus">
-            <p>Avec son plus célèbre ambassadeur, Gibson présente la guitare Artist Collection Slash Les Paul Standard LH November Burst. 
-                Cet instrument pour gaucher a toutes les caractéristiques que les fans du guitariste de Guns N 'Roses, 
-                Velvet Revolver et Snakepit aimeraient voir dans les guitares à simple pan coupé préférées de cette marque de guitare américaine légendaire. 
-                Naturellement, ce spécimen de l'usine américaine de Nashville est fabriqué à partir des bois habituels. 
-                Le corps et le manche collé sont en acajou et associés à une touche en palissandre et une table extrêmement appétissante en érable flammé de qualité AAA. 
-                Au fait, avez-vous un appétit musical pour la destruction ? Alors choisissez cet exemplaire de finition November Burst.<a href=""> voir plus...</a></p>
-        </div>  
-            <a href="">
-                    <img src="images/gibson_lespaul_slash_novemberLH.jpg" alt="photo de la LesPaul Slash November LH" class="photo_produits_gauche">
-            </a>
-            
-        
+            <p>Avec son plus célèbre ambassadeur, Gibson présente la guitare Artist Collection Slash Les Paul Standard
+                LH November Burst.
+                Cet instrument pour gaucher a toutes les caractéristiques que les fans du guitariste de Guns N 'Roses,
+                Velvet Revolver et Snakepit aimeraient voir dans les guitares à simple pan coupé préférées de cette
+                marque de guitare américaine légendaire.
+                Naturellement, ce spécimen de l'usine américaine de Nashville est fabriqué à partir des bois habituels.
+                Le corps et le manche collé sont en acajou et associés à une touche en palissandre et une table
+                extrêmement appétissante en érable flammé de qualité AAA.
+                Au fait, avez-vous un appétit musical pour la destruction ? Alors choisissez cet exemplaire de finition
+                November Burst.</p>
+        </div>
+        <a href="">
+            <img src="images/gibson_lespaul_slash_novemberLH.jpg" alt="photo de la LesPaul Slash November LH"
+                class="photo_produits_gauche">
+        </a>
+
+
     </section>
     <h3 class="titre_droite">Gibson Modern Collection SG Modern Trans Black Fade</h3>
     <section class="droite">
         <a href="">
-            <img src="images/gibson_doublecut_trans_black_fade.png" alt="photo de la Gibson modern Trans Black Fade" class="photo_produits_droite">
+            <img src="images/gibson_doublecut_trans_black_fade.png" alt="photo de la Gibson modern Trans Black Fade"
+                class="photo_produits_droite">
         </a>
         <div class="aligner_voirplus">
-            <p>L'une des têtes d'affiche de la Modern Collection, la Gibson SG Modern reprend le son emblématique de Gibson tout en proposant une jouabilité moderne. 
-                Le corps en acajou mince a été recouvert d'une table en érable figurée AA, de sorte que chaque guitare affiche un design unique de par le dessin du bois. 
-                On retrouve bien sûr le vernis nitrocellulose qui permet à la guitare de résonner pleinement. 
-                Cette SG est livrée avec un étui rigide et un kit d'accessoires.<a href=""> voir plus...</a></p>
+            <p>L'une des têtes d'affiche de la Modern Collection, la Gibson SG Modern reprend le son emblématique de
+                Gibson tout en proposant une jouabilité moderne.
+                Le corps en acajou mince a été recouvert d'une table en érable figurée AA, de sorte que chaque guitare
+                affiche un design unique de par le dessin du bois.
+                On retrouve bien sûr le vernis nitrocellulose qui permet à la guitare de résonner pleinement.
+                Cette SG est livrée avec un étui rigide et un kit d'accessoires.</p>
         </div>
-        </section>
+    </section>
 
     </section>
     <h3 class="titre_gauche">Gibson Flying V Antique Natural</h3>
     <section class="gauche">
         <div class="aligner_voirplus">
-            <p>La Flying V de la série Original Designer de Gibson vous offre toutes les caractéristiques familières du modèle standard de 1967 mais avec une finition qui rappelle l'original de 1958. 
-                Pour vous donner cette sensation de jeu bien connue, cette solid body en forme de V a reçu un profil de manche Slim Taper tant apprécié. 
-                La touche en palissandre au radius de 12 pouces confirme qu’il s’agit d’un manche confortable, tout comme les frettes medium jumbo.<a href=""> voir plus...</a></p>
-        </div>  
-            <a href="">
-                    <img src="images/gibson_flyingV.png" alt="photo de la Gibson Flying V Antique Natural" class="photo_produits_gauche">
-            </a>
-            
-        
+            <p>La Flying V de la série Original Designer de Gibson vous offre toutes les caractéristiques familières du
+                modèle standard de 1967 mais avec une finition qui rappelle l'original de 1958.
+                Pour vous donner cette sensation de jeu bien connue, cette solid body en forme de V a reçu un profil de
+                manche Slim Taper tant apprécié.
+                La touche en palissandre au radius de 12 pouces confirme qu’il s’agit d’un manche confortable, tout
+                comme les frettes medium jumbo.</p>
+        </div>
+        <a href="">
+            <img src="images/gibson_flyingV.png" alt="photo de la Gibson Flying V Antique Natural"
+                class="photo_produits_gauche">
+        </a>
+
+
     </section>
     <h3 class="titre_droite">Gibson Original Designer Explorer Antique Natural</h3>
     <section class="droite">
         <a href="">
-            <img src="images/gibson_explorer.png" alt="photo de la Gibson Explorer Antique Natural" class="photo_produits_droite">
+            <img src="images/gibson_explorer.png" alt="photo de la Gibson Explorer Antique Natural"
+                class="photo_produits_droite">
         </a>
         <div class="aligner_voirplus">
-            <p>L'une des têtes d'affiche de la Modern Collection, la Gibson SG Modern reprend le son emblématique de Gibson tout en proposant une jouabilité moderne. 
-                Le corps en acajou mince a été recouvert d'une table en érable figurée AA, de sorte que chaque guitare affiche un design unique de par le dessin du bois. 
-                On retrouve bien sûr le vernis nitrocellulose qui permet à la guitare de résonner pleinement. 
-                Cette SG est livrée avec un étui rigide et un kit d'accessoires. <a href="">voir plus...</a></p>
+            <p>L'une des têtes d'affiche de la Modern Collection, la Gibson SG Modern reprend le son emblématique de
+                Gibson tout en proposant une jouabilité moderne.
+                Le corps en acajou mince a été recouvert d'une table en érable figurée AA, de sorte que chaque guitare
+                affiche un design unique de par le dessin du bois.
+                On retrouve bien sûr le vernis nitrocellulose qui permet à la guitare de résonner pleinement.
+                Cette SG est livrée avec un étui rigide et un kit d'accessoires.</p>
         </div>
-        </section>
+    </section>
 
     </section>
     <!-- <section class="pages">
@@ -182,4 +188,5 @@
 
     </section>
 </body>
+
 </html>
