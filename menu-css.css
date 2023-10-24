@@ -8,24 +8,33 @@ html body{
     font-family: Mooli;
 }
 
-.filter-options-container{
-    width: 33vw;
-    height: 100vh;
+.container-menu{
+    background: rgb(255, 255, 255);
+    position: absolute;
+    top: -2px;
+    left:0;
+    overflow: scroll;
 }
 
-.filter-options-extra-container{
+.container-menu-div{
     margin-top:1rem;
     margin-left: 2rem ;
     padding-bottom: 1rem;
 }
 
-.filter-options-extra-container > h3{
+.container-menu-div > h3{
     font-size: x-large;
 }
 
-.bloc-menu{
-    border-top: 1px solid gray ;
+.separator {
     margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    border:1px solid black;
+    width: 60%;
+}
+
+.bloc-menu{
+
     margin-bottom: 2.5rem;
 }
 
@@ -33,41 +42,44 @@ html body{
     margin-top: 1rem;
 }
 
-.liste-deroulante li{
+.liste-menu li{
     list-style-type: none;
     width: 100%;
     border-radius: 8px;
+    margin-top: 0.5rem;
     margin-bottom: 1rem;
     font-size: 1rem;
 }
 
-.liste-deroulante li a{
+.liste-menu li a{
     text-decoration: none;
     color: black;
 }
 
-.liste-deroulante li a:hover{
+.liste-menu li a:hover{
     color:blueviolet
 }
 
 
 @media (width <= 375px){
-    .filter-options-container {
-        width: 80vw;
+    .container-menu {
+        width: 100vw;
         height: 100vh;
+        transform: translateX(-40vw);
     }
 }
 
-@media (width >= 425px){
-    .filter-options-container {
-        width: 65vw;
+@media (width <= 425px){
+    .container-menu {
+        width: 100vw;
         height: 100vh;
+        transform: translateX(-100vw);
     }
 }
 
 @media (width >= 725px) {
-    .filter-options-container{
-        width: 33vw;
+    .container-menu{
+        width: 40vw;
         height: 100vh;
     }
 }

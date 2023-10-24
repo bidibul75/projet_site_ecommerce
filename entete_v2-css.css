@@ -44,6 +44,21 @@ html body{
     gap: 1rem;
     justify-content: center;
 }
+
+.zone-1-lower > input{
+    display: none;
+} 
+
+.zone-1-lower input[type="checkbox"]:checked ~ .container-menu{
+    transform: translateX(0px);
+    transition: all 0.4s ease;
+}
+
+
+label {
+    cursor: pointer;
+}
+
 .zone-1-lower a {
     padding-top: 0.55vw;
 }
@@ -111,7 +126,7 @@ html body{
     background: #f1f1f1;
   }
 
-  input:focus {
+input:focus {
     outline:  none;
 }
 .champ-recherche button {
@@ -202,7 +217,7 @@ html body{
 .upper-zone-content{
     display: grid;
     grid-template: 1fr 1fr / 2fr 1fr;
-    align-items: center;
+    align-items: baseline;
 }
 
     .zone-1-upper, .link-zone-1-lower, .zone-3-upper,
