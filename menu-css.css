@@ -81,5 +81,6 @@ html body{
     .container-menu{
         width: 40vw;
         height: 100vh;
+        transform: translateX(-40vw);
     }
 }
