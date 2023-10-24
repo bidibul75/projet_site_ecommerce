@@ -1,0 +1,150 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html body{
+    font-family: Mooli;
+}
+
+.filter-options-container{
+    width: 33vw;
+    height: 100vh;
+}
+
+.filter-options-extra-container{
+    margin-top:1rem;
+    margin-left: 2rem ;
+}
+
+.container-item-box{
+    margin-bottom: 2rem;
+    font-size: 0.8rem;
+
+}
+
+.titre-filtre{
+    margin-bottom: 1rem;
+    font-size:large;
+}
+
+.item-box{
+    margin-top: 10px;
+}
+
+/* Correspond à la partie commentée dans le HTML */
+
+/* .liste-deroulante-extra{
+    list-style-type: none;
+}
+
+.liste-deroulante-extra + li{
+    list-style-type: none;
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+}
+
+.checkbox-lvl-0::before{
+    content: '+';
+    margin-right: 10px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.checkbox-lvl-0{
+    display: none;
+} */
+
+.input-price{
+    height: 50px;
+    width: 60px;
+    border-radius: 5px;
+    border:solid 1px lightgrey;
+    align-self: center;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  text-align: center;
+
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+  text-align: center;
+}
+
+.evaluation{
+    display: inline;
+}
+
+.evaluation img{
+    height: 1rem;
+}
+
+.choix-optionnels{
+    border-top: 1px solid gray ;
+    margin-top: 1rem;
+}
+
+.liste-deroulante{
+    margin-top: 1rem;
+}
+
+.liste-deroulante li{
+    list-style-type: none;
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+}
+
+.liste-deroulante li .label-bloc-optionnel{
+    display: inline;
+    align-items: center;
+    font-size: large;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.checkbox-lvl-1{
+    display: none;
+}
+
+.label-bloc-optionnel::before {
+    content:'+';
+    margin-right: 10px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.label-bloc-optionnel:hover{
+    color: blueviolet;
+}
+
+.liste-deroulante .content{
+    max-height: 0;
+    overflow: hidden;
+}
+
+.liste-deroulante .checkbox-lvl-1:checked + label + .content{
+    max-height:400px;
+}
+
+.liste-deroulante .checkbox-lvl-1:checked + label::before{
+    content: '-';
+}
+
+@media (width <= 375px){
+    .filter-options-container {
+        width: 55vw;
+        height: 100vh;
+    }
+}

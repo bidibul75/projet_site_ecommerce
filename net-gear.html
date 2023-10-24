@@ -37,6 +37,7 @@
     <!-- Demande au robot de Google de ne pas archiver le site, 
     qui pourrait au moment de l'archivage contenir une erreur (prix...).-->
     <meta name="googlebot" content="noarchive">
+    <script src="onglets_page_produits.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -106,7 +107,7 @@
     <br>
     <br>
 
-    <section class="pages_produits">
+    
         <div class="fil_ariane">
             <div>
                 <a href="index.html" alt="Accueil"> &#8962;</a>
@@ -119,7 +120,7 @@
             </div>
 
         </div>
-
+<section class="pages_produits">
         <div class="descriptif_pages_produits">
             <div class="descriptif_pages_produits_gauche">
                 <h1>Neural DSP Quad Cortex</h1>
@@ -128,62 +129,93 @@
                 <h2>Pédale haut-de-gamme multi-effets pour guitare et basse</h2>
                 <p class="texte_pages_produits">
 
-                <ul>
-                    <li>Modélisation d'amplificateur puissante avec DSP dédié 2 GHz de l'architecture SHARC Quad-Core
-                    </li>
-                    <li>Architecture de réseau unique "Neural Capture" permettant l'analyse et la simulation de la
-                        dynamique
-                        et du son d'autres amplificateurs</li>
-                    <li>Wifi intégré pour le partage de presets de "Rig-Capture", sauvegardes et mises à jour du
-                        firmware
-                        <br>
-                    <li>Technologie de modélisation supérieure intégrée permettant une collection sans cesse croissante
-                        d'algorithmes avec une qualité sonore sans compromis</li>
-                    <li>Contient des Rig-Captures Custom de certains des meilleurs producteurs et designers sonores</li>
-                    <li>Très faible latence et flexibilité de routage inégalée</li>
-                    <li>Ecran tactile multipoint 7"</li>
-                    <li>Simulateur de baffle avec plus de 1000 réponses impulsionnelles</li>
-                    <li>11 commutateurs au pied combinés nouvellement développés avec fonction de commande rotative</li>
-                    <li>Contrôle de volume</li>
-                    <li>Aucune possibilité de fonctionnement avec pile</li>
-                    <li>Bloc d'alimentation 12 V DC incl.</li>
-                    <li>Dimensions: 290 x 191 x 48 mm</li>
-                    <li>Poids: 1,6 kg</li>
-
-                    <h3> Connexions: </h3>
-
-                    <li>Entrées 1 & 2 sur XLR/Jack 6,3 mm</li>
-                    <li>Boucle d'effets 1 sur Jack 6,3 mm</li>
-                    <li>Boucle d'effets 2 sur Jack 6,3 mm</li>
-                    <li>Sorties 1 & 2 sur XLR</li>
-                    <li>Sorties 3 & 4 sur Jack stéréo 6,3 mm</li>
-                    <li>Sortie casque sur Jack stéréo 6,3 mm</li>
-                    <li>Expression 1 & 2 sur Jack stéréo 6,3 mm</li>
-                    <li>MIDI In & Thru/Out</li>
-                    <li>Port USB</li>
-
-                </ul>
+                
 
                 </p>
+
+                <!-- Onglets pour affichage descriptif et fiche technique-->
+                <div id="onglets">
+                    <div>
+                        <button onclick="openTab(0)" class="bouton_onglet actif">Descriptif</button>
+                        <button onclick="openTab(1)" class="bouton_onglet">Fiche technique</button>
+                        <button onclick="openTab(2)" class="bouton_onglet">Avis clients</button>
+                    </div>
+
+                    <div>
+                        <div class="tab-content" style="display:block">
+                          
+                                <p>Modélisation d'amplificateur puissante avec DSP dédié 2 GHz de l'architecture SHARC Quad-Core
+                                </p>
+                                <p>Architecture de réseau unique "Neural Capture" permettant l'analyse et la simulation de la
+                                    dynamique et du son d'autres amplificateurs</p>
+                                <p>Wifi intégré pour le partage de presets de "Rig-Capture", sauvegardes et mises à jour du
+                                    firmware
+                                </p>
+                                <p>Technologie de modélisation supérieure intégrée permettant une collection sans cesse croissante
+                                    d'algorithmes avec une qualité sonore sans compromis</p>
+                                <p>Contient des Rig-Captures Custom de certains des meilleurs producteurs et designers sonores</p>
+                                <p>Très faible latence et flexibilité de routage inégalée</p>
+                           
+                        </div>
+                        <div class="tab-content">
+                            
+                    
+                                <p>Ecran tactile multipoint 7"</p>
+                                <p>Simulateur de baffle avec plus de 1000 réponses impulsionnelles</p>
+                                <p>11 commutateurs au pied combinés nouvellement développés avec fonction de commande rotative</p>
+                                <p>Contrôle de volume</p>
+                                <p>Aucune possibilité de fonctionnement avec pile</p>
+                                <p>Bloc d'alimentation 12 V DC incl.</p>
+                                <p>Dimensions: 290 x 191 x 48 mm</p>
+                                <p>Poids: 1,6 kg</p>
+            
+                                <h3> Connexions: </h3>
+            
+                                <p>Entrées 1 & 2 sur XLR/Jack 6,3 mm</p>
+                                <p>Boucle d'effets 1 sur Jack 6,3 mm</p>
+                                <p>Boucle d'effets 2 sur Jack 6,3 mm</p>
+                                <p>Sorties 1 & 2 sur XLR</p>
+                                <p>Sorties 3 & 4 sur Jack stéréo 6,3 mm</p>
+                                <p>Sortie casque sur Jack stéréo 6,3 mm</p>
+                                <p>Expression 1 & 2 sur Jack stéréo 6,3 mm</p>
+                                <p>MIDI In & Thru/Out</p>
+                                <p>Port USB</p>
+            
+                            
+                        </div>
+                        <div class="tab-content">
+                            C'est cool
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
             </div>
 
-            <div class="descriptif_pages_produits_droite">
 
-                <div>
-                    1.698,00 €
-                </div>
-                <div>
-                    Tous les prix TVA incl. (TTC)
-                </div>
-                <div> Disponible immédiatement
-                </div>
-                <div>
-                    Livraison gratuite estimée entre le <span>Mercredi 25 octobre et le Jeudi 26 octobre.</span><br><br><br>
-                </div>
+        </div>
 
+        <div class="descriptif_pages_produits_droite">
+
+            <div>
+                1.698,00 €
+            </div>
+            <div>
+                Tous les prix TVA incl. (TTC)
+            </div>
+            <div> Disponible immédiatement
+            </div>
+            <div>
+                Livraison gratuite estimée entre le <span>Mercredi 25 octobre et le Jeudi 26
+                    octobre.</span><br><br><br>
+            </div>
+
+            <div>
                 <div>
-                    <div>
-                        <!-- <li class="menu_deroulant_quantites"><a href="#"></a></li>
+                    <!-- <li class="menu_deroulant_quantites"><a href="#"></a></li>
 
                         <ul class="dropdown">
                             <li><a href="#">1</a></li>
@@ -195,14 +227,14 @@
                         </ul> -->
 
 
-                    </div>
-                    <div>
-                        <a href="#">AJOUTER AU PANIER</a>
-                    </div>
                 </div>
-
+                <div>
+                    <a href="#">AJOUTER AU PANIER</a>
+                </div>
             </div>
+
         </div>
+
 
     </section>
 
