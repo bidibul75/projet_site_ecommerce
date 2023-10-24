@@ -53,7 +53,21 @@ html body{
 
 @media (width <= 375px){
     .filter-options-container {
-        width: 55vw;
+        width: 80vw;
+        height: 100vh;
+    }
+}
+
+@media (width >= 425px){
+    .filter-options-container {
+        width: 65vw;
+        height: 100vh;
+    }
+}
+
+@media (width >= 725px) {
+    .filter-options-container{
+        width: 33vw;
         height: 100vh;
     }
 }
