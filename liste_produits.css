@@ -7,8 +7,25 @@ html body{
     margin-bottom: 2vw
 }
 
-a:hover{
+a:hover > p{
     opacity: 50%;
+}
+
+a:hover > img{
+    transform: scale(1.2);
+}
+.prix{
+    display: flex;
+    font-size: 3em;
+    margin-left: 1vw;
+    align-items: center;
+    position: relative;
+    bottom: 1vw;
+}
+
+a{
+    color: black;
+    transition: transform 0.5s
 }
 
 h1{
@@ -42,7 +59,7 @@ h1{
 .titre_gauche{
     display: flex;
     flex-direction: row;
-    /* margin-left: 20vw; */
+    margin-left: 20vw;
     margin-top: 4vw;
 }
 
@@ -55,14 +72,17 @@ h1{
 
 }
 
-.photo_produits_droite{
+.photo_produits_droite, .danelectro{
     border-right: 5px yellow solid;
     border-top: 5px yellow solid;
     border-bottom: 5px yellow solid;
     border-radius: 100%;
+    min-width: 14vw;
+    min-height: 20vw;
+    
 }
 
-.droite, .photo_produits_droite{
+.droite, .photo_produits_droite, .danelectro{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -74,9 +94,13 @@ h1{
     margin-top: 1vw;
 }
 
+.danelectro{
+    max-height: 15vw;
+}
+
 
 .photo_produits_gauche, .photo_produits_droite{
-    max-width: 15vw; 
+    max-width: 18vw; 
 }
 
 .pages{
@@ -102,12 +126,42 @@ p{
     margin-bottom: 1vw;
     display: flex;
     justify-content: center;
+    text-align: justify;
 }
 
 
-/* .pagination{
-    border-radius: 100%;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 10px;
-} */
+  .pages{
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #eee;
+    margin-top: 1em;
+    padding-top: 0.5em;
+    margin-bottom: 2vw;
+  }
+
+  .pagination {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+  }
+
+  .pagination li {
+    margin: 0 1px;
+  }
+
+  .pagination a {
+    display: block;
+    padding: 0.5em 1em;
+    border: 1px solid #999;
+    border-radius: 0.8em;
+    text-decoration: none;
+  }
+
+  .pagination a:hover{
+    background-color: black;
+    color: white;
+  }
+
+ 
