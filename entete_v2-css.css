@@ -58,11 +58,13 @@ html body {
 .style-button-open {
     background: lightgray;
     border: none;
+    cursor: pointer;
 }
 
 .style-button-close {
     background: white;
     border: none;
+    cursor: pointer;
 }
 
 label {
@@ -214,6 +216,10 @@ input:focus {
 .list-nav li:hover {
     background: blueviolet;
     border-radius: 10px;
+}
+
+.container-menu{
+    z-index: 1000;
 }
 
 

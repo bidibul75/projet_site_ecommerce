@@ -10,11 +10,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mooli&family=Shadows+Into+Light&display=swap" rel="stylesheet">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="stylesheet" href="entete-css.css">
   <link rel="stylesheet" href="Nos_categories.css">
   <link rel="stylesheet" href="liste_produits.css">
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="nouscontacter.css">
+  <link rel="stylesheet" href="entete_v2-css.css">
+  <link rel="stylesheet" href="menu-css.css">
 
 
   <!-- chargement responsif des favicons selon le type de device-->
@@ -50,34 +51,89 @@
             <a href="a_propos.html">A propos</a>
           </div>
           <div class="zone-1-lower">
-            <label for="check" class="icons">
-              <i class="bx bx-menu" id="menu-icon"></i>
-            </label>
-            <a href="index.html#nouveautes">Nouveautés</a>
-            <a href="index.html#best_sellers">Best-seller</a>
-          </div>
-          <div class="zone-2-upper">
-            <div class="bloc-image-entete">
-              <a href="index.html">
-                <img src="/projet_site_ecommerce/images/guit_hub.png" alt="" class="img-logo">
-              </a>
+            <button id="button-open" class="style-button-open">
+              <img src="/projet_site_ecommerce/ressources_entete/bx-menu.svg" alt="menu">
+            </button>
+            <div class="container-menu" id="to-close-menu">
+              <div class="container-menu-div">
+                <div class="h3-close-menu">
+                  <h3>Menu</h3>
+                  <button id="button-close" class="style-button-close"><img
+                      src="/projet_site_ecommerce/ressources_entete/bx-x-36px.svg" alt="close-icon"></button>
+                  <!-- <input type="checkbox" name="check-close" id="close" onclick="close()"> -->
+                </div>
+                <div class="separator"></div>
+                <div class="bloc-menu">
+                  <div class="choix-menu">
+                    <ul class="liste-menu">
+                      <li><a href="liste_produits.html">Tous nos produits</a></li>
+                      <li><a href="liste_guitares_acoustiques.html">Guitare Acoustique</a></li>
+                      <li><a href="liste_guitares_electriques.html">Guitare Electrique</a></li>
+                      <li><a href="liste_basses.html">Basse</a></li>
+                      <li><a href="liste_amplis.html">Ampli</a></li>
+                      <li><a href="liste_effets.html">Effets</a></li>
+                      <li><a href="liste_accessoires.html">Accessoires</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <h3>Services</h3>
+                <div class="separator"></div>
+                <div class="bloc-menu">
+                  <div class="choix-menu">
+                    <ul class="liste-menu">
+                      <li><a href="nouscontacter.html">Nous contacter</a></li>
+                      <li><a href="#">Questions fréquentes</a></li>
+                      <li><a href="#">Frais de port et de livraison</a></li>
+                      <li><a href="#">Retourner un produit</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <h3>A propos</h3>
+                <div class="separator"></div>
+                <div class="bloc-menu">
+                  <div class="choix-menu">
+                    <ul class="liste-menu">
+                      <li><a href="a_propos.html">Informations Guithub</a></li>
+                      <li><a href="#">Conditions générales</a></li>
+                      <li><a href="#">L'univers Guithub</a></li>
+                      <li><a href="#">Tuto make-up</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
+            <a href="index.html#nouveautes" class="link-zone-1-lower">Nouveautés</a>
+            <a href="index.html#best_sellers" class="link-zone-1-lower">Best-seller</a>
           </div>
-          <div class="zone-2-lower">
-            <form action="" class="champ-recherche">
-              <button type="submit"><i class='bx bx-search'></i></button>
-              <input type="text" class="barre-recherche" placeholder="Rechercher">
-            </form>
+          <div class="zone-2">
+            <div class="zone-2-upper">
+              <div class="bloc-image-entete">
+                <a href="index.html">
+                  <img src="/projet_site_ecommerce/images/logo_guit_hub_long.png" alt="" class="img-logo">
+                </a>
+              </div>
+            </div>
+            <div class="zone-2-lower">
+              <form action="" class="champ-recherche">
+                <button type="submit"><i class='bx bx-search'></i></button>
+                <input type="text" class="barre-recherche" placeholder="Rechercher">
+              </form>
+            </div>
           </div>
           <div class="zone-3-upper">
             <a href="#">Politique de retour</a>
             <a href="#">TVA réduite</a>
           </div>
           <div class="zone-3-lower">
-            <label for="check" class="icons">
-              <i class='bx bxs-flag-alt' id="side-icons"></i>
-              <a href="#"> <i class='bx bxs-user-account' id="side-icons"></i></a>
-              <a href="#"> <i class='bx bx-cart' id="side-icons"></i></a>
+            <div class="img-entete">
+              <a href="#"><img src="/projet_site_ecommerce/ressources_entete/bxs-flag-alt.svg" alt="langue"></a>
+            </div>
+            <div class="img-entete">
+              <a href="#"><img src="/projet_site_ecommerce/ressources_entete/bx-user-circle.svg" alt="langue"></a>
+            </div>
+            <div class="img-entete">
+              <a href="#"><img src="/projet_site_ecommerce/ressources_entete/bx-cart.svg" alt="langue"></a>
+            </div>
           </div>
         </div>
       </div>
@@ -110,42 +166,45 @@
       </div>
     </div>
   </header>
-    <br>
-    <br>
-    <br>
-    <h1 class="titre_contact">Nous Contacter</h1>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="paragraphe_contact">
-        <p>En cas de questions n'hesitez pas a nous contacter par differents moyens</p>
-    </div>
-    <section class="contact">
+  <br>
+  <br>
+  <br>
+  <h1 class="titre_contact">Nous Contacter</h1>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="paragraphe_contact">
+    <p>En cas de questions n'hesitez pas a nous contacter par differents moyens</p>
+  </div>
+  <section class="contact">
 
-        <div>
-            <p class="adresse">En passant à notre magasin GuitHub:<br>
-                3 Rue Armand Moisant 75015 Paris</p>
-            <ul>
-                <li>Lundi : 9h - 17h</li>
-                <li>Mardi : 9h - 17h</li>
-                <li>Mercredi : 9h - 17h</li>
-                <li>Jeudi : 9h - 17h</li>
-                <li>Vendredi : 9h - 17h</li>
-                <li>Samedi : 9h - 12h</li>
-                <li>Dimanche : Fermé</li>
-            </ul>
-            <p class="numero">Ou par téléphone au : 01 23 45 67 89</p>
-        </div>
-        <form action="/traitement.php" method="post">
-            <label for="email">Veuillez saisir votre email</label>
-            <input type="email" name="email" id="email" required placeholder="xyz@exmple.fr">
-            <label for="name">Veuillez saisir votre prénom</label>
-            <input type="text" required name="name" id="name" placeholder="Prénom...">
-            <label for="last_name">Veuillez saisir votre Nom de famille</label>
-            <input type="text" required name="last_name" id="last_name" placeholder="Nom de famille ...">
-            <label for="sujet">Ecrivez votre message</label>
-            <textarea name="corps" id="sujet" cols="30" rows="10" placeholder="message..."></textarea>
-            <button>submit</button>
-        </form>
-    </section>
+    <div>
+      <p class="adresse">En passant à notre magasin GuitHub:<br>
+        3 Rue Armand Moisant 75015 Paris</p>
+      <ul>
+        <li>Lundi : 9h - 17h</li>
+        <li>Mardi : 9h - 17h</li>
+        <li>Mercredi : 9h - 17h</li>
+        <li>Jeudi : 9h - 17h</li>
+        <li>Vendredi : 9h - 17h</li>
+        <li>Samedi : 9h - 12h</li>
+        <li>Dimanche : Fermé</li>
+      </ul>
+      <p class="numero">Ou par téléphone au : 01 23 45 67 89</p>
+    </div>
+    <form action="/traitement.php" method="post" class="coordonees">
+      <label for="email">Veuillez saisir votre email</label>
+      <input type="email" name="email" id="email" required placeholder="xyz@exmple.fr">
+      <label for="name">Veuillez saisir votre prénom</label>
+      <input type="text" required name="name" id="name" placeholder="Prénom...">
+      <label for="last_name">Veuillez saisir votre Nom de famille</label>
+      <input type="text" required name="last_name" id="last_name" placeholder="Nom de famille ...">
+      <label for="sujet">Ecrivez votre message</label>
+      <textarea name="corps" id="sujet" cols="30" rows="10" placeholder="message..."></textarea>
+      <button>envoyer</button>
+    </form>
+  </section>
+  <script src="/projet_site_ecommerce/scriptClose.js"></script>
+</body>
+</html>

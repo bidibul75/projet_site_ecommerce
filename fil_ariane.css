@@ -6,6 +6,10 @@
     margin-left: 5%;
     transform: skew(-25deg);
     /* On incline les cases de 25 degrés */
+    position: sticky;
+    top: 1px;
+    opacity: initial;
+    z-index: 999;
 }
 
 .fil_ariane div {

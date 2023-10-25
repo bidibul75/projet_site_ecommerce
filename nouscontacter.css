@@ -44,7 +44,7 @@ ul{
     top: 2vw;
 }
 
-form{
+.coordonees{
     display: flex;
     flex-direction: column;
     min-width: 40vw;

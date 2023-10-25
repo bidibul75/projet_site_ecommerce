@@ -10,15 +10,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mooli&family=Shadows+Into+Light&display=swap" rel="stylesheet">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="stylesheet" href="entete-css.css">
+  <link rel="stylesheet" href="entete_v2-css.css">
+  <link rel="stylesheet" href="menu-css.css">
   <link rel="stylesheet" href="carrousel.css">
   <link rel="stylesheet" href="Nos_categories.css">
   <link rel="stylesheet" href="meilleursVentes.css">
   <link rel="stylesheet" href="footer-css.css">
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="Feedback.css">
-  <!-- <link rel="stylesheet" href="Feedback.css"> -->
-
 
   <!-- chargement responsif des favicons selon le type de device-->
   <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
@@ -39,7 +38,7 @@
   <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
   <!-- Demande au robot de Google de ne pas archiver le site, 
-    qui pourrait au moment de l'archivage contenir une erreur (prix...).-->
+  qui pourrait au moment de l'archivage contenir une erreur (prix...).-->
   <meta name="googlebot" content="noarchive">
 </head>
 
@@ -53,34 +52,89 @@
             <a href="a_propos.html">A propos</a>
           </div>
           <div class="zone-1-lower">
-            <label for="check" class="icons">
-              <i class="bx bx-menu" id="menu-icon"></i>
-            </label>
-            <a href="#nouveautes">Nouveautés</a>
-            <a href="#best_sellers">Best-seller</a>
-          </div>
-          <div class="zone-2-upper">
-            <div class="bloc-image-entete">
-              <a href="index.html">
-                <img src="/projet_site_ecommerce/images/guit_hub.png" alt="" class="img-logo">
-              </a>
+            <button id="button-open" class="style-button-open">
+              <img src="/projet_site_ecommerce/ressources_entete/bx-menu.svg" alt="menu">
+            </button>
+            <div class="container-menu" id="to-close-menu">
+              <div class="container-menu-div">
+                <div class="h3-close-menu">
+                  <h3>Menu</h3>
+                  <button id="button-close" class="style-button-close"><img
+                      src="/projet_site_ecommerce/ressources_entete/bx-x-36px.svg" alt="close-icon"></button>
+                  <!-- <input type="checkbox" name="check-close" id="close" onclick="close()"> -->
+                </div>
+                <div class="separator"></div>
+                <div class="bloc-menu">
+                  <div class="choix-menu">
+                    <ul class="liste-menu">
+                      <li><a href="liste_produits.html">Tous nos produits</a></li>
+                      <li><a href="liste_guitares_acoustiques.html">Guitare Acoustique</a></li>
+                      <li><a href="liste_guitares_electriques.html">Guitare Electrique</a></li>
+                      <li><a href="liste_basses.html">Basse</a></li>
+                      <li><a href="liste_amplis.html">Ampli</a></li>
+                      <li><a href="liste_effets.html">Effets</a></li>
+                      <li><a href="liste_accessoires.html">Accessoires</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <h3>Services</h3>
+                <div class="separator"></div>
+                <div class="bloc-menu">
+                  <div class="choix-menu">
+                    <ul class="liste-menu">
+                      <li><a href="nouscontacter.html">Nous contacter</a></li>
+                      <li><a href="#">Questions fréquentes</a></li>
+                      <li><a href="#">Frais de port et de livraison</a></li>
+                      <li><a href="#">Retourner un produit</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <h3>A propos</h3>
+                <div class="separator"></div>
+                <div class="bloc-menu">
+                  <div class="choix-menu">
+                    <ul class="liste-menu">
+                      <li><a href="a_propos.html">Informations Guithub</a></li>
+                      <li><a href="#">Conditions générales</a></li>
+                      <li><a href="#">L'univers Guithub</a></li>
+                      <li><a href="#">Tuto make-up</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
+            <a href="index.html#nouveautes" class="link-zone-1-lower">Nouveautés</a>
+            <a href="index.html#best_sellers" class="link-zone-1-lower">Best-seller</a>
           </div>
-          <div class="zone-2-lower">
-            <form action="" class="champ-recherche">
-              <button type="submit"><i class='bx bx-search'></i></button>
-              <input type="text" class="barre-recherche" placeholder="Rechercher">
-            </form>
+          <div class="zone-2">
+            <div class="zone-2-upper">
+              <div class="bloc-image-entete">
+                <a href="index.html">
+                  <img src="/projet_site_ecommerce/images/logo_guit_hub_long.png" alt="" class="img-logo">
+                </a>
+              </div>
+            </div>
+            <div class="zone-2-lower">
+              <form action="" class="champ-recherche">
+                <button type="submit"><i class='bx bx-search'></i></button>
+                <input type="text" class="barre-recherche" placeholder="Rechercher">
+              </form>
+            </div>
           </div>
           <div class="zone-3-upper">
             <a href="#">Politique de retour</a>
             <a href="#">TVA réduite</a>
           </div>
           <div class="zone-3-lower">
-            <label for="check" class="icons">
-              <i class='bx bxs-flag-alt' id="side-icons"></i>
-              <a href="#"> <i class='bx bxs-user-account' id="side-icons"></i></a>
-              <a href="#"> <i class='bx bx-cart' id="side-icons"></i></a>
+            <div class="img-entete">
+              <a href="#"><img src="/projet_site_ecommerce/ressources_entete/bxs-flag-alt.svg" alt="langue"></a>
+            </div>
+            <div class="img-entete">
+              <a href="#"><img src="/projet_site_ecommerce/ressources_entete/bx-user-circle.svg" alt="langue"></a>
+            </div>
+            <div class="img-entete">
+              <a href="#"><img src="/projet_site_ecommerce/ressources_entete/bx-cart.svg" alt="langue"></a>
+            </div>
           </div>
         </div>
       </div>
@@ -178,38 +232,42 @@
 
   <div class="grid-container-nos_categories">
     <a href="liste_guitares_acoustiques.html" class="grid-item-nos_categories">
-      <img src="/projet_site_ecommerce/images/prduits_en_vente/ibanez_alt30.png" class="guitares_acoust" alt="Catégorie Guitare acoustique">
+      <img src="/projet_site_ecommerce/images/prduits_en_vente/ibanez_alt30.png" class="guitares_acoust"
+        alt="Catégorie Guitare acoustique">
       <br>
-        <p>Guitares acoustiques</p>
+      <p>Guitares acoustiques</p>
     </a>
     <a href="liste_basses.html" class="grid-item-nos_categories">
-      <img src="/projet_site_ecommerce/images/prduits_en_vente/cort-a4.jpg" class="basses"alt="Categorie basse">
+      <img src="/projet_site_ecommerce/images/prduits_en_vente/cort-a4.jpg" class="basses" alt="Categorie basse">
       <br>
-        <p>Guitares basse</p>
+      <p>Guitares basse</p>
     </a>
 
     <a href="liste_effets.html" class="grid-item-nos_categories">
-      <img src="/projet_site_ecommerce/images/prduits_en_vente/dunlop_crybaby.jpg" class="effets" alt="Catégorie pédales d'effets">
+      <img src="/projet_site_ecommerce/images/prduits_en_vente/dunlop_crybaby.jpg" class="effets"
+        alt="Catégorie pédales d'effets">
       <br>
-        <p>Effets</p>
+      <p>Effets</p>
     </a>
-    
+
     <a href="liste_guitares_electriques.html" class="grid-item-nos_categories">
-      <img src="/projet_site_ecommerce/images/prduits_en_vente/jackson_rrx4.jpg" class="guitares_elec" alt="Catégorie Guitare Electrique">
+      <img src="/projet_site_ecommerce/images/prduits_en_vente/jackson_rrx4.jpg" class="guitares_elec"
+        alt="Catégorie Guitare Electrique">
       <br>
-        <p>Guitares électriques</p>
+      <p>Guitares électriques</p>
     </a>
-    
+
     <a href="liste_amplis.html" class="grid-item-nos_categories">
       <img src="/projet_site_ecommerce/images/prduits_en_vente/marshall_mg30.jpg" class="ampli" alt="Catégorie Ampli">
       <br>
-        <p>Amplis</p>
+      <p>Amplis</p>
     </a>
-    
+
     <a href="liste_accessoires.html" class="grid-item-nos_categories">
-      <img src="/projet_site_ecommerce/images/prduits_en_vente/dunlop_mediator1.0.jpg" class="accessoires" alt="Catégorie accessoires">
+      <img src="/projet_site_ecommerce/images/prduits_en_vente/dunlop_mediator1.0.jpg" class="accessoires"
+        alt="Catégorie accessoires">
       <br>
-        <p>Accessoires</p>
+      <p>Accessoires</p>
     </a>
   </div>
 
@@ -234,7 +292,7 @@
             <!-- <button>Ajouter au panier</button> -->
             <div class="container-button-meilleurs-ventes">
               <button type="button" class="button-meilleurs-ventes">
-                  <span>Ajouter au panier</span>
+                <span>Ajouter au panier</span>
               </button>
             </div>
           </div>
@@ -249,7 +307,7 @@
             <p>7€</p>
             <div class="container-button-meilleurs-ventes">
               <button type="button" class="button-meilleurs-ventes">
-                  <span>Ajouter au panier</span>
+                <span>Ajouter au panier</span>
               </button>
             </div>
           </div>
@@ -264,7 +322,7 @@
             <p>1199€</p>
             <div class="container-button-meilleurs-ventes">
               <button type="button" class="button-meilleurs-ventes">
-                  <span>Ajouter au panier</span>
+                <span>Ajouter au panier</span>
               </button>
             </div>
           </div>
@@ -279,7 +337,7 @@
             <p>7€</p>
             <div class="container-button-meilleurs-ventes">
               <button type="button" class="button-meilleurs-ventes">
-                  <span>Ajouter au panier</span>
+                <span>Ajouter au panier</span>
               </button>
             </div>
           </div>
@@ -294,7 +352,7 @@
             <p>95€</p>
             <div class="container-button-meilleurs-ventes">
               <button type="button" class="button-meilleurs-ventes">
-                  <span>Ajouter au panier</span>
+                <span>Ajouter au panier</span>
               </button>
             </div>
           </div>
@@ -309,7 +367,7 @@
             <p>739€</p>
             <div class="container-button-meilleurs-ventes">
               <button type="button" class="button-meilleurs-ventes">
-                  <span>Ajouter au panier</span>
+                <span>Ajouter au panier</span>
               </button>
             </div>
           </div>
@@ -338,7 +396,7 @@
             <p>1699€</p>
             <div class="container-button-nouveautes">
               <button type="button" class="button-nouveautes">
-                  <span>Ajouter au panier</span>
+                <span>Ajouter au panier</span>
               </button>
             </div>
           </div>
@@ -353,7 +411,7 @@
             <p>1399€</p>
             <div class="container-button-nouveautes">
               <button type="button" class="button-nouveautes">
-                  <span>Ajouter au panier</span>
+                <span>Ajouter au panier</span>
               </button>
             </div>
           </div>
@@ -368,7 +426,7 @@
             <p>1199€</p>
             <div class="container-button-nouveautes">
               <button type="button" class="button-nouveautes">
-                  <span>Ajouter au panier</span>
+                <span>Ajouter au panier</span>
               </button>
             </div>
           </div>
@@ -376,14 +434,15 @@
           <div class="product-item">
             <a href="">
               <div class="image">
-                <img src="/projet_site_ecommerce/images/prduits_en_vente/schecter_synystergates_bkgd.jpg" alt="Produit 2">
+                <img src="/projet_site_ecommerce/images/prduits_en_vente/schecter_synystergates_bkgd.jpg"
+                  alt="Produit 2">
               </div>
             </a>
             <h5>Schecter - Syn BKDG</h5>
             <p>1799€</p>
             <div class="container-button-nouveautes">
               <button type="button" class="button-nouveautes">
-                  <span>Ajouter au panier</span>
+                <span>Ajouter au panier</span>
               </button>
             </div>
           </div>
@@ -398,7 +457,7 @@
             <p>799€</p>
             <div class="container-button-nouveautes">
               <button type="button" class="button-nouveautes">
-                  <span>Ajouter au panier</span>
+                <span>Ajouter au panier</span>
               </button>
             </div>
           </div>
@@ -413,7 +472,7 @@
             <p>629€</p>
             <div class="container-button-nouveautes">
               <button type="button" class="button-nouveautes">
-                  <span>Ajouter au panier</span>
+                <span>Ajouter au panier</span>
               </button>
             </div>
           </div>
@@ -637,7 +696,7 @@
   </div>
 
 
-
+  <script src="/projet_site_ecommerce/scriptClose.js"></script>
 </body>
 
 </html>

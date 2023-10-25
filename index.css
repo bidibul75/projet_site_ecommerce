@@ -3,6 +3,10 @@ ol > a{
 
 }
 
+p{
+  z-index: 1;
+}
+
 ::-webkit-scrollbar {
     width: 0.6vw;
     background: lightgray;
@@ -116,16 +120,7 @@ ol > a{
             transform: translateX(-9%) translateY(-25%) rotate(25deg); 
           }
 
-          @media screen and (max-width: 768px) {
-            body{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                overflow-y: hidden;
-                overflow-x: hidden;
-            }
-            
-          }
+
 
 
 
