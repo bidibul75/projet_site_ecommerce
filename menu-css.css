@@ -14,6 +14,7 @@ html body{
     top: -2px;
     left:0;
     overflow: scroll;
+    display: none;
 }
 
 .container-menu-div{
@@ -22,8 +23,15 @@ html body{
     padding-bottom: 1rem;
 }
 
-.container-menu-div > h3{
+.container-menu-div h3{
     font-size: x-large;
+}
+
+.h3-close-menu{
+    display: flex;
+    margin-right: 2rem;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .separator {
@@ -65,7 +73,8 @@ html body{
     .container-menu {
         width: 100vw;
         height: 100vh;
-        transform: translateX(-40vw);
+        display: none;
+        transition: all 0.4s ease;
     }
 }
 
@@ -73,7 +82,8 @@ html body{
     .container-menu {
         width: 100vw;
         height: 100vh;
-        transform: translateX(-100vw);
+        display: none;
+        transition: all 0.4s ease;
     }
 }
 
@@ -81,6 +91,7 @@ html body{
     .container-menu{
         width: 40vw;
         height: 100vh;
-        transform: translateX(-40vw);
+        display: none;
+        transition: all 0.4s ease;
     }
 }
