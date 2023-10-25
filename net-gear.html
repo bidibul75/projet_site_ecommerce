@@ -11,8 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Mooli&family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="entete-css.css">
-    <link rel="stylesheet" href="carrousel.css">
-    <link rel="stylesheet" href="Nos_categories.css">
+    <!-- <link rel="stylesheet" href="carrousel.css">
+    <link rel="stylesheet" href="Nos_categories.css"> -->
+    <link rel="stylesheet" href="footer-css.css">
     <link rel="stylesheet" href="pages_produits.css">
 
 
@@ -107,98 +108,29 @@
     <br>
     <br>
 
-    
-        <div class="fil_ariane">
-            <div>
-                <a href="index.html" alt="Accueil"> &#8962;</a>
-            </div>
-            <div>
-                <a href="guitare.html" alt="Guitare">Guitare</a>
-            </div>
-            <div>
-                <a href="amplis.html" alt="Amplis">Ampli guitares électriques</a>
-            </div>
 
+    <div class="fil_ariane">
+        <div>
+            <a href="index.html" alt="Accueil"> &#8962;</a>
         </div>
-<section class="pages_produits">
-        <div class="descriptif_pages_produits">
-            <div class="descriptif_pages_produits_gauche">
-                <h1>Neural DSP Quad Cortex</h1>
-                <img src="images/neural.jpg" alt="Neural DSP Quad Cortex">
-
-                <h2>Pédale haut-de-gamme multi-effets pour guitare et basse</h2>
-                <p class="texte_pages_produits">
-
-                
-
-                </p>
-
-                <!-- Onglets pour affichage descriptif et fiche technique-->
-                <div id="onglets">
-                    <div>
-                        <button onclick="openTab(0)" class="bouton_onglet actif">Descriptif</button>
-                        <button onclick="openTab(1)" class="bouton_onglet">Fiche technique</button>
-                        <button onclick="openTab(2)" class="bouton_onglet">Avis clients</button>
-                    </div>
-
-                    <div>
-                        <div class="tab-content" style="display:block">
-                          
-                                <p>Modélisation d'amplificateur puissante avec DSP dédié 2 GHz de l'architecture SHARC Quad-Core
-                                </p>
-                                <p>Architecture de réseau unique "Neural Capture" permettant l'analyse et la simulation de la
-                                    dynamique et du son d'autres amplificateurs</p>
-                                <p>Wifi intégré pour le partage de presets de "Rig-Capture", sauvegardes et mises à jour du
-                                    firmware
-                                </p>
-                                <p>Technologie de modélisation supérieure intégrée permettant une collection sans cesse croissante
-                                    d'algorithmes avec une qualité sonore sans compromis</p>
-                                <p>Contient des Rig-Captures Custom de certains des meilleurs producteurs et designers sonores</p>
-                                <p>Très faible latence et flexibilité de routage inégalée</p>
-                           
-                        </div>
-                        <div class="tab-content">
-                            
-                    
-                                <p>Ecran tactile multipoint 7"</p>
-                                <p>Simulateur de baffle avec plus de 1000 réponses impulsionnelles</p>
-                                <p>11 commutateurs au pied combinés nouvellement développés avec fonction de commande rotative</p>
-                                <p>Contrôle de volume</p>
-                                <p>Aucune possibilité de fonctionnement avec pile</p>
-                                <p>Bloc d'alimentation 12 V DC incl.</p>
-                                <p>Dimensions: 290 x 191 x 48 mm</p>
-                                <p>Poids: 1,6 kg</p>
-            
-                                <h3> Connexions: </h3>
-            
-                                <p>Entrées 1 & 2 sur XLR/Jack 6,3 mm</p>
-                                <p>Boucle d'effets 1 sur Jack 6,3 mm</p>
-                                <p>Boucle d'effets 2 sur Jack 6,3 mm</p>
-                                <p>Sorties 1 & 2 sur XLR</p>
-                                <p>Sorties 3 & 4 sur Jack stéréo 6,3 mm</p>
-                                <p>Sortie casque sur Jack stéréo 6,3 mm</p>
-                                <p>Expression 1 & 2 sur Jack stéréo 6,3 mm</p>
-                                <p>MIDI In & Thru/Out</p>
-                                <p>Port USB</p>
-            
-                            
-                        </div>
-                        <div class="tab-content">
-                            C'est cool
-                        </div>
-                    </div>
-
-                </div>
-
-
-
-
-            </div>
-
-
+        <div>
+            <a href="guitare.html" alt="Guitare">Guitare</a>
+        </div>
+        <div>
+            <a href="amplis.html" alt="Amplis">Ampli guitares électriques</a>
         </div>
 
-        <div class="descriptif_pages_produits_droite">
+    </div>
+
+    <h1>Neural DSP Quad Cortex</h1>
+
+<!-- Début de section (partie centrale de la page)----------------------------------------- -->
+    <section class="pages_produits">
+        <div class="photo_pages_produits">
+            <img src="images/neural.jpg" alt="Neural DSP Quad Cortex">
+        </div>
+<!-- Block en haut à droite avec les prix, ajouter au panier... --------------------------- -->
+        <div class="prix_pages_produits">
 
             <div>
                 1.698,00 €
@@ -213,20 +145,11 @@
                     octobre.</span><br><br><br>
             </div>
 
+            <!-- Input quantité et bouton Ajouter au panier -->
             <div>
                 <div>
-                    <!-- <li class="menu_deroulant_quantites"><a href="#"></a></li>
-
-                        <ul class="dropdown">
-                            <li><a href="#">1</a></li>
-                            <ul>
-                                <li>2</li>
-                                <li>3</li>
-                            </ul>
-
-                        </ul> -->
-
-
+                    <input type="number" id="quantite" name="quantite" min="1" max="10" value="1"
+                        placeholder="Quantité" />
                 </div>
                 <div>
                     <a href="#">AJOUTER AU PANIER</a>
@@ -235,10 +158,225 @@
 
         </div>
 
+<!-- Onglets pour affichage descriptif et fiche technique----------------------------------- -->
+        <div id="onglets">
+            <h2>Pédale haut-de-gamme multi-effets pour guitare et basse</h2>
+            <div>
+                <button onclick="openTab(0)" class="bouton_onglet actif">Descriptif</button>
+                <button onclick="openTab(1)" class="bouton_onglet">Fiche technique</button>
+                <button onclick="openTab(2)" class="bouton_onglet">Avis clients</button>
+            </div>
+
+            <div>
+                <div class="tab-content" style="display:block">
+
+                    <p>Modélisation d'amplificateur puissante avec DSP dédié 2 GHz de l'architecture SHARC
+                        Quad-Core.
+                    </p>
+                    <p>Architecture de réseau unique "Neural Capture" permettant l'analyse et la simulation de
+                        la dynamique et du son d'autres amplificateurs.</p>
+                    <p>Wifi intégré pour le partage de presets de "Rig-Capture", sauvegardes et mises à jour du
+                        firmware.
+                    </p>
+                    <p>Technologie de modélisation supérieure intégrée permettant une collection sans cesse
+                        croissante d'algorithmes avec une qualité sonore sans compromis.</p>
+                    <p>Contient des Rig-Captures Custom de certains des meilleurs producteurs et designers
+                        sonores.</p>
+                    <p>Très faible latence et flexibilité de routage inégalée.</p>
+                </div>
+
+                <div class="tab-content">
+                    <p>Ecran tactile multipoint 7"</p>
+                    <p>Simulateur de baffle avec plus de 1000 réponses impulsionnelles</p>
+                    <p>11 commutateurs au pied combinés nouvellement développés avec fonction de commande
+                        rotative</p>
+                    <p>Contrôle de volume</p>
+                    <p>Aucune possibilité de fonctionnement avec pile</p>
+                    <p>Bloc d'alimentation 12 V DC incl.</p>
+                    <p>Dimensions: 290 x 191 x 48 mm</p>
+                    <p>Poids: 1,6 kg</p>
+
+                    <h3> Connexions: </h3>
+
+                    <p>Entrées 1 & 2 sur XLR/Jack 6,3 mm</p>
+                    <p>Boucle d'effets 1 sur Jack 6,3 mm</p>
+                    <p>Boucle d'effets 2 sur Jack 6,3 mm</p>
+                    <p>Sorties 1 & 2 sur XLR</p>
+                    <p>Sorties 3 & 4 sur Jack stéréo 6,3 mm</p>
+                    <p>Sortie casque sur Jack stéréo 6,3 mm</p>
+                    <p>Expression 1 & 2 sur Jack stéréo 6,3 mm</p>
+                    <p>MIDI In & Thru/Out</p>
+                    <p>Port USB</p>
+                </div>
+
+                <div class="tab-content">
+                    <p>C'est cool</p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+
+            </div>
+
+        </div>
 
     </section>
 
     <br><br><br>
+
+    <div class="footer-container">
+        <div class="footer-upper-container">
+            <div class="footer-upper-container-with-margin">
+                <div class="footer-autopromo">
+                    <div class="option-paiement">
+                        <h4>Achetez et payez en toute sécurité</h4>
+                        <div class="icon-paiement">
+                            <div class="payment-icon">
+                                <img src="/projet_site_ecommerce/ressources_footer/binance-svgrepo-com.svg"
+                                    alt="Binance" class="icon-footer">
+                            </div>
+                            <div class="payment-icon">
+                                <img src="/projet_site_ecommerce/ressources_footer/paypal-v2-svgrepo-com.svg"
+                                    alt="Paypal" class="icon-footer">
+                            </div>
+                            <div class="payment-icon">
+                                <img src="/projet_site_ecommerce/ressources_footer/jagex-svgrepo-com.svg" alt="Jagex"
+                                    class="icon-footer">
+                            </div>
+                            <div class="payment-icon">
+                                <img src="/projet_site_ecommerce/ressources_footer/nexo-svgrepo-com.svg" alt="Nexo"
+                                    class="icon-footer">
+                            </div>
+                            <div class="payment-icon">
+                                <img src="/projet_site_ecommerce/ressources_footer/wyze-svgrepo-com.svg" alt="Notabug"
+                                    class="icon-footer">
+                            </div>
+                            <div class="payment-icon">
+                                <img src="/projet_site_ecommerce/ressources_footer/firefly-iii-svgrepo-com.svg"
+                                    alt="Firefly" class="icon-footer">
+                            </div>
+                            <div class="payment-icon">
+                                <img src="/projet_site_ecommerce/ressources_footer/discord-v2-svgrepo-com.svg"
+                                    alt="Discord" class="icon-footer">
+                            </div>
+
+                        </div>
+                        <p class="option-paiement-conclusion">
+                            Crache la monnaie, mon gars ! Tu peux dépenser comme tu le veux !
+                        </p>
+                    </div>
+                    <div class="avantages">
+                        <h4>Vos avantages</h4>
+                        <ul>
+                            <li class="li-display">Garantie Guithub 3 an</li>
+                            <li>Garantie 30 jours satisfait ou remboursé</li>
+                            <li>Service de réparation</li>
+                            <li>Conseils d'experts en la matière</li>
+                            <li>Garantie satisfait ou remboursé</li>
+                            <li>Le plus grand stock d'Europe</li>
+                        </ul>
+                    </div>
+                    <div class="services">
+                        <h4>Nos services</h4>
+                        <ul>
+                            <li>Frais de port et délais de livraison</li>
+                            <li>Centre de service</li>
+                            <li>Bons d'achat</li>
+                            <li>Vente en magasin</li>
+                            <li>Aperçu du service</li>
+                            <li>Nous contacter</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer-lower-container">
+            <div class="footer-lower-with-margins">
+                <div class="footer-lower-left-right">
+                    <div class="footer-lower-left--">
+                        <ul>
+                            <li><a href="#">CGV / Infos légales</a></li>
+                            <li><a href="#">Politique de confidentialité</a></li>
+                            <li><a href="#">Paramètres de confidentialité</a></li>
+                            <li><a href="#">Droit de rétractation du consommateur</a></li>
+                            <li><a href="#">Processus de commande</a></li>
+                            <li><a href="#">Garantie légale de conformité</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-lower-right--">
+                        <div class="reseaux-sociaux">
+                            <div class="rs-row-1">
+                                <a href="#">
+                                    <div class="icon-rs"><img
+                                            src="/projet_site_ecommerce/ressources_footer/instagram-svgrepo-com.svg"
+                                            alt="Insta"></div>
+                                </a>
+                                <a href="#">
+                                    <div class="icon-rs"><img
+                                            src="/projet_site_ecommerce/ressources_footer/pinterest-v2-svgrepo-com.svg"
+                                            alt="Pinterest"></div>
+                                </a>
+                                <a href="#">
+                                    <div class="icon-rs"><img
+                                            src="/projet_site_ecommerce/ressources_footer/facebook-v2-svgrepo-com.svg"
+                                            alt="Facebook"></div>
+                                </a>
+                            </div>
+                            <div class="rs-row-2">
+                                <a href="#">
+                                    <div class="icon-rs"><img
+                                            src="/projet_site_ecommerce/ressources_footer/rockstar-games-svgrepo-com.svg"
+                                            alt="Rockstar">
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="icon-rs"><img
+                                            src="/projet_site_ecommerce/ressources_footer/tesla-svgrepo-com.svg"
+                                            alt="Tesla"></div>
+                                </a>
+                                <a href="#">
+                                    <div class="icon-rs"><img
+                                            src="/projet_site_ecommerce/ressources_footer/sync-svgrepo-com.svg"
+                                            alt="sync">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <ul>
+                            <li><a href="#">A propos</a></li>
+                            <li><a href="#">Carrières et recrutement</a></li>
+                            <li><a href="#">Petites annonces</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="copyright">
+                        <div class="stores">
+                            <div class="store"><a href="#"><img
+                                        src="/projet_site_ecommerce/ressources_footer/apple_store_icon.svg" alt=""></a>
+                            </div>
+                            <div class="store"><a href="#"><img
+                                        src="/projet_site_ecommerce/ressources_footer/play_store_icon.svg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="conclusion">
+                            <span>© OG Guithub content</span>
+                            <span>Le HTML et CSS, c'est fantastique !</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
 </body>
 
 </html>
