@@ -2,288 +2,312 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liste de nos produits - GuitHub</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mooli&family=Shadows+Into+Light&display=swap" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="entete-css.css">
-    <link rel="stylesheet" href="Nos_categories.css">
-    <link rel="stylesheet" href="liste_produits.css">
-    <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liste de nos produits - GuitHub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mooli&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="entete-css.css">
+  <link rel="stylesheet" href="Nos_categories.css">
+  <link rel="stylesheet" href="liste_produits.css">
+  <link rel="stylesheet" href="index.css">
 
 
-    <!-- chargement responsif des favicons selon le type de device-->
-    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <!-- Demande au robot de Google de ne pas archiver le site, 
+  <!-- chargement responsif des favicons selon le type de device-->
+  <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <!-- Demande au robot de Google de ne pas archiver le site, 
     qui pourrait au moment de l'archivage contenir une erreur (prix...).-->
-    <meta name="googlebot" content="noarchive">
+  <meta name="googlebot" content="noarchive">
 </head>
 
 <body onLoad="currentSlide(1)">
-    <header>
-        <div class="container-entete">
-          <div class="upper-zone">
-            <div class="upper-zone-content">
-              <div class="zone-1-upper">
-                <a href="nouscontacter.html">Nous contacter</a>
-                <a href="a_propos.html">A propos</a>
-              </div>
-              <div class="zone-1-lower">
-                <label for="check" class="icons">
-                  <i class="bx bx-menu" id="menu-icon"></i>
-                </label>
-                <a href="index.html#nouveautes">Nouveautés</a>
-                <a href="index.html#best_sellers">Best-seller</a>
-              </div>
-              <div class="zone-2-upper">
-                <div class="bloc-image-entete">
-                  <a href="index.html">
-                    <img src="/projet_site_ecommerce/images/guit_hub.png" alt="" class="img-logo">
-                  </a>
-                </div>
-              </div>
-              <div class="zone-2-lower">
-                <form action="" class="champ-recherche">
-                  <button type="submit"><i class='bx bx-search'></i></button>
-                  <input type="text" class="barre-recherche" placeholder="Rechercher">
-                </form>
-              </div>
-              <div class="zone-3-upper">
-                <a href="#">Politique de retour</a>
-                <a href="#">TVA réduite</a>
-              </div>
-              <div class="zone-3-lower">
-                <label for="check" class="icons">
-                  <i class='bx bxs-flag-alt' id="side-icons"></i>
-                  <a href="#"> <i class='bx bxs-user-account' id="side-icons"></i></a>
-                  <a href="#"> <i class='bx bx-cart' id="side-icons"></i></a>
-              </div>
+  <header>
+    <div class="container-entete">
+      <div class="upper-zone">
+        <div class="upper-zone-content">
+          <div class="zone-1-upper">
+            <a href="nouscontacter.html">Nous contacter</a>
+            <a href="a_propos.html">A propos</a>
+          </div>
+          <div class="zone-1-lower">
+            <label for="check" class="icons">
+              <i class="bx bx-menu" id="menu-icon"></i>
+            </label>
+            <a href="index.html#nouveautes">Nouveautés</a>
+            <a href="index.html#best_sellers">Best-seller</a>
+          </div>
+          <div class="zone-2-upper">
+            <div class="bloc-image-entete">
+              <a href="index.html">
+                <img src="/projet_site_ecommerce/images/guit_hub.png" alt="" class="img-logo">
+              </a>
             </div>
           </div>
-          <div class="bottom-zone">
-            <nav class="menu-nav">
-              <ol class="list-nav">
-                <a class="categorie_nav" href="liste_produits.html">
-                  <li>Tous nos produits</li>
-                </a>
-                <a class="categorie_nav" href="liste_guitares_acoustiques.html">
-                  <li>Guitare Acoustique</li>
-                </a>
-                <a class="categorie_nav" href="">
-                  <li>Guitare Electrique</li>
-                </a>
-                <a class="categorie_nav" href="">
-                  <li>Basse</li>
-                </a>
-                <a class="categorie_nav" href="">
-                  <li>Ampli</li>
-                </a>
-                <a class="categorie_nav" href="">
-                  <li>Effets</li>
-                </a>
-                <a class="categorie_nav" href="">
-                  <li>Accessoires</li>
-                </a>
-              </ol>
-            </nav>
+          <div class="zone-2-lower">
+            <form action="" class="champ-recherche">
+              <button type="submit"><i class='bx bx-search'></i></button>
+              <input type="text" class="barre-recherche" placeholder="Rechercher">
+            </form>
+          </div>
+          <div class="zone-3-upper">
+            <a href="#">Politique de retour</a>
+            <a href="#">TVA réduite</a>
+          </div>
+          <div class="zone-3-lower">
+            <label for="check" class="icons">
+              <i class='bx bxs-flag-alt' id="side-icons"></i>
+              <a href="#"> <i class='bx bxs-user-account' id="side-icons"></i></a>
+              <a href="#"> <i class='bx bx-cart' id="side-icons"></i></a>
           </div>
         </div>
-      </header>
-    <br>
-    <br>
-    <br>
-    <h1>Liste de nos produits</h1>
-    <br>
-    <br>
-
-    <h3 class="titre_gauche">Boss - Super Chorus</h3>
-    <section class="gauche">
-        <a class="aligner_voirplus" href="">
-            <p>Bien que disposant d'une entrée mono, la sortie est stéréo. 
-                Il est donc possible de la brancher sur deux amplis pour profiter d'un effet d'une richesse sonore accrue. 
-                Les commandes sont claires et efficaces et proposent d'agir sur le volume (E.Level), l'égalisation (EQ), la vitesse (Rate) et l'intensité de l'effet (Depth). 
-                Nous sommes clairement en présence d'une pédale de chorus simple à mettre en œuvre et d'une efficacité redoutable. <br> <span class="prix">115€</span>
-            </p>
-        </a>
-
-        <a href="">
-            <img src="images/prduits_en_vente/boss_superchorus.jpg" alt="photo de la SuperChorus de Boss"
-                class="photo_produits_gauche">
-        </a>
-
-
-    </section>
-    <h3 class="titre_droite">Charvel Signature - Joe Duplantier</h3>
-    <section class="droite">
-        <a href="">
-            <img src="images/prduits_en_vente/charvel_joeduplantier.jpg" alt="photo de la Charvel - Joe Duplantier Signature"
-            class="photo_produits_droite"> 
-        </a>
-        <a href="" class="aligner_voirplus">
-            <p>Bien que cette forme de guitare ne soit pas directement liée au metal et à ses dérivés, elle n'en demeure pas moins de plus en plus populaire depuis quelques années. 
-            Joe Duplantier, chanteur-guitariste de Gojira, a choisi ce type de guitare en la dotant de quelques caractéristiques qui devraient faire rougir quelques instruments à l'allure bien plus agressive. </p><br> <span class="prix">729€</span>
-        </a>
-    </section>
-    <h3 class="titre_gauche">Cort A4</h3>
-    <section class="gauche">
-        <a href="" class="aligner_voirplus">
-            <p> Cette basse électrique A4 Plus FMMH conçue par Cort affiche une finition de toute beauté et vous offre toutes les commodités modernes en matière de son, 
-                de confort de jeu et d'esthétique, le tout à un prix sans précédent dans sa catégorie. 
-                Cette basse solid body présente une finition open pore à l'aspect et au toucher naturels.</p><br> <span class="prix">729€</span>
-        </a>
-        <a href="">
-            <img src="images/prduits_en_vente/cort-a4.jpg" alt="photo de la Cort A4"
-            class="photo_produits_gauche">
-        </a>
-
-    </section>
-    <h3 class="titre_droite">Danelectro 67 Red</h3>
-    <section class="droite">
-        <a href="">
-            <img src="images/prduits_en_vente/danelectro.png" alt="photo de la Danelectro 67 Red"
-            class="danelectro"> 
-        </a>
-        <a href="" class="aligner_voirplus">
-            <p>La géniale guitare électrique est une référence de polyvalence. Tout le savoir-faire que la marque Danelectro a acquis depuis toutes ces années se voit sur cette guitare.
-
-                Cette guitare électrique Danelectro 67 Red bénéficie de plus de confort et de vitesse. Il est impossible de faire plus jouable.
-                
-                La nouvelle guitare a un degré de finition remarquable, le dos du manche permet une optimisation de la vitesse du jeu.
-                
-                Le savoir-faire de Danelectro se retrouve dans cette guitare GUITARMODEL. Elle mélange des caractéristiques avantageuses et des matériaux qualitatifs avec tout le passé de la marque Danelectro pour créer au final une guitare électrique équilibrée et contemporaine.</p><br> <span class="prix">559€</span>
-        </a>
-    </section>
-    <h3 class="titre_gauche">Dunlop - Cry Baby</h3>
-    <section class="gauche">
-        <a class="aligner_voirplus" href="">
-            <p>La Cry Baby de Dunlop est une pédale très simple d'utilisation. 
-                Branchez votre guitare via l'entrée instrument jack 6,35 mm, et connectez votre ampli à la sortie, elle aussi sur jack. 
-                Appuyez sur la semelle jusqu'à déclencher le footswitch et gérer l'effet comme bon vous semble, en allant et venant de manière plus ou moins prononcée et régulière !</p><br> <span class="prix">112€</span>
-        </a>
-        <a href="">
-            <img src="images/prduits_en_vente/dunlop_crybaby.jpg" alt="photo de la Dunlop Crybaby"
-                class="photo_produits_gauche">
-        </a>
-    </section>
-    <h3 class="titre_droite">Dunlop - Pick 0.5mm</h3>
-    <section class="droite">
-        <a href="">
-            <img src="images/prduits_en_vente/dunlop_mediator_0.5.jpg" alt="photo de la Gibson Explorer Antique Natural"
-                class="photo_produits_droite">
-        </a>
-        <a href="" class="aligner_voirplus">
-            <p>Fusion des modèles Tortex et Jazz III, le Tortex TIII ravira tous les guitaristes, que vous préfériez le jazz, le rock ou encore le metal ! Ce lot comprend 12 médiators d'une épaisseur de 0,50 mm qui sont fabriqués en tortex, un matériau très solide assurant une longue durée de vie.</p><br> <span class="prix">7€</span>
-        </a>
-    </section>
-
-    <h3 class="titre_gauche">Dunlop - Pick 1.0</h3>
-    <section class="gauche">
-        <a class="aligner_voirplus" href="">
-            <p>Fusion des modèles Tortex et Jazz III, le Tortex TIII ravira tous les guitaristes, que vous préfériez le jazz, le rock ou encore le metal ! Ce lot comprend 12 médiators d'une épaisseur de 0,50 mm qui sont fabriqués en tortex, un matériau très solide assurant une longue durée de vie.</p><br> <span class="prix">7€</span>
-        </a>
-        <a href="">
-            <img src="images/prduits_en_vente/dunlop_mediator1.0.jpg" alt="photo de la Dunlop Crybaby"
-                class="photo_produits_gauche">
-        </a>
-    </section>
-
-    <h3 class="titre_droite">ElectroHaromix - Silencer</h3>
-    <section class="droite">
-        <a href="">
-            <img src="images/prduits_en_vente/electro_harmonix_silencer.jpg" alt="photo de la Gibson Explorer Antique Natural"
-                class="photo_produits_droite">
-        </a>
-        <a href="" class="aligner_voirplus">
-            <p>La pédale d'effet Silencer est un noise gate qui réduit les bruits ambiants indésirables au minimum. 
-                En studio comme sur scène, vous n'aurez plus peur de pousser à fond vos commandes de gain ou de distorsion. 
-                La pédale noise gate Silencer d'Electro Harmonix élimine le ronflement gênant que produisent les pédales de votre pedalboard.</p><br> <span class="prix">86€</span>
-        </a>
-    </section>
-    <h3 class="titre_gauche">Engl - E633</h3>
-    <section class="gauche">
-        <a class="aligner_voirplus" href="">
-            <p>Le Engl E633 Fireball 25 est l'ampli regroupe la puissance concentrée à gain élevé de la célèbre lampe Fireball dans un format plus pratique, 
-                qui convient aussi bien au studio d'enregistrement qu'à la salle de répétition et au salon grâce à la réduction de puissance intégrée. 
-                Selon la position du contrôle de gain, le canal propre de l'Engle délivre des sons cristallins ou un crunch crémeux, 
-                tandis que le canal principal fournit un tableau officiel qui peut être boosté d'une distorsion rocheuse modérée à un marteau à vapeur métallique brut à gain élevé. <br> <span class="prix">840€</span>
-            </p>
-        </a>
-
-        <a href="">
-            <img src="images/prduits_en_vente/engl_633.jpg" alt="photo du ENGL E633"
-                class="photo_produits_gauche">
-        </a>
-
-
-    </section>
-    <h3 class="titre_droite">EVH - 5150</h3>
-    <section class="droite">
-        <a href="">
-            <img src="images/prduits_en_vente/evh_5150.png" alt="photo du EVH 5150"
-                class="photo_produits_droite">
-        </a>
-        <a href="" class="aligner_voirplus">
-            <p> Si vous souhaitez profiter du son live le plus récent d'Eddie van Halen, EVH propose la 5150 III 50S Stealth Head pour une utilisation sur des scènes de petite à moyenne taille. 
-                Après la sortie de la version 100W 5150, 
-                ce modèle 50W vous accompagnera sans problème lorsque vous aurez besoin d’un son de guitare à lampes marqué sans trop avoir à pousser le volume.</p><br> <span class="prix">1999€</span>
+      </div>
+      <div class="bottom-zone">
+        <nav class="menu-nav">
+          <ol class="list-nav">
+            <a class="categorie_nav" href="liste_produits.html">
+              <li>Tous nos produits</li>
             </a>
-    </section>
-    <h3 class="titre_gauche">Gibson - HummingBird</h3>
-    <section class="gauche">
-        <a href="" class="aligner_voirplus">
-            <p>Version moderne de l'Hummingbird originelle, la GIBSON Modern Hummingbird Standard (MCSSHBVS) est une guitare folk électro de type Dreadnought sublimée par une lutherie massive traditionnelle au meilleur sens du terme (table Epicéa Sitka, dos/éclisses/manche Acajou et touche en Palissandre indien).
-                Pré-amplification LR Baggs VTC intégrée (mollettes volume/tonalité dans la rosace) .</p><br> <span class="prix">3769€</span>
+            <a class="categorie_nav" href="liste_guitares_acoustiques.html">
+              <li>Guitares Acoustiques</li>
             </a>
-        <a href="">
-            <img src="images/prduits_en_vente/Gibson_hummingbird.png" alt="photo de la Charvel - Joe Duplantier Signature"
-                class="photo_produits_gauche">
-        </a>
+            <a class="categorie_nav" href="liste_guitares_electriques.html">
+              <li>Guitares Electriques</li>
+            </a>
+            <a class="categorie_nav" href="liste_basses.html">
+              <li>Basses</li>
+            </a>
+            <a class="categorie_nav" href="liste_amplis.html">
+              <li>Amplis</li>
+            </a>
+            <a class="categorie_nav" href="liste_effets.html">
+              <li>Effets</li>
+            </a>
+            <a class="categorie_nav" href="liste_accessoires.html">
+              <li>Accessoires</li>
+            </a>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <br>
+  <br>
+  <br>
+  <h1>Nos Produits</h1>
+  <br>
+  <br>
+
+  <h3 class="titre_gauche">Boss - Super Chorus</h3>
+  <section class="gauche">
+    <a class="aligner_voirplus" href="">
+      <p>Bien que disposant d'une entrée mono, la sortie est stéréo.
+        Il est donc possible de la brancher sur deux amplis pour profiter d'un effet d'une richesse sonore accrue.
+        Les commandes sont claires et efficaces et proposent d'agir sur le volume (E.Level), l'égalisation (EQ), la
+        vitesse (Rate) et l'intensité de l'effet (Depth).
+        Nous sommes clairement en présence d'une pédale de chorus simple à mettre en œuvre et d'une efficacité
+        redoutable. <br> <span class="prix">115€</span>
+      </p>
+    </a>
+    <a href="">
+      <img src="images/prduits_en_vente/boss_superchorus.jpg" alt="photo de la SuperChorus de Boss"
+        class="photo_produits_gauche">
+    </a>
+  </section>
+
+  <h3 class="titre_droite">Charvel Signature - Joe Duplantier</h3>
+  <section class="droite">
+    <a href="">
+      <img src="images/prduits_en_vente/charvel_joeduplantier.jpg" alt="photo de la Charvel - Joe Duplantier Signature"
+        class="photo_produits_droite">
+    </a>
+    <a href="" class="aligner_voirplus">
+      <p>Bien que cette forme de guitare ne soit pas directement liée au metal et à ses dérivés, elle n'en demeure pas
+        moins de plus en plus populaire depuis quelques années.
+        Joe Duplantier, chanteur-guitariste de Gojira, a choisi ce type de guitare en la dotant de quelques
+        caractéristiques qui devraient faire rougir quelques instruments à l'allure bien plus agressive. </p><br> <span
+        class="prix">729€</span>
+    </a>
+  </section>
+
+  <h3 class="titre_gauche">Cort A4</h3>
+  <section class="gauche">
+    <a href="" class="aligner_voirplus">
+      <p> Cette basse électrique A4 Plus FMMH conçue par Cort affiche une finition de toute beauté et vous offre toutes
+        les commodités modernes en matière de son,
+        de confort de jeu et d'esthétique, le tout à un prix sans précédent dans sa catégorie.
+        Cette basse solid body présente une finition open pore à l'aspect et au toucher naturels.
+      </p><br> <span class="prix">729€</span>
+    </a>
+    <a href="">
+      <img src="images/prduits_en_vente/cort-a4.jpg" alt="photo de la Cort A4" class="photo_produits_gauche">
+    </a>
+  </section>
+
+  <h3 class="titre_droite">Danelectro 67 Red</h3>
+  <section class="droite">
+    <a href="">
+      <img src="images/prduits_en_vente/danelectro.png" alt="photo de la Danelectro 67 Red" class="danelectro">
+    </a>
+    <a href="" class="aligner_voirplus">
+      <p>La géniale guitare électrique est une référence de polyvalence. Tout le savoir-faire que la marque Danelectro a
+        acquis depuis toutes ces années se voit sur cette guitare.
+
+        Cette guitare électrique Danelectro 67 Red bénéficie de plus de confort et de vitesse. Il est impossible de
+        faire plus jouable.
+
+        La nouvelle guitare a un degré de finition remarquable, le dos du manche permet une optimisation de la vitesse
+        du jeu.
+
+        Le savoir-faire de Danelectro se retrouve dans cette guitare GUITARMODEL. Elle mélange des caractéristiques
+        avantageuses et des matériaux qualitatifs avec tout le passé de la marque Danelectro pour créer au final une
+        guitare électrique équilibrée et contemporaine.</p><br> <span class="prix">559€</span>
+    </a>
+  </section>
+  <h3 class="titre_gauche">Dunlop - Cry Baby</h3>
+  <section class="gauche">
+    <a class="aligner_voirplus" href="">
+      <p>La Cry Baby de Dunlop est une pédale très simple d'utilisation.
+        Branchez votre guitare via l'entrée instrument jack 6,35 mm, et connectez votre ampli à la sortie, elle aussi
+        sur jack.
+        Appuyez sur la semelle jusqu'à déclencher le footswitch et gérer l'effet comme bon vous semble, en allant et
+        venant de manière plus ou moins prononcée et régulière !</p><br> <span class="prix">112€</span>
+    </a>
+    <a href="">
+      <img src="images/prduits_en_vente/dunlop_crybaby.jpg" alt="photo de la Dunlop Crybaby"
+        class="photo_produits_gauche">
+    </a>
+  </section>
+  <h3 class="titre_droite">Dunlop - Pick 0.5mm</h3>
+  <section class="droite">
+    <a href="">
+      <img src="images/prduits_en_vente/dunlop_mediator_0.5.jpg" alt="photo de la Gibson Explorer Antique Natural"
+        class="photo_produits_droite">
+    </a>
+    <a href="" class="aligner_voirplus">
+      <p>Fusion des modèles Tortex et Jazz III, le Tortex TIII ravira tous les guitaristes, que vous préfériez le jazz,
+        le rock ou encore le metal ! Ce lot comprend 12 médiators d'une épaisseur de 0,50 mm qui sont fabriqués en
+        tortex, un matériau très solide assurant une longue durée de vie.</p><br> <span class="prix">7€</span>
+    </a>
+  </section>
+
+  <h3 class="titre_gauche">Dunlop - Pick 1.0</h3>
+  <section class="gauche">
+    <a class="aligner_voirplus" href="">
+      <p>Fusion des modèles Tortex et Jazz III, le Tortex TIII ravira tous les guitaristes, que vous préfériez le jazz,
+        le rock ou encore le metal ! Ce lot comprend 12 médiators d'une épaisseur de 0,50 mm qui sont fabriqués en
+        tortex, un matériau très solide assurant une longue durée de vie.</p><br> <span class="prix">7€</span>
+    </a>
+    <a href="">
+      <img src="images/prduits_en_vente/dunlop_mediator1.0.jpg" alt="photo de la Dunlop Crybaby"
+        class="photo_produits_gauche">
+    </a>
+  </section>
+
+  <h3 class="titre_droite">ElectroHaromix - Silencer</h3>
+  <section class="droite">
+    <a href="">
+      <img src="images/prduits_en_vente/electro_harmonix_silencer.jpg" alt="photo de la Gibson Explorer Antique Natural"
+        class="photo_produits_droite">
+    </a>
+    <a href="" class="aligner_voirplus">
+      <p>La pédale d'effet Silencer est un noise gate qui réduit les bruits ambiants indésirables au minimum.
+        En studio comme sur scène, vous n'aurez plus peur de pousser à fond vos commandes de gain ou de distorsion.
+        La pédale noise gate Silencer d'Electro Harmonix élimine le ronflement gênant que produisent les pédales de
+        votre pedalboard.</p><br> <span class="prix">86€</span>
+    </a>
+  </section>
+  <h3 class="titre_gauche">Engl - E633</h3>
+  <section class="gauche">
+    <a class="aligner_voirplus" href="">
+      <p>Le Engl E633 Fireball 25 est l'ampli regroupe la puissance concentrée à gain élevé de la célèbre lampe Fireball
+        dans un format plus pratique,
+        qui convient aussi bien au studio d'enregistrement qu'à la salle de répétition et au salon grâce à la réduction
+        de puissance intégrée.
+        Selon la position du contrôle de gain, le canal propre de l'Engle délivre des sons cristallins ou un crunch
+        crémeux,
+        tandis que le canal principal fournit un tableau officiel qui peut être boosté d'une distorsion rocheuse modérée
+        à un marteau à vapeur métallique brut à gain élevé. <br> <span class="prix">840€</span>
+      </p>
+    </a>
+
+    <a href="">
+      <img src="images/prduits_en_vente/engl_633.jpg" alt="photo du ENGL E633" class="photo_produits_gauche">
+    </a>
 
 
-    </section>
-    <h3 class="titre_droite">Ibanez - Alt30</h3>
-    <section class="droite">
-        <a href="">
-            <img src="images/prduits_en_vente/ibanez_alt30.png" alt="photo de l'Ibanez Alt30"
-                class="photo_produits_droite">
-        </a>
-        <a href="" class="aligner_voirplus">
-            <p>
-                Faisant partie de la nouvelle série Ibanez Altstar, la guitare électro-acoustique ALT30FM combine l'apparence et la sensation d'une guitare électrique avec celles d'une guitare acoustique à caisse plate. 
-                En plus d'un manche Comfort Grip confortable, ce modèle abordable présente une tête classique à six mécaniques alignées du même côté, des incrustations de repères de position Altstar spécialement conçues, 
-                et les chevilles de pont Advantage auto-développées par Ibanez.</p><br> <span class="prix">419€</span>
-        </a>
-    </section>
+  </section>
+  <h3 class="titre_droite">EVH - 5150</h3>
+  <section class="droite">
+    <a href="">
+      <img src="images/prduits_en_vente/evh_5150.png" alt="photo du EVH 5150" class="photo_produits_droite">
+    </a>
+    <a href="" class="aligner_voirplus">
+      <p> Si vous souhaitez profiter du son live le plus récent d'Eddie van Halen, EVH propose la 5150 III 50S Stealth
+        Head pour une utilisation sur des scènes de petite à moyenne taille.
+        Après la sortie de la version 100W 5150,
+        ce modèle 50W vous accompagnera sans problème lorsque vous aurez besoin d’un son de guitare à lampes marqué sans
+        trop avoir à pousser le volume.</p><br> <span class="prix">1999€</span>
+    </a>
+  </section>
+  <h3 class="titre_gauche">Gibson - HummingBird</h3>
+  <section class="gauche">
+    <a href="" class="aligner_voirplus">
+      <p>Version moderne de l'Hummingbird originelle, la GIBSON Modern Hummingbird Standard (MCSSHBVS) est une guitare
+        folk électro de type Dreadnought sublimée par une lutherie massive traditionnelle au meilleur sens du terme
+        (table Epicéa Sitka, dos/éclisses/manche Acajou et touche en Palissandre indien).
+        Pré-amplification LR Baggs VTC intégrée (mollettes volume/tonalité dans la rosace) .</p><br> <span
+        class="prix">3769€</span>
+    </a>
+    <a href="">
+      <img src="images/prduits_en_vente/Gibson_hummingbird.png" alt="photo de la Charvel - Joe Duplantier Signature"
+        class="photo_produits_gauche">
+    </a>
 
-    <nav class="pages" aria-label="pagination">
-        <ul class="pagination">
-          <li><a href="">«</a></li>
-          <li><a href="liste_produits.html">1</a></li>
-          <li><a href="liste_produits_2.html">2</a></li>
-          <li><a href="liste_produits_3.html">3</a></li>
-          <li><a href="liste_produits_2.html">»</a></li>
-        </ul>
-      </nav>
+
+  </section>
+  <h3 class="titre_droite">Ibanez - Alt30</h3>
+  <section class="droite">
+    <a href="">
+      <img src="images/prduits_en_vente/ibanez_alt30.png" alt="photo de l'Ibanez Alt30" class="photo_produits_droite">
+    </a>
+    <a href="" class="aligner_voirplus">
+      <p>
+        Faisant partie de la nouvelle série Ibanez Altstar, la guitare électro-acoustique ALT30FM combine l'apparence et
+        la sensation d'une guitare électrique avec celles d'une guitare acoustique à caisse plate.
+        En plus d'un manche Comfort Grip confortable, ce modèle abordable présente une tête classique à six mécaniques
+        alignées du même côté, des incrustations de repères de position Altstar spécialement conçues,
+        et les chevilles de pont Advantage auto-développées par Ibanez.</p><br> <span class="prix">419€</span>
+    </a>
+  </section>
+
+  <nav class="pages" aria-label="pagination">
+    <ul class="pagination">
+      <li><a href="">«</a></li>
+      <li><a href="liste_produits.html">1</a></li>
+      <li><a href="liste_produits_2.html">2</a></li>
+      <li><a href="liste_produits_3.html">3</a></li>
+      <li><a href="liste_produits_2.html">»</a></li>
+    </ul>
+  </nav>
 </body>
 
 </html>

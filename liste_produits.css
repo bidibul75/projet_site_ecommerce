@@ -21,6 +21,7 @@ a:hover > img{
     align-items: center;
     position: relative;
     bottom: 1vw;
+    min-height: 4vw;
 }
 
 a{
