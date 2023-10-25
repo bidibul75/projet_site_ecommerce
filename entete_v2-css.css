@@ -235,7 +235,7 @@ input:focus {
     }
 }
 
-@media (width <=425px) {
+@media (width <=530px) {
     .upper-zone-content {
         display: grid;
         grid-template: 1fr 1fr / 2fr 1fr;

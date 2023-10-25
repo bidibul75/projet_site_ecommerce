@@ -40,3 +40,9 @@
     border-radius: 0 7px 7px 0;
     /* arrondis de case sur les bords extérieurs de la dernière case */
 }
+
+@media screen and (max-width: 1080px) {
+    .fil_ariane{
+        display: none;
+    }    
+}
