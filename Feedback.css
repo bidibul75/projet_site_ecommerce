@@ -1,20 +1,21 @@
 body {
     font-family: Mooli;
-    background-color: rgb(231, 234, 235);
+    scrollbar-width: thin;
 
 }
 
-.titre {
+.titre_feedback {
     text-align: center;
-    box-shadow: 0px 67px 80px rgba(0, 0, 0, 0.381);
+    /* box-shadow: 0px 67px 80px rgba(0, 0, 0, 0.381); */
     background-color: transparent;
 }
 
-.horizontal-scroll {
+.horizontal-scroll_feedback {
     max-width: 100%;
     overflow-x: auto;
     white-space: nowrap;
-    margin-top: 10vw;
+    margin-top: 5vw;
+    background-color: rgb(231, 234, 235);
    
 }
 
@@ -31,31 +32,31 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 20%;
-    height: 17vw;
-    margin: 30px;
+    height: 20vw;
+    margin: 9px;
+    margin-bottom: 2vw;
     background-color: white;
     border-radius: 2vw;
-    border: 0.1vw solid gray
+    border: 0.1vw solid gray;
+    overflow: hidden;
    
 }
 
-.image {
+.image_feedback {
     display: flex;
-    height: 5vw;
-    width: 20%;
-    margin-top: vw;
-    padding: 3%;
+    justify-content: center;
+    height: 10vw;
+    width: 10vw;
+    padding: 1.5vw;
     border: 5px solid #ccc;
     border-radius: 50%;
 }
 
-.image img{
+.image_feedback img{
     display:block;
-    margin-bottom: vw;
-    margin-left: 0.9vw;
-    max-width: 75%;   
-    height: auto; 
+    height: 6vw;
+    max-width: 10vw;
+
 } 
 
 .txt {

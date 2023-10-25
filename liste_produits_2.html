@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Liste de nos produits - GuitHub</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mooli&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="entete-css.css">
+        <link rel="stylesheet" href="Nos_categories.css">
+        <link rel="stylesheet" href="liste_produits.css">
+    
+    
+        <!-- chargement responsif des favicons selon le type de device-->
+        <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <!-- Demande au robot de Google de ne pas archiver le site, 
+        qui pourrait au moment de l'archivage contenir une erreur (prix...).-->
+        <meta name="googlebot" content="noarchive">
+    </head>
+
+<body onLoad="currentSlide(1)">
+    <header>
+        <div class="container-entete">
+          <div class="upper-zone">
+            <div class="upper-zone-content">
+              <div class="zone-1-upper">
+                <a href="nouscontacter.html">Nous contacter</a>
+                <a href="a_propos.html">A propos</a>
+              </div>
+              <div class="zone-1-lower">
+                <label for="check" class="icons">
+                  <i class="bx bx-menu" id="menu-icon"></i>
+                </label>
+                <a href="#nouveautes">Nouveautés</a>
+                <a href="#best_sellers">Best-seller</a>
+              </div>
+              <div class="zone-2-upper">
+                <div class="bloc-image-entete">
+                  <a href="index.html">
+                    <img src="/projet_site_ecommerce/images/guit_hub.png" alt="" class="img-logo">
+                  </a>
+                </div>
+              </div>
+              <div class="zone-2-lower">
+                <form action="" class="champ-recherche">
+                  <button type="submit"><i class='bx bx-search'></i></button>
+                  <input type="text" class="barre-recherche" placeholder="Rechercher">
+                </form>
+              </div>
+              <div class="zone-3-upper">
+                <a href="#">Politique de retour</a>
+                <a href="#">TVA réduite</a>
+              </div>
+              <div class="zone-3-lower">
+                <label for="check" class="icons">
+                  <i class='bx bxs-flag-alt' id="side-icons"></i>
+                  <a href="#"> <i class='bx bxs-user-account' id="side-icons"></i></a>
+                  <a href="#"> <i class='bx bx-cart' id="side-icons"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="bottom-zone">
+            <nav class="menu-nav">
+              <ol class="list-nav">
+                <a class="categorie_nav" href="liste_produits.html">
+                  <li>Tous nos produits</li>
+                </a>
+                <a class="categorie_nav" href="">
+                  <li>Guitare Acoustique</li>
+                </a>
+                <a class="categorie_nav" href="">
+                  <li>Guitare Electrique</li>
+                </a>
+                <a class="categorie_nav" href="">
+                  <li>Basse</li>
+                </a>
+                <a class="categorie_nav" href="">
+                  <li>Ampli</li>
+                </a>
+                <a class="categorie_nav" href="">
+                  <li>Effets</li>
+                </a>
+                <a class="categorie_nav" href="">
+                  <li>Accessoires</li>
+                </a>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </header>
+    <br>
+    <br>
+    <br>
+    <h1>Liste de nos produits</h1>
+    <br>
+    <br>
+
+    <h3 class="titre_gauche">Ibanez GSR 180</h3>
+    <section class="gauche">
+        <a class="aligner_voirplus" href="">
+            <p>La Ibanez GSR180-BK est une basse électrique d'entrée de gamme qui présente toutefois des arguments solides pour les débutants à la recherche d'un instrument fiable. Elle pourra également convenir aux bassistes plus expérimentés qui disposent d'un budget serré ou qui souhaitent simplement acquérir un instrument de rechange.</p><br> <span class="prix">189€</span>
+        </a>
+        <a href="">
+            <img src="images/prduits_en_vente/Ibanez_gsr180.jpg" alt="Photo de la Ibanez GSR 180"
+                class="photo_produits_gauche">
+        </a>
+
+    </section>
+    <h3 class="titre_droite">Jackson RRX24 Black and Yellow Stripes</h3>
+    <section class="droite">
+        <a href="">
+            <img src="images/prduits_en_vente/jackson_rrx4.jpg" alt=""
+            class="photo_produits_droite"> 
+        </a>
+        <a href="" class="aligner_voirplus">
+            <p>La plus célèbre des formes Jacskon désormais déclinée dans une finition Black / Yellow Bevels ! Avec son corps asymétrique en forme de V, cette guitare annonce tout de suite la couleur. Elle est clairement faite pour le metal ! Corps en peuplier, manche traversant en érable avec talon profilé, touche en laurier, la fabrication est typique de ce que fait Jackson.</p><br> <span class="prix">819€</span>
+        </a>
+    </section>
+    <h3 class="titre_gauche">LAG LGTHV30ACE</h3>
+    <section class="gauche">
+        <a class="aligner_voirplus" href="">
+            <p>Avec la Tramontane HyVibe 10, Lag lance la toute première « guitare intelligente ». Cette guitare électro-acoustique peut s'auto-amplifier, générer ses propres effets, servir de looper et fonctionner comme une enceinte Bluetooth ! Toute cette magie se produit avant même que vous ne la branchiez sur un ampli ou une pédale</p><br> <span class="prix">1399€</span>
+        </a>
+        <a href="">
+            <img src="images/prduits_en_vente/LAG.png" alt="Photo de la guitare acoustique LAG"
+                class="photo_produits_gauche">
+        </a>
+
+    </section>
+    <h3 class="titre_droite"></h3>
+    <section class="droite">
+        <a href="">
+            <img src="images/prduits_en_vente/line6_spider.jpg" alt=""
+            class="photo_produits_droite"> 
+        </a>
+        <a href="" class="aligner_voirplus">
+            <p>Le Line 6 Spider V20 MKII est bien plus qu'un amplificateur de pratique compact. Parfait pour les guitaristes qui aiment varier les styles, ce combo de 20 W est équipé de plus de 200 amplificateurs, enceintes et effets, de quoi s'adapter à n'importe quel style. Pas le temps de régler les détails spécifiques ? Pas de souci, le Spider V20 MKII propose également de nombreuses préréglages parmi lesquels choisir.</p><br> <span class="prix">229€</span>
+        </a>
+    </section>
+    <h3 class="titre_gauche">Marshall MG30FX</h3>
+    <section class="gauche">
+        <a class="aligner_voirplus" href="">
+            <p>Le Marshall MG30GFX est un ampli combo de 30 watts qui présente l’allure noir et or classique de la marque. Il embarque un haut-parleur de 10 pouces et propose quatre canaux, auxquels s’ajoute une section d’effets simple. Très facile à prendre en main, son panneau de contrôle intègre un contrôle de Gain, un égaliseur 3 bandes, un Volume et un Master.</p><br> <span class="prix">199€</span>
+        </a>
+        <a href="">
+            <img src="images/prduits_en_vente/marshall_mg30.jpg" alt="Photo de la guitare acoustique LAG"
+                class="photo_produits_gauche">
+        </a>
+
+    </section>
+    <h3 class="titre_droite">Orange Super Crush 100</h3>
+    <section class="droite">
+        <a href="">
+            <img src="images/prduits_en_vente/orange_supercrush.jpg" alt=""
+            class="photo_produits_droite"> 
+        </a>
+        <a href="" class="aligner_voirplus">
+            <p>Le SC100H utilise un circuit entièrement analogique avec un préampli JFET et un étage de sortie de classe A/B. Cela rend cette tête très polyvalente. Vous obtenez beaucoup de marge pour de beaux cleans, mais des réglages à gain élevés solides sont également possibles. De plus, cet ampli répond très bien à la dynamique naturelle de votre jeu, tout comme le ferait un vrai modèle à lampes. Grâce aux deux canaux commutables au pied, vous pouvez également basculer facilement entre les deux types de sons proposés via les canaux Clean et Dirty.</p><br> <span class="prix">529€</span>
+        </a>
+    </section>
+    <h3 class="titre_gauche">Marshall MG30FX</h3>
+    <section class="gauche">
+        <a class="aligner_voirplus" href="">
+            <p>Le Marshall MG30GFX est un ampli combo de 30 watts qui présente l’allure noir et or classique de la marque. Il embarque un haut-parleur de 10 pouces et propose quatre canaux, auxquels s’ajoute une section d’effets simple. Très facile à prendre en main, son panneau de contrôle intègre un contrôle de Gain, un égaliseur 3 bandes, un Volume et un Master.</p><br> <span class="prix">199€</span>
+        </a>
+        <a href="">
+            <img src="images/prduits_en_vente/marshall_mg30.jpg" alt="Photo de la guitare acoustique LAG"
+                class="photo_produits_gauche">
+        </a>
+    </section>
+
+    <h3 class="titre_droite">Ovation Pro Series Elite 1868TX-5-G</h3>
+    <section class="droite">
+        <a href="">
+            <img src="images/prduits_en_vente/Ovation.jpg" alt=""
+            class="photo_produits_droite"> 
+        </a>
+        <a href="" class="aligner_voirplus">
+            <p> Maintenue à un prix abordable, cette guitare électro-acoustique au look contemporain et facile à jouer est entièrement conçue pour la scène. Elle est dotée d'un dos rond spécial fabriqué à partir d'un matériau synthétique sombre, qui, combiné avec la table d'harmonie en épicéa de Sitka massif et le design à plusieurs ouvertures sonores, produit un son clair aussi puissant et robuste que la construction qui contribue à le façonner.</p><br> <span class="prix">799€</span>
+        </a>
+    </section>
+
+    <h3 class="titre_gauche">PRS SE Mark Tremonti</h3>
+    <section class="gauche">
+        <a class="aligner_voirplus" href="">
+            <p>Agrémentée d'une superbe table en Erable figuré, la guitare électrique solidbody PRS SE Mark Tremonti 2021 est un des modèles signatures de l'excellent guitariste/chanteur d'Alter Bridge et Creed. Depuis 2019 elle bénéficie d'une caisse en Acajou plus épaisse, de nouveaux micros Tremonti S, et d'un vibrato.
+                Dans la lignée d'un célèbre modèle américain de référence, elle distille les sonorités généreuses caractéristiques de la single cutaway de légende à un tarif remarquable.</p><br> <span class="prix">1099€</span>
+        </a>
+        <a href="">
+            <img src="images/prduits_en_vente/prs_tremonti.png" alt="Photo de la guitare acoustique LAG"
+                class="photo_produits_gauche">
+        </a>
+    </section>
+
+    <h3 class="titre_droite">Schecter - Synyster BKGD</h3>
+    <section class="droite">
+        <a href="">
+            <img src="images/prduits_en_vente/schecter.png" alt=""
+            class="photo_produits_droite"> 
+        </a>
+        <a href="" class="aligner_voirplus">
+            <p>S'appuyant sur les pouvoirs musicaux du guitariste d'Avenged Sevenfold, Synyster Gates, Schecter présente la Synyster BKGD : une édition accessible de son emblématique guitare signature. Bien qu'elle soit un peu moins chère, le corps en acajou conserve toujours la forme caractéristique et décalée d'Avenger, mais cette fois avec une table plate élégamment soulignée par un liseré noir.</p><br> <span class="prix">1099€</span>
+        </a>
+    </section>
+
+    <nav class="pages" aria-label="pagination">
+        <ul class="pagination">
+            <li><a href="liste_produits.html">«</a></li>
+            <li><a href="liste_produits.html">1</a></li>
+            <li><a href="liste_produits_2.html">2</a></li>
+            <li><a href="liste_produits_3.html">3</a></li>
+            <li><a href="liste_produits_3.html">»</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

@@ -10,6 +10,8 @@ body, html {
 }
  .grid-container-nos_categories {
     display: grid;
+    position: relative;
+    left: 7vw;
     grid-template-columns: 1fr 1fr 1fr ;
     grid-template-rows: 1fr 1fr;
     gap: 1.5vw;
@@ -21,6 +23,7 @@ body, html {
   .grid-item-nos_categories {
     display: flex;
     align-items: center;
+    justify-content: center;
     border-bottom: 1px solid gray;
     padding: 3vw; 
     max-width: 30vw;   
@@ -28,9 +31,29 @@ body, html {
   
   .grid-item-nos_categories img {
     display: block;
-    max-width: 15vw; 
     margin-right: 20px;
     margin-bottom: 5px;
+  }
+
+  .evh{
+    position: relative;
+    top: 2.5vw;
+  }
+
+  .guitares_acoust{
+    max-width: 12vw;
+  }
+
+ ².effets, .accessoires{
+    max-width: 7vw;
+  }
+
+  .basses, .guitares_elec{
+    max-width: 13vw;
+  }
+
+  .effets, .ampli{
+    max-width: 7vw;
   }
   
   .grid-item-nos_categories p {
