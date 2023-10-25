@@ -20,13 +20,20 @@ html body{
 
 .container-item-box{
     margin-bottom: 2rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
 
+}
+
+.separator {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    border:1px solid black;
+    width: 60%;
 }
 
 .titre-filtre{
     margin-bottom: 1rem;
-    font-size:large;
+    font-size:x-large;
 }
 
 .item-box{

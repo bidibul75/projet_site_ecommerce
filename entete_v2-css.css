@@ -46,15 +46,6 @@ html body {
     justify-content: center;
 }
 
-.zone-1-lower input {
-    display: none;
-}
-
-.zone-1-lower input[type="checkbox"]:checked~.container-menu {
-    transform: translateX(0px);
-    transition: all 0.4s ease;
-}
-
 .style-button-open {
     background: lightgray;
     border: none;
@@ -90,21 +81,6 @@ label {
     align-items: center;
     justify-items: center;
 }
-
-
-/* .zone-2-upper {
-    grid-column: 2/3;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-top: 5px; 
-} */
-
-
-/* .zone-2-lower {
-    grid-column: 2/3;
-    grid-row: 2/3;
-} */
 
 .img-logo {
     border-radius: 3px;
@@ -185,15 +161,7 @@ input:focus {
     color: #fff;
 }
 
-
-/* .champ-recherche::after {
-    content: "";
-    clear: both;
-    display: table;
-  } */
-
 .menu-nav {
-    /* display: inline; */
     align-content: center;
 }
 
