@@ -9,64 +9,57 @@ html body{
 }
 
 .filter-options-container{
-    width: 33vw;
+    width: 40vw;
     height: 100vh;
 }
 
 .filter-options-extra-container{
     margin-top:1rem;
     margin-left: 2rem ;
+    overflow: scroll;
 }
 
 .container-item-box{
     margin-bottom: 2rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
 
+}
+
+.separator {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    border:1px solid gray;
+    width: 80%;
 }
 
 .titre-filtre{
     margin-bottom: 1rem;
-    font-size:large;
+    font-size:x-large;
 }
 
 .item-box{
-    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
-/* Correspond à la partie commentée dans le HTML */
-
-/* .liste-deroulante-extra{
-    list-style-type: none;
-}
-
-.liste-deroulante-extra + li{
-    list-style-type: none;
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-    font-size: 0.8rem;
-}
-
-.checkbox-lvl-0::before{
-    content: '+';
-    margin-right: 10px;
-    font-size: 24px;
-    font-weight: 600;
-}
-
-.checkbox-lvl-0{
-    display: none;
-} */
-
-.input-price{
-    height: 50px;
-    width: 60px;
+.input-price,
+.input-frette,
+.input-puissance,
+.input-canaux{
+    height:46px;
+    width: 78px;
     border-radius: 5px;
     border:solid 1px lightgrey;
     align-self: center;
+    text-align: center;
 }
 
-/* Chrome, Safari, Edge, Opera */
+/* 
+Chrome, Safari, Edge, Opera 
+Permet la suppression des flèches +/- 
+*/
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -75,7 +68,10 @@ input::-webkit-inner-spin-button {
 
 }
 
-/* Firefox */
+/* 
+Firefox 
+Permet la suppression des flèches +/- 
+*/
 input[type=number] {
   -moz-appearance: textfield;
   text-align: center;
@@ -83,6 +79,7 @@ input[type=number] {
 
 .evaluation{
     display: inline;
+    margin-left: 5px;
 }
 
 .evaluation img{
@@ -90,7 +87,6 @@ input[type=number] {
 }
 
 .choix-optionnels{
-    border-top: 1px solid gray ;
     margin-top: 1rem;
 }
 
@@ -102,8 +98,6 @@ input[type=number] {
     list-style-type: none;
     width: 100%;
     border-radius: 8px;
-    margin-bottom: 1rem;
-    font-size: 0.8rem;
 }
 
 .liste-deroulante li .label-bloc-optionnel{
@@ -118,6 +112,19 @@ input[type=number] {
     display: none;
 }
 
+label,
+input[type="checkbox"]{
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+label:hover,
+input[type="checkbox"]:hover{
+    cursor: pointer;
+    opacity: 60%;
+}
+
+
 .label-bloc-optionnel::before {
     content:'+';
     margin-right: 10px;
@@ -127,11 +134,14 @@ input[type=number] {
 
 .label-bloc-optionnel:hover{
     color: blueviolet;
+    opacity: 100%;
 }
 
 .liste-deroulante .content{
     max-height: 0;
     overflow: hidden;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .liste-deroulante .checkbox-lvl-1:checked + label + .content{
@@ -142,9 +152,44 @@ input[type=number] {
     content: '-';
 }
 
+.bloc-submit-reset{
+    margin: 0.5rem 0;;
+    margin-right: 0.5rem;
+}
+
+.valider-filtres,
+.reset-filtres{
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    color: #eeeeee;
+    background-color: black;
+    font-weight: 600;
+    width: 160px;
+    height: 35px;
+    border-radius: 2vw;
+    border: 1px solid white;
+    font-size: 0.6rem;
+}
+
+.valider-filtres span,
+.reset-filtres span {
+    position: relative;
+    z-index: 1;
+}
+
+.valider-filtres:hover,
+.reset-filtres:hover {
+    opacity: 80%;
+}
+
 @media (width <= 375px){
     .filter-options-container {
-        width: 55vw;
+        width: 100vw;
         height: 100vh;
     }
 }
