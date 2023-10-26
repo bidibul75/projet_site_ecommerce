@@ -14,7 +14,6 @@
 
 .horizontal-scroll {
   padding: 1vw;
-  white-space: nowrap;
   margin-top: 5vw;
   margin-bottom: 5vw;
   background-color: none;
@@ -36,7 +35,6 @@
 .image {
   height: 10vw;
   min-width: 20vw;
-  max-width: 30vw; /* on peut ajuster la largeur */
   /* padding: 3%; */
   border: 5px solid #ccc;
   border-radius: 3%;
@@ -62,36 +60,51 @@
 .product-item p {
   font-size: 14px;
 } 
-
+@media (max-width: 1000px) {
+  *{
+    margin: 0;
+  }
+  .image img{
+    max-height: 9vw;
+  }
+}
 /* Mode responsive */
-@media (max-width: 750px) {
+@media (max-width: 770px) {
   .horizontal-scroll {
-      max-width: 100%;
-      overflow-x: auto;
-      white-space: nowrap;
-  }
-
-  .product-menu {
-      width: auto;
-      height: auto;
-      display: block;
-  }
-
-  .product-item {
-      width: 100%;
-      display: inline-block;
-  }
-
-  .image {
-      width: 90%;
+      max-width: 80%;
       /* margin: auto; */
   }
 
+  .product-item{
+    height: 25vw;
+  }
+
   .image img {
-      max-width: 100%;
+      max-width: 7vw;
       height: auto;
   }
 }
+
+@media (max-width: 426px){
+  .image{
+    min-width: 70vw;
+    height: 46vw;
+  }
+
+  .image img{
+    min-height: 42vw;
+    min-width: 43vw;
+    margin-left: 12vw;
+  }
+
+  .product-item{
+    min-height: 60vw;
+  }
+
+  .horizontal-scroll{
+    height: 70vw;
+  }
+} 
 
 
 

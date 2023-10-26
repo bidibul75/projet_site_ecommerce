@@ -108,3 +108,20 @@
     opacity: 1
   }
 }
+
+@media (width <=1080px) {
+  .custom-slider{
+    max-width: 75vw;
+  }
+  .custom-slider img{
+    max-height: 30vw;
+  }
+  .slide-container{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (width <=770px){
+
+}

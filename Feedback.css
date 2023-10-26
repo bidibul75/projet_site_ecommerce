@@ -68,3 +68,13 @@ body {
     white-space: break-spaces;
 } 
 
+@media (max-width: 430px){
+    .horizontal-scroll_feedback{
+        min-height: 30vw;
+    }
+    .container-feedback-item{
+        min-height: 43vw;
+        min-width: 96vw;
+    }
+}
+
