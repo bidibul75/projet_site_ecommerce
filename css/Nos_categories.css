@@ -1,0 +1,96 @@
+body, html {
+    /* margin: 20px; */
+    padding: 0;
+    font-family: Mooli;
+}
+
+.titre{
+    text-align: center;
+    font-size: 20px;
+}
+ .grid-container-nos_categories {
+    display: grid;
+    position: relative;
+    left: 7vw;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    gap: 1.5vw;
+    margin: 4vw;
+    max-width: 30vw;
+
+  }
+  
+  .grid-item-nos_categories {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid gray;
+    padding: 3vw; 
+    max-width: 30vw;   
+  }
+  
+  .grid-item-nos_categories img {
+    display: block;
+    margin-right: 20px;
+    margin-bottom: 5px;
+  }
+
+  .evh{
+    position: relative;
+    top: 2.5vw;
+  }
+
+  .guitares_acoust{
+    max-width: 12vw;
+  }
+
+ ².effets, .accessoires{
+    max-width: 7vw;
+  }
+
+  .basses, .guitares_elec{
+    max-width: 13vw;
+  }
+
+  .effets, .ampli{
+    max-width: 7vw;
+  }
+  
+  .grid-item-nos_categories p {
+    display: flex;
+    align-items: flex-end;
+    margin: 0;
+    width: 100%;
+    font-size: 20px;
+    margin-top: 50px;
+
+  }
+
+  /* Responsive pour tablettes */
+  @media (max-width: 850px){
+        .grid-container-nos_categories{
+          grid-template-columns: repeat(2, 1fr);
+        }  
+  } 
+
+  /* Responsive pour mobiles */
+  @media (max-width: 600px){
+    .grid-item-nos_categories img{
+        max-width: 10vw;
+    }
+    .grid-container-nos_categories{
+      grid-template-columns: 1fr;
+
+    }
+
+  }
+  a{
+    text-decoration: none;
+  }
+
+
+    
+  .titre{
+    
+
+  }
