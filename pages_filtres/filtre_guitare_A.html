@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/projet_site_ecommerce/filter-css.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Filter</title>
+</head>
+
+<body>
+    <div class="filter-options-container">
+        <div class="filter-options-extra-container">
+            <form action="" method="post">
+            <div class="container-item-box">
+                <div class="constructeur">
+                    <h3 class="titre-filtre">Constructeurs</h3>
+                    <div class="separator"></div>
+                    <div class="item-box">
+                        <input type="checkbox" name="Gibson" id="gibson">
+                        <label for="gibson">Gibson</label>
+                    </div>
+                    <div class="item-box">
+                        <input type="checkbox" name="Ibanez" id="ibanez">
+                        <label for="ibanez">Ibanez</label>
+                    </div>
+                    <div class="item-box">
+                        <input type="checkbox" name="LAG" id="lag">
+                        <label for="lag">LAG</label>
+                    </div>
+                    <div class="item-box">
+                        <input type="checkbox" name="Ovation" id="ovation">
+                        <label for="ovation">Ovation</label>
+                    </div>
+                </div>
+            </div>
+            <div class="container-item-box">
+                <h4 class="titre-filtre">Echelle de prix</h4>
+                <div class="separator"></div>
+                <input type="number" inputmode="numeric" name="min-prix" id="prix-min" class="input-price">
+                <span> - </span>
+                <input type="number" inputmode="numeric" name="max-prix" id="prix-max" class="input-price">
+            </div>
+            <div class="container-item-box">
+                <h4 class="titre-filtre">Evaluations</h4>
+                <div class="separator"></div>
+                <div class="item-box">
+                    <input type="checkbox" name="Evaluation-5" id="evaluation-5">
+                    <div class="evaluation">
+                        <img src="/projet_site_ecommerce/ressources_filtre/bxs-star.svg" alt="notation">
+                        <img src="/projet_site_ecommerce/ressources_filtre/bxs-star.svg" alt="notation">
+                        <img src="/projet_site_ecommerce/ressources_filtre/bxs-star.svg" alt="notation">
+                        <img src="/projet_site_ecommerce/ressources_filtre/bxs-star.svg" alt="notation">
+                        <img src="/projet_site_ecommerce/ressources_filtre/bxs-star.svg" alt="notation">
+                    </div>
+                </div>
+                <div class="item-box">
+                    <input type="checkbox" name="Evaluation-4" id="evaluation-4">
+                    <div class="evaluation">
+                        <img src="/projet_site_ecommerce/ressources_filtre/bxs-star.svg" alt="notation">
+                        <img src="/projet_site_ecommerce/ressources_filtre/bxs-star.svg" alt="notation">
+                        <img src="/projet_site_ecommerce/ressources_filtre/bxs-star.svg" alt="notation">
+                        <img src="/projet_site_ecommerce/ressources_filtre/bxs-star.svg" alt="notation">
+                        <img src="/projet_site_ecommerce/ressources_filtre/bx-star-empty.svg" alt="notation">
+                    </div>
+                </div>
+                <div class="item-box">
+                    <input type="checkbox" name="Evaluation-3" id="evaluation-3">
+                    <div class="evaluation">
+                        <img src="/projet_site_ecommerce/ressources_filtre/bxs-star.svg" alt="notation">
+                        <img src="/projet_site_ecommerce/ressources_filtre/bxs-star.svg" alt="notation">
+                        <img src="/projet_site_ecommerce/ressources_filtre/bxs-star.svg" alt="notation">
+                        <img src="/projet_site_ecommerce/ressources_filtre/bx-star-empty.svg" alt="notation">
+                        <img src="/projet_site_ecommerce/ressources_filtre/bx-star-empty.svg" alt="notation">
+                    </div>
+                </div>
+            </div>
+            <div class="choix-optionnels">
+                <div class="separator"></div>
+                <div class="bloc-optionnel">
+                    <ul class="liste-deroulante">
+                        <li>
+                            <input type="checkbox" name="liste" id="first" class="checkbox-lvl-1">
+                            <label for="first" class="label-bloc-optionnel">Couleur</label>
+                            <div class="content">
+                                <div class="item-box">
+                                    <input type="checkbox" name="Bleu" id="bleu">
+                                    <label for="bleu">Bleu</label>
+                                </div>
+                                <div class="item-box">
+                                    <input type="checkbox" name="Blanc" id="blanc">
+                                    <label for="blanc">Blanc</label>
+                                </div>
+                                <div class="item-box">
+                                    <input type="checkbox" name="Rouge" id="rouge">
+                                    <label for="rouge">Rouge</label>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="liste" id="second" class="checkbox-lvl-1">
+                            <label for="second" class="label-bloc-optionnel">Frettes</label>
+                            <div class="content">
+                                <select name="Frette-min" id="frette-min" class="input-frette">
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="24">24</option>
+                                </select>
+                                <span> - </span>
+                                <select name="Frette-max" id="frette-max" class="input-frette">
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="24" selected>24</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="liste" id="pan" class="checkbox-lvl-1">
+                            <label for="pan" class="label-bloc-optionnel">Pan coupé</label>
+                            <div class="content">
+                                <div class="item-box">
+                                    <input type="checkbox" name="Pan-O" id="pan-O">
+                                    <label for="pan-O">Oui</label>
+                                </div>
+                                <div class="item-box">
+                                    <input type="checkbox" name="Pan-N" id="pan-n">
+                                    <label for="pan-n">Non</label>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    </details>
+                </div>
+                <div class="bloc-optionnel">
+                </div>
+                <div class="bloc-optionnel"></div>
+            </div>
+            <div class="bloc-submit-reset">
+                <input type="submit" value="Valider la sélection" class="valider-filtres" />
+                <input type="reset" value="Réinitisaliser les filtres" class="reset-filtres" />
+            </div>
+        </form>
+        </div>
+    </div>
+
+    </div>
+
+</body>
+
+</html>
