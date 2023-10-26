@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Conseil.css">
+    <title>conseil</title>
+</head>
+<body>
+
+                                    <!-- Bouton d'ouverture -->
+    
+    <button id="button-open-conseil"  class="style-button-open-conseil">
+    <label for="modalCheckbox">Besoin d'un conseil ?</label>
+    </button>
+    
+
+
+                                               
+    <div class="container-conseil" id="to-close-conseil">
+        <div class="grid-container-conseil-div">
+
+
+            <!-- Bouton de fermeture et titre "Conseil" -->
+
+            <div class="h3-close-conseil">
+                <h3>Conseil</h3>
+                <button id="button-close-conseil" class="style-button-close"><img src="/projet_site_ecommerce/ressources_entete/bx-x-36px.svg" alt="close-icon"></button>
+               
+            </div> 
+
+
+            <div class="separator-conseil"></div>
+
+         <!-- ces boutons sont utilisés pour basculer entre l'affichage du numéro de tél et l'e-mail. Par défaut le logo du tél est coché -->
+            <input type="radio" name="contactType" id="telRadio" checked>
+            <input type="radio" name="contactType" id="emailRadio">
+
+            <div class="bloc-contact-conseil">
+
+                            <!-- 1ère ligne -->
+                <div class="row-contact-conseil">Hotline</div>
+
+                            <!-- 2ème ligne -->
+        <!-- Dans cette row j'insère les logo "tel" et "email" dans des <label> qui vont servir d'interface utilisateur pour les boutons radio.
+            En cliquant sur ces logos, on selectionne les boutons radio correspondant. -->
+                <div class="row-contact-conseil">
+
+                    <label class="logo-tel-conseil" for="telRadio">
+                        <img src="/logo-tel-conseil/icons8-téléphone-24.png" alt="logo-tel">
+                    </label>
+
+                    <label class="logo-email-conseil" for="emailRadio">
+                        <img src="/logo-email-conseil/icons8-email-24.png" alt="logo-email">
+                    </label>
+                </div>
+
+                            <!-- 3ème ligne  -->
+                <div class="row-contact-conseil contact-info">
+                    <span id="telInfo">+49-9546-9223-40</span>
+                    <span id="emailInfo">example@Guithub.com</span>
+                </div>
+            </div>
+
+
+            <div class="separator-conseil"></div>
+
+
+            
+            <div class="bloc-horaire-conseil">
+                <div class="titre-horaire-conseil">
+                    <h5>Horaires d'ouverture</h5>
+                </div>
+                <div class="bloc-horaire-conseil">
+                    <div class="row-jour-conseil"><p>Lundi</p></div> 
+                    <div class="row-heure-conseil"><p>09:30 - 18:30</p></div>
+                    <div class="row-jour-conseil"><p>Mardi</p></div> 
+                    <div class="row-heure-conseil"><p>09:30 - 18:30</p></div>
+                    <div class="row-jour-conseil"><p>Mercredi</p></div> 
+                    <div class="row-heure-conseil"><p>09:30 - 18:30</p></div>
+                    <div class="row-jour-conseil"><p>Jeudi</p></div> 
+                    <div class="row-heure-conseil"><p>09:30 - 18:30</p></div>
+                    <div class="row-jour-conseil"><p>Vendredi</p></div> 
+                    <div class="row-heure-conseil"><p>09:30 - 18:30</p></div>
+                    <div class="row-jour-conseil"><p>Samedi</p></div> 
+                    <div class="row-heure-conseil"><p>09:30 - 18:30</p></div>
+
+
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    <script src="/Script.js"></script>
+
+</body>
+</html>
