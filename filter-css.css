@@ -9,7 +9,7 @@ html body{
 }
 
 .filter-options-container{
-    width: 35vw;
+    width: 40vw;
     height: 100vh;
 }
 
@@ -39,10 +39,15 @@ html body{
 
 .item-box{
     margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
 .input-price,
-.input-frette{
+.input-frette,
+.input-puissance,
+.input-canaux{
     height:46px;
     width: 78px;
     border-radius: 5px;
@@ -74,6 +79,7 @@ input[type=number] {
 
 .evaluation{
     display: inline;
+    margin-left: 5px;
 }
 
 .evaluation img{
@@ -109,6 +115,7 @@ input[type=number] {
 label,
 input[type="checkbox"]{
     cursor: pointer;
+    margin-left: 5px;
 }
 
 label:hover,
@@ -133,7 +140,8 @@ input[type="checkbox"]:hover{
 .liste-deroulante .content{
     max-height: 0;
     overflow: hidden;
-    margin-top: 1rem;;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .liste-deroulante .checkbox-lvl-1:checked + label + .content{
