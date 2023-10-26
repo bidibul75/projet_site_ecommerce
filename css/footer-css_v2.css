@@ -230,7 +230,7 @@
         font-size: 0.875rem;
     }
 
-    .button-meilleurs-ventes {
+    .button-newsletter {
         border: none;
         text-align: center;
         cursor: pointer;
@@ -248,12 +248,12 @@
         font-size: 0.6rem;
     }
     
-    .button-meilleurs-ventes span {
+    .button-newsletter span {
         position: relative;
         z-index: 1;
     }
     
-    .button-meilleurs-ventes:hover {
+    .button-newsletter:hover {
         opacity: 80%;
     }
     
