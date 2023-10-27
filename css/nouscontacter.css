@@ -32,7 +32,7 @@ ul{
     margin-bottom: 5vw;
 }
 
-.ad/resse{
+.adresse{
     position: relative;
     right: 2vw;
     margin-bottom: 1.5vw
@@ -55,19 +55,22 @@ textarea{
 }
 
 button{
-    max-width: 5vw;
+    max-width: auto;
+}
+@media (max-width: 800px){
+.contact{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.coordonees{
+    max-width: 87vw;
+}
 }
 
-@media (max-width: 769px){
-    button{
-        max-width: 7vw; 
-    }
-}
 
 @media (max-width: 426px){
-    .contact{
-        flex-direction: column;
-    }
+    
 
     ul{
         display: flex;
@@ -80,20 +83,10 @@ button{
     .coordonees{
         max-width: 87vw;
     }
-
-    button{
-        max-width: 12vw;
-    }
 }
 
 @media (max-width: 376px){
     button{
         max-width: 14vw;
-    }
-}
-
-@media (max-width: 326px){
-    button{
-        max-width: 16vw;
     }
 }
