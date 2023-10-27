@@ -3,6 +3,10 @@ ol > a{
 
 }
 
+.categories a:visited{
+  color: black;
+}
+
 p{
   z-index: 1;
 }
