@@ -2,6 +2,7 @@ html,
 body {
     font-family: Mooli;
     /* pb sur page index : n'est pas en font familly mooli*/
+    overflow-x: auto;
 }
 
 a:visited {
