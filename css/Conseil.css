@@ -1,0 +1,292 @@
+html body{
+    font-family: Mooli;
+  }
+
+  /* pour changer le curseur de la souris en forme de main lorsqu'il est sur le un label */
+label {
+
+cursor: pointer;
+
+} 
+
+
+.style-button-open-conseil {
+    display: inline-block;
+    text-align: center;
+    background: black;
+    color: white;
+    border-radius: 5vw;
+    text-transform: uppercase;
+    font-weight: bolder;
+    transform: translateX(0);
+    cursor: pointer;
+    position: sticky; /* Si l'élément parent n'est pas en overflow sur "hidden" la propriété sticky peut marcher */
+    top: 0; /* Pour le mettre en haut de l'écran, pour le mettre en bas de l'écran c'est bottom:0 */
+    z-index: 1000; 
+    
+}
+
+
+.style-button-open-conseil:hover{
+    background-color: blueviolet;
+
+}
+
+.bloc-contact-conseil{
+
+    margin-bottom: 7.5vw;
+
+}
+
+.h3-close-conseil{
+    display: flex;
+    margin-right: 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grid-container-conseil-div h3{
+    font-size: x-large;
+}
+
+.grid-container-conseil-div{
+    margin-top:1rem;
+    margin-left: 2rem ;
+    padding-bottom: 1rem;
+    max-width: 100%;
+}
+
+.container-conseil{
+    background: whitesmoke;
+    position: absolute;
+    top: -2px;
+    left:0;
+    overflow: scroll;
+    display: block;
+    transform: translateX(-100%);
+    transition: transform 0.7s ease-out;
+    z-index: 1000;
+    width: 30%;
+    max-width: 100%;
+}
+
+.style-button-close {
+    background: white;
+    border: none;
+    cursor: pointer;
+}
+
+.container-conseil.show{
+    transform: translateX(0);
+}
+
+.separator-conseil {
+    border:1px solid black;
+    width: 90%;
+}
+.bloc-contact-conseil {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr; /* pour crée 3 rangées de taille égale */
+    gap: 8vw; /*Espacement entre les rangées$*/
+}
+.row-contact-conseil {
+    display: flex;
+    align-items: center; /* Pour centrer les éléments verticalement */
+    justify-content: center; /* Alignement horizontal  au centre*/
+    gap: 10vw; /* Espacement entre les logo email et tel */
+}
+.logo-tel-conseil, .logo-email-conseil {
+    border-radius: 50%; 
+    background-color: white ;
+    padding: 1vw;
+    transition: background-color 0.3s; /* Transition fluide pour le hover */
+}
+.logo-tel-conseil img, .logo-email-conseil img {
+    display: block;
+    max-width: 100%; 
+    height: auto;
+}
+.logo-tel-conseil:hover, .logo-email-conseil:hover {
+    background-color: blueviolet;
+}
+.bloc-horaire-conseil {
+    padding: 4vw;
+    
+}
+
+.titre-horaire-conseil h5 {
+    text-align: center;
+  
+}
+
+.row-jour-conseil, 
+.row-heure-conseil {
+    display: inline-block; 
+    vertical-align: middle; /* Pour aligne verticalement les jours et les heures */
+} 
+
+.row-jour-conseil {
+    width: 40%; 
+    text-align: right; /* aligne le jour vers la droite */
+    padding-right: 2vw; /* espace entre le jour et l'horaire */
+}
+
+.row-heure-conseil {
+    width: 50%; 
+    text-align: left; /* aligne l'horaire vers la gauche */
+}
+
+.row-jour-conseil p, 
+.row-heure-conseil p {
+    margin: 0;
+}
+#telRadio, #emailRadio{
+    display: none;
+}
+
+#telInfo, #emailInfo{
+    display: none;
+}
+#telRadio:checked ~ .bloc-contact-conseil .contact-info #telInfo {
+    display: block;
+}
+#emailRadio:checked ~ .bloc-contact-conseil .contact-info #emailInfo {
+    display: block;
+}
+
+
+
+                       /*---------------- responsivity --------------*/
+
+@media (max-width: 2560px) {
+    .container-conseil {
+    width: 40%; /* Augmente la largeur pour les tablettes */
+    }
+    .style-button-open-conseil {
+        font-size: 0.8em; /* Réduire la taille de la police pour les boutons */
+        padding: 0.5rem 1rem; /* Ajuster le padding du bouton */
+    }
+    .row-contact-conseil {
+        display: flex;
+        align-items: center; /* Pour centrer les éléments verticalement */
+        justify-content: center; /* Alignement horizontal  au centre*/
+        gap: 8vw; /* Espacement entre les logo email et tel */
+        
+    }
+    .bloc-contact-conseil {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr; /* pour crée 3 rangées de taille égale */
+        gap: 4vw; /*Espacement entre les rangées$*/
+       
+        
+}
+.bloc-horaire-conseil {
+    padding: 2vw;
+    text-transform:uppercase ;
+    
+    }
+}
+
+
+
+@media (max-width: 1583px) {
+    .container-conseil {
+        width: 50%; /* Augmente la largeur pour les tablettes */
+    }
+    .style-button-open-conseil {
+        font-size: 0.8em; /* Réduire la taille de la police pour les boutons */
+        padding: 0.5rem 1rem; /* Ajuster le padding du bouton */
+    }
+}
+
+
+@media (max-width: 1220px) {
+    .container-conseil {
+        width: 50%; /* Augmente la largeur pour les tablettes */
+    }
+    .style-button-open-conseil {
+        font-size: 0.8rem; /* Réduire la taille de la police pour les boutons */
+        padding: 0.5rem 1rem; /* Ajuster le padding du bouton */
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .container-conseil {
+        width: 60%; /* Augmente la largeur pour les tablettes */
+    }
+    .style-button-open-conseil {
+        font-size: 0.8rem; /* Réduire la taille de la police pour les boutons */
+        padding: 0.5rem 1rem; /* Ajuster le padding du bouton */
+    }
+}
+
+
+@media (max-width: 493px) {
+        .row-jour-conseil, .row-heure-conseil {
+            display: inline-block; /* Afficher en bloc pour plus d'espace */
+            text-align: center; /* Centrer le texte */
+            width: 100%; /* Utilise toute la largeur disponible */
+            padding-left: 0; /* Supprimer le padding droit */
+        }
+        .row-jour-conseil p, 
+        .row-heure-conseil p {
+            margin:0.5rem 0; /* Ajouter une marge verticale pour l'espacement */
+        }
+}
+
+
+@media (max-width: 480px) {
+    .container-conseil {
+        width: 100%; /* Utilise toute la largeur de l'écran pour les mobiles */
+    }
+    .style-button-open-conseil, .grid-container-conseil-div h3 {
+        font-size: 0.7rem; /* Réduire davantage la taille de la police pour les mobiles */
+    }
+    .grid-container-conseil-div {
+        margin-left: 1rem; /* Réduire la marge gauche */
+    }
+    .row-jour-conseil, .row-heure-conseil {
+        display: inline-block; /* Afficher en bloc pour plus d'espace */
+        text-align: center; /* Centrer le texte */
+    }
+    .row-jour-conseil {
+        padding-right: 0; /* Supprimer le padding droit */
+    }
+    .style-button-open-conseil {
+        margin-left: 0; /* Supprimer la marge gauche du bouton */
+    }
+}
+
+@media (max-width: 375px) {
+    .logo-tel-conseil img, .logo-email-conseil img {
+        width: 100%; /* Réduire la taille de l'image */
+        display: block; /* Assure que l'image est centrée */
+        margin: auto; /* Centre l'image horizontalement */
+    }
+    .row-jour-conseil, .row-heure-conseil {
+        display: block; /* Afficher en bloc pour plus d'espace */
+        text-align: center; /* Centrer le texte */
+        width: 100%; /* Utilise toute la largeur disponible */
+        padding-right: 0; /* Supprimer le padding droit */
+    }
+    .row-jour-conseil p, 
+    .row-heure-conseil p {
+        margin: 2.5vw 0; /* Ajouter une marge verticale pour l'espacement */
+    }
+   
+}
+
+@media (max-width: 320px) {
+    .row-jour-conseil, .row-heure-conseil {
+        display: inline-block; /* Afficher en bloc pour plus d'espace */
+        text-align: center; /* Centrer le texte */
+        width: 100%; /* Utilise toute la largeur disponible */
+        padding-left: 0; /* Supprimer le padding droit */
+    }
+    .row-jour-conseil p, 
+    .row-heure-conseil p {
+        margin: 2.5vw 0; /* Ajouter une marge verticale pour l'espacement */
+    }
+}
