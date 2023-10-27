@@ -58,7 +58,7 @@ html body{
 
 /* 
 Chrome, Safari, Edge, Opera 
-Permet la suppression des flèches +/- 
+Permet la supp/ression des flèches +/- 
 */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -70,7 +70,7 @@ input::-webkit-inner-spin-button {
 
 /* 
 Firefox 
-Permet la suppression des flèches +/- 
+Permet la supp/ression des flèches +/- 
 */
 input[type=number] {
   -moz-appearance: textfield;
