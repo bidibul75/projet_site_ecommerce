@@ -10,100 +10,148 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mooli&family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="entete-css.css">
+    <link rel="stylesheet" href="/css/entete_v2-css.css">
+    <link rel="stylesheet" href="/css/menu-css.css">
     <!-- <link rel="stylesheet" href="carrousel.css">
     <link rel="stylesheet" href="Nos_categories.css"> -->
-    <link rel="stylesheet" href="footer-css.css">
-    <link rel="stylesheet" href="pages_produits.css">
+    <link rel="stylesheet" href="/css/footer-css_v2.css">
+    <link rel="stylesheet" href="/css/pages_produits.css">
 
 
     <!-- chargement responsif des favicons selon le type de device-->
-    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
     <link rel="manifest" href="/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="/images/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <!-- Demande au robot de Google de ne pas archiver le site, 
     qui pourrait au moment de l'archivage contenir une erreur (prix...).-->
     <meta name="googlebot" content="noarchive">
-    <script src="onglets_page_produits.js" type="text/javascript"></script>
 </head>
 
 <body>
-    <div class="container-entete">
-        <div class="upper-zone">
+    <header>
+        <div class="container-entete">
+          <div class="upper-zone">
             <div class="upper-zone-content">
-                <div class="zone-1-upper">
-                    <a href="#">Nous contacter</a>
-                    <a href="a_propos.html">A propos</a>
-                </div>
-                <div class="zone-1-lower">
-                    <label for="check" class="icons">
-                        <i class="bx bx-menu" id="menu-icon"></i>
-                    </label>
-                    <a href="#">Item 1</a>
-                    <a href="#">Item 2</a>
-                </div>
-                <div class="zone-2-upper">
-                    <div class="bloc-image-entete">
-                        <img src="/ressources_entete/favicon-32x32.png" alt="" class="img-logo">
+              <div class="zone-1-upper">
+                <a href="/nouscontacter.html">Nous contacter</a>
+                <a href="/a_propos.html">A propos</a>
+              </div>
+              <div class="zone-1-lower">
+                <button id="button-open" class="style-button-open">
+                  <img src="/ressources_entete/bx-menu.svg" alt="menu">
+                </button>
+                <div class="container-menu" id="to-close-menu">
+                  <div class="container-menu-div">
+                    <div class="h3-close-menu">
+                      <h3>Menu</h3>
+                      <button id="button-close" class="style-button-close"><img
+                          src="/ressources_entete/bx-x-36px.svg" alt="close-icon"></button>
+                      <!-- <input type="checkbox" name="check-close" id="close" onclick="close()"> -->
                     </div>
+                    <div class="separator"></div>
+                    <div class="bloc-menu">
+                      <div class="choix-menu">
+                        <ul class="liste-menu">
+                          <li><a href="/pages_liste_produits/liste_produits_1.html">Tous nos produits</a></li>
+                          <li><a href="/pages_liste_produits/liste_guitares_acoustiques.html">Guitare Acoustique</a></li>
+                          <li><a href="/pages_liste_produits/liste_guitares_electriques.html">Guitare Electrique</a></li>
+                          <li><a href="/pages_liste_produits/liste_basses.html">Basse</a></li>
+                          <li><a href="/pages_liste_produits/liste_amplis.html">Ampli</a></li>
+                          <li><a href="/pages_liste_produits/liste_effets.html">Effets</a></li>
+                          <li><a href="/pages_liste_produits/liste_accessoires.html">Accessoires</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h3>Services</h3>
+                    <div class="separator"></div>
+                    <div class="bloc-menu">
+                      <div class="choix-menu">
+                        <ul class="liste-menu">
+                          <li><a href="/nouscontacter.html">Nous contacter</a></li>
+                          <li><a href="#">Questions fréquentes</a></li>
+                          <li><a href="#">Frais de port et de livraison</a></li>
+                          <li><a href="#">Retourner un produit</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h3>A propos</h3>
+                    <div class="separator"></div>
+                    <div class="bloc-menu">
+                      <div class="choix-menu">
+                        <ul class="liste-menu">
+                          <li><a href="/a_propos.html">Informations Guithub</a></li>
+                          <li><a href="#">Conditions générales</a></li>
+                          <li><a href="#">L'univers Guithub</a></li>
+                          <li><a href="#">Tuto make-up</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a href="/index.html#nouveautes" class="link-zone-1-lower">Nouveautés</a>
+                <a href="/index.html#best_sellers" class="link-zone-1-lower">Best-seller</a>
+              </div>
+              <div class="zone-2">
+                <div class="zone-2-upper">
+                  <div class="bloc-image-entete">
+                    <a href="/index.html">
+                      <img src="/images/logo_guit_hub_long.png" alt="" class="img-logo">
+                    </a>
+                  </div>
                 </div>
                 <div class="zone-2-lower">
-                    <form action="" class="champ-recherche">
-                        <button type="submit"><i class='bx bx-search'></i></button>
-                        <input type="text" class="barre-recherche" placeholder="Rechercher">
-                    </form>
+                  <form action="" class="champ-recherche">
+                    <button type="submit"><i class='bx bx-search'></i></button>
+                    <input type="text" class="barre-recherche" placeholder="Rechercher">
+                  </form>
                 </div>
-                <div class="zone-3-upper">
-                    <a href="#">Politique de retour</a>
-                    <a href="#">TVA réduite</a>
+              </div>
+              <div class="zone-3-upper">
+                <a href="#">Politique de retour</a>
+                <a href="#">TVA réduite</a>
+              </div>
+              <div class="zone-3-lower">
+                <div class="img-entete">
+                  <a href="#"><img src="/ressources_entete/bxs-flag-alt.svg" alt="langue"></a>
                 </div>
-                <div class="zone-3-lower">
-                    <label for="check" class="icons">
-                        <i class='bx bxs-flag-alt' id="side-icons"></i>
-                        <a href="#"> <i class='bx bxs-user-account' id="side-icons"></i></a>
-                        <a href="#"> <i class='bx bx-cart' id="side-icons"></i></a>
+                <div class="img-entete">
+                  <a href="#"><img src="/ressources_entete/bx-user-circle.svg" alt="langue"></a>
                 </div>
+                <div class="img-entete">
+                  <a href="#"><img src="/ressources_entete/bx-cart.svg" alt="langue"></a>
+                </div>
+              </div>
             </div>
-        </div>
-        <div class="bottom-zone">
+          </div>
+          <div class="bottom-zone">
             <nav class="menu-nav">
-                <ol class="list-nav">
-                    <li>Guitare</li>
-                    <li>Basse</li>
-                    <li>Batteries</li>
-                    <li>Clavier</li>
-                    <li>Studio</li>
-                    <li>Logiciels</li>
-                    <li>Sono</li>
-                    <li>Eclairage</li>
-                    <li>Deejay</li>
-                    <li>Vidéos</li>
-                    <li>Micros</li>
-                    <li>Effets</li>
-                    <li>Vents</li>
-                    <li>Instr. Trad.</li>
-                    <li>Librairie</li>
-                    <li>Cases</li>
-                    <li>Câbles</li>
-                    <li>Accessoires</li>
-                </ol>
+              <ol class="list-nav">
+                <li><a class="categorie_nav" href="pages_liste_produits/liste_produits_1.html"></a>Tous nos produits</a></li>
+                <li><a class="categorie_nav" href="pages_liste_produits/liste_guitares_acoustiques.html"></a>Guitares Acoustiques</a></li>
+                <li><a class="categorie_nav" href="pages_liste_produits/liste_guitares_electriques.html"></a>Guitares Electriques</a></li>
+                <li><a class="categorie_nav" href="pages_liste_produits/liste_basses.html"></a>Basses</a></li>
+                <li><a class="categorie_nav" href="pages_liste_produits/liste_amplis.html"></a>Amplis</a></li>            
+                <li><a class="categorie_nav" href="pages_liste_produits/liste_effets.html"></a>Effets</a></li>
+                <li><a class="categorie_nav" href="pages_liste_produits/liste_accessoires.html"></a>Accessoires</a></li>
+              </ol>
             </nav>
+          </div>
         </div>
-    </div>
+      </header>
     <br>
     <br>
     <br>
@@ -111,7 +159,7 @@
 
     <div class="fil_ariane">
         <div>
-            <a href="index.html" alt="Accueil"> &#8962;</a>
+            <a href="/index.html" alt="Accueil"> &#8962;</a>
         </div>
         <div>
             <a href="liste_guitare.html" alt="Guitare">Guitare</a>
@@ -124,7 +172,7 @@
     <!-- Début de section (partie centrale de la page)----------------------------------------- -->
     <section class="pages_produits">
         <div class="photo_pages_produits">
-            <img src="images/ibanez_alt30.png" alt="Ibanez Alt30">
+            <img src="/images/ibanez_alt30.png" alt="Ibanez Alt30">
         </div>
         <!-- Block en haut à droite avec les prix, ajouter au panier... --------------------------- -->
         <div class="prix_pages_produits">
@@ -190,7 +238,7 @@
                     <p>Préamplificateur Ibanez AEQ-2UT avec accordeur intégré</p>
                     <p>Chevalet en noyer</p>
                     <p>Sillet de chevalet en plastique</p>
-                    <p>Mécaniques chromées moulées sous pression (démultiplication: 18:1)</p>
+                    <p>Mécaniques chromées moulées sous p/ression (démultiplication: 18:1)</p>
                     <p>Cordes .010-.047</p>
                     <p>Couleur: Blue Doom Burst High Gloss</p>
                 
@@ -299,37 +347,24 @@
                         <div class="reseaux-sociaux">
                             <div class="rs-row-1">
                                 <a href="#">
-                                    <div class="icon-rs"><img
-                                            src="/ressources_footer/instagram-svgrepo-com.svg"
-                                            alt="Insta"></div>
+                                    <div class="icon-rs"><img src="/ressources_footer/instagram-svgrepo-com.svg" alt="Insta"></div>
                                 </a>
                                 <a href="#">
-                                    <div class="icon-rs"><img
-                                            src="/ressources_footer/pinterest-v2-svgrepo-com.svg"
-                                            alt="Pinterest"></div>
+                                    <div class="icon-rs"><img src="/ressources_footer/pinterest-v2-svgrepo-com.svg" alt="Pinterest"></div>
                                 </a>
                                 <a href="#">
-                                    <div class="icon-rs"><img
-                                            src="/ressources_footer/facebook-v2-svgrepo-com.svg"
-                                            alt="Facebook"></div>
+                                    <div class="icon-rs"><img src="/ressources_footer/facebook-v2-svgrepo-com.svg" alt="Facebook"></div>
                                 </a>
                             </div>
                             <div class="rs-row-2">
                                 <a href="#">
-                                    <div class="icon-rs"><img
-                                            src="/ressources_footer/rockstar-games-svgrepo-com.svg"
-                                            alt="Rockstar">
-                                    </div>
+                                    <div class="icon-rs"><img src="/ressources_footer/rockstar-games-svgrepo-com.svg" alt="Rockstar"></div>
                                 </a>
                                 <a href="#">
-                                    <div class="icon-rs"><img
-                                            src="/ressources_footer/tesla-svgrepo-com.svg"
-                                            alt="Tesla"></div>
+                                    <div class="icon-rs"><img src="/ressources_footer/tesla-svgrepo-com.svg" alt="Tesla"></div>
                                 </a>
                                 <a href="#">
-                                    <div class="icon-rs"><img
-                                            src="/ressources_footer/sync-svgrepo-com.svg"
-                                            alt="sync">
+                                    <div class="icon-rs"><img src="/ressources_footer/sync-svgrepo-com.svg" alt="sync">
                                     </div>
                                 </a>
                             </div>
@@ -340,16 +375,24 @@
                             <li><a href="#">Petites annonces</a></li>
                             <li><a href="#">Blog</a></li>
                         </ul>
-
+    
                     </div>
                     <div class="copyright">
                         <div class="stores">
-                            <div class="store"><a href="#"><img
-                                        src="/ressources_footer/apple_store_icon.svg" alt=""></a>
+                            <div class="store">
+                                <a href="#"><img src="/ressources_footer/apple_store_icon.svg" alt=""></a>
                             </div>
-                            <div class="store"><a href="#"><img
-                                        src="/ressources_footer/play_store_icon.svg" alt=""></a>
+                            <div class="store">
+                                <a href="#"><img src="/ressources_footer/play_store_icon.svg" alt=""></a>
                             </div>
+                        </div>
+                        <div class="formulaire-newsletter">
+                            <form action="" method="post">
+                                <label for="newsletter" class="label-newsletter">Recevoir la newsletter : </label>
+                                    <input type="text" name="champ-mail" id="newsletter" 
+                                        placeholder="  jean.bonbeurre@email.com" class="input-newsletter">
+                                    <button id="Envoyer" class="button-meilleurs-ventes">Inscrivez-moi !</button>
+                            </form>
                         </div>
                         <div class="conclusion">
                             <span>© OG Guithub content</span>
@@ -358,11 +401,12 @@
                     </div>
                 </div>
             </div>
+    
         </div>
     </div>
 
-
-
+    <script src="/js/scriptClose.js" type="text/javascript"></script>
+    <script src="/js/onglets_page_produits.js" type="text/javascript"></script>
 </body>
 
 </html>

@@ -32,7 +32,8 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 20vw;
+    height: 22vw;
+    width: 32vw;
     margin: 9px;
     margin-bottom: 2vw;
     background-color: white;
@@ -67,14 +68,22 @@ body {
     width: 100%;
     white-space: break-spaces;
 } 
-
-@media (max-width: 430px){
-    .horizontal-scroll_feedback{
+@media (max-width: 770px){
+    .container-feedback-item{
         min-height: 30vw;
     }
+}
+@media (max-width: 430px){
     .container-feedback-item{
-        min-height: 43vw;
-        min-width: 96vw;
+        min-height: 37vw;
+        min-width: 79vw;
     }
+}
+@media (max-width: 376px){
+    .container-feedback-item{
+        min-height: 46vw;
+        min-width: 79vw;
+    }
+
 }
 
