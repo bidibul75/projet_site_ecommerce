@@ -56,11 +56,16 @@ h1{
     margin-top: 4vw;
 }
 
-.titre_gauche{
+.titre_gauche {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-top: 4vw;
+}
+.titre-histoire-GuitHub{
+    display: flex;
+    flex-direction: row;
+    margin-left: 12vw;
 }
 
 
