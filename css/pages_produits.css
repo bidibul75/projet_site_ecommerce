@@ -276,6 +276,9 @@ h1 {
         margin-right: 0;
     }
 
+    #onglets button {
+        font-size: 1rem;
+    }
 
     .photo_pages_produits {
         margin-left: 0;
