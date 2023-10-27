@@ -2,9 +2,10 @@ html,
 body {
     font-family: Mooli;
     /* pb sur page index : n'est pas en font familly mooli*/
+    overflow-x: auto;
 }
 
-a:link {
+ a {
     color: black;
     text-decoration: none;
 }
@@ -41,7 +42,7 @@ a:hover {
     text-decoration: none;
     font-size: 1rem;
     transform: skew(25deg);
-    /* On redresse le texte des cases du fil d'ariane de 25 degrés */
+    /* On red/resse le texte des cases du fil d'ariane de 25 degrés */
 }
 
 .fil_ariane div:first-child {
@@ -135,8 +136,7 @@ h1 {
     display: none;
 }
 
-.tab-content p,
-.tab-content h3 {
+.tab-content p, .tab-content h3 {
     justify-content: left;
     padding-top: 25px;
     margin-left: 5%;
@@ -152,7 +152,6 @@ h1 {
     padding-bottom: 25px;
 
 }
-
 .tab-content h3 {
     font-size: 1.1rem;
     font-weight: bold;
@@ -166,6 +165,7 @@ h1 {
     flex-direction: column;
     padding-left: 5%;
     padding-right: 5%;
+
 }
 
 .prix_pages_produits div:first-child {
@@ -200,13 +200,21 @@ h1 {
     flex-direction: row;
     align-items: baseline;
     padding: 0;
+
 }
 
-#quantite {
-    display: inline;
+.prix_pages_produits div:nth-of-type(5) div:first-child {
+    display: flex;
+
+}
+
+.prix_pages_produits div:nth-of-type(5) input {
+
+    justify-self: center;
+    align-self: center;
     border: 0;
     width: 3em;
-    font-size: 1.2rem;
+    font-size: 1.2rem;    
     background: #e9e9ed;
     margin: auto;
     border-radius: 10px;
@@ -214,8 +222,8 @@ h1 {
     text-align: center;
 }
 
-#bouton_quantite {
-    display: inline;
+.prix_pages_produits div:nth-of-type(5) a {
+    display: inline-block;
     text-align: center;
     background: black;
     color: white;
@@ -226,8 +234,7 @@ h1 {
     margin-left: 30px;
 }
 
-
-#bouton_quantite:hover {
+.prix_pages_produits div:nth-of-type(5) a:hover {
     background-color: blueviolet;
     opacity: 100%;
 }
