@@ -50,6 +50,7 @@
   <link rel="stylesheet" href="/css/footer-css_v2.css">
   <link rel="stylesheet" href="/css/index.css">
   <link rel="stylesheet" href="/css/Feedback.css">
+  <link rel="stylesheet" href="/css/login-css.css">
   <!-- <link rel="stylesheet" href="/css/pages_produits.css"> -->
 
 
@@ -177,7 +178,7 @@
                       <li><a href="/a_propos.html">Informations Guithub</a></li>
                       <li><a href="#">Conditions générales</a></li>
                       <li><a href="#">L'univers Guithub</a></li>
-                      <li><a href="https://www.youtube.com/watch?v=86scX2s7hoQ">Tuto make-up</a></li>
+                      <li><a href="#">Tuto make-up</a></li>
                     </ul>
                   </div>
                 </div>
@@ -210,10 +211,10 @@
               <a href="#"><img src="/ressources_entete/bxs-flag-alt.svg" alt="langue"></a>
             </div>
             <div class="img-entete">
-              <a href="/page_login.html"><img src="/ressources_entete/bx-user-circle.svg" alt="langue"></a>
+              <a href="#"><img src="/ressources_entete/bx-user-circle.svg" alt="langue"></a>
             </div>
             <div class="img-entete">
-              <a href="/pages_produits/panier.html"><img src="/ressources_entete/bx-cart.svg" alt="langue"></a>
+              <a href="#"><img src="/ressources_entete/bx-cart.svg" alt="langue"></a>
             </div>
           </div>
         </div>
@@ -245,387 +246,25 @@
           </ol>
         </nav>
       </div>
-    </div>
   </header>
-  <br>
-  <br>
-  <br>
-  </nav>
-  <div class="slide-container">
-    <div class="custom-slider fade">
-      <!-- <div class="slide-index">1 / 3</div> -->
-      <a href="pages_produits/net-gear.html">
-        <img class="slide-img" src="images/10.png" alt="Neural DSP">
-        <!-- <div class="slide-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div> -->
-      </a>
+<div class="container-login">
+    <div class="formulaire">
+        <form action="input">
+            <div class="formulaire-login">
+                <label for="login">Email</label>
+                <input type="email" name="login" id="login" class="login-input">
+            </div>
+            <div class="formulaire-password">
+                <label for="password">Mot de passe</label>
+                <input type="password" name="password" id="password">
+            </div>
+            <div class="container-button-connexion">
+                <button type="input" class="button-connexion">Connexion</button>
+                <a href="#"><span>Mot de passe oublié ?</span></a>
+            </div>
+        </form>
     </div>
-
-    <div class="custom-slider fade">
-      <a href="#">
-        <img class="slide-img" src="images/20.png" alt="Dj gear">
-      </a>
-    </div>
-
-    <div class="custom-slider fade">
-      <a href="#">
-        <img class="slide-img" src="images/30.png" alt="High-end studio microphones">
-      </a>
-    </div>
-
-    <div class="custom-slider fade">
-
-      <a href="#">
-        <img class="slide-img" src="images/40.png" alt="Custom shop basses">
-      </a>
-    </div>
-    <div class="custom-slider fade">
-      <a href="#">
-        <img class="slide-img" src="images/50.png" alt="Controller keyboards topseller">
-      </a>
-    </div>
-
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  </div>
-  <br>
-  <div class="slide-dot">
-    <span class="dot" onclick="currentSlide(0)"></span>
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-    <span class="dot" onclick="currentSlide(4)"></span>
-  </div>
-
-
-  <br>
-  <br>
-  <br>
-  <div class="titre">
-    <h2>Nos Catégories</h2>
-  </div>
-  <div class="categories">
-    <div class="grid-container-nos_categories">
-      <a href="pages_liste_produits/liste_guitares_acoustiques.html" class="grid-item-nos_categories">
-        <img src="/images/prduits_en_vente/ibanez_alt30.png" class="guitares_acoust" alt="Catégorie Guitare acoustique">
-        <br>
-        <p>Guitares acoustiques</p>
-      </a>
-      <a href="pages_liste_produits/liste_basses.html" class="grid-item-nos_categories">
-        <img src="/images/prduits_en_vente/cort-a4.jpg" class="basses" alt="Categorie basse">
-        <br>
-        <p>Guitares basse</p>
-      </a>
-
-      <a href="pages_liste_produits/liste_effets.html" class="grid-item-nos_categories">
-        <img src="/images/prduits_en_vente/dunlop_crybaby.jpg" class="effets" alt="Catégorie pédales d'effets">
-        <br>
-        <p>Effets</p>
-      </a>
-
-      <a href="pages_liste_produits/liste_guitares_electriques.html" class="grid-item-nos_categories">
-        <img src="/images/prduits_en_vente/jackson_rrx4.jpg" class="guitares_elec" alt="Catégorie Guitare Electrique">
-        <br>
-        <p>Guitares électriques</p>
-      </a>
-
-      <a href="pages_liste_produits/liste_amplis.html" class="grid-item-nos_categories">
-        <img src="/images/prduits_en_vente/marshall_mg30.jpg" class="ampli" alt="Catégorie Ampli">
-        <br>
-        <p>Amplis</p>
-      </a>
-
-      <a href="pages_liste_produits/liste_accessoires.html" class="grid-item-nos_categories">
-        <img src="/images/prduits_en_vente/dunlop_mediator1.0.jpg" class="accessoires" alt="Catégorie accessoires">
-        <br>
-        <p>Accessoires</p>
-      </a>
-    </div>
-  </div>
-
-  <div class="best_sellers" id="best_sellers">
-    <div class="titre">
-      <h2>Nos Meilleures Ventes</h2>
-    </div>
-    <div class="centre_horizontal">
-      <div class="horizontal-scroll">
-
-        <div class="product-menu">
-
-          <div class="product-item">
-            <a href="">
-              <div class="image">
-                <img src="/images/prduits_en_vente/boss_superchorus.jpg" alt="Produit 1">
-              </div>
-            </a>
-            <h5>Boss - Super Chorus</h5>
-            <p>115€</p>
-            <!-- <button>Ajouter au panier</button> -->
-            <div class="container-button-meilleurs-ventes">
-              <button type="button" class="button-meilleurs-ventes">
-                <span>Ajouter au panier</span>
-              </button>
-            </div>
-          </div>
-
-          <div class="product-item">
-            <a href="">
-              <div class="image">
-                <img src="/images/prduits_en_vente/dunlop_mediator1.0.jpg" alt="Produit 2">
-              </div>
-            </a>
-            <h5>Dunlop - Pick 1.0mm</h5>
-            <p>7€</p>
-            <div class="container-button-meilleurs-ventes">
-              <button type="button" class="button-meilleurs-ventes">
-                <span>Ajouter au panier</span>
-              </button>
-            </div>
-          </div>
-
-          <div class="product-item">
-            <a href="">
-              <div class="image">
-                <img src="/images/prduits_en_vente/evh_5150.png" class="evh" alt="Produit 3">
-              </div>
-            </a>
-            <h5>EVH - 5150</h5>
-            <p>1199€</p>
-            <div class="container-button-meilleurs-ventes">
-              <button type="button" class="button-meilleurs-ventes">
-                <span>Ajouter au panier</span>
-              </button>
-            </div>
-          </div>
-
-          <div class="product-item">
-            <a href="">
-              <div class="image">
-                <img src="/images/prduits_en_vente/dunlop_mediator_0.5.jpg" alt="Produit 2">
-              </div>
-            </a>
-            <h5>Dunlop - Pick 0.5mm</h5>
-            <p>7€</p>
-            <div class="container-button-meilleurs-ventes">
-              <button type="button" class="button-meilleurs-ventes">
-                <span>Ajouter au panier</span>
-              </button>
-            </div>
-          </div>
-
-          <div class="product-item">
-            <a href="">
-              <div class="image">
-                <img src="/images/prduits_en_vente/electro_harmonix_silencer.jpg" alt="Produit 2">
-              </div>
-            </a>
-            <h5>ElectroHarmonix - Silencer</h5>
-            <p>95€</p>
-            <div class="container-button-meilleurs-ventes">
-              <button type="button" class="button-meilleurs-ventes">
-                <span>Ajouter au panier</span>
-              </button>
-            </div>
-          </div>
-
-          <div class="product-item">
-            <a href="">
-              <div class="image">
-                <img src="/images/prduits_en_vente/cort-a4.jpg" alt="Produit 2">
-              </div>
-            </a>
-            <h5>Cort A4</h5>
-            <p>739€</p>
-            <div class="container-button-meilleurs-ventes">
-              <button type="button" class="button-meilleurs-ventes">
-                <span>Ajouter au panier</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="nouveautes" id="nouveautes">
-    <div class="titre">
-      <h2>Nouveautés</h2>
-    </div>
-    <div class="centre_horizontal">
-      <div class="horizontal-scroll">
-
-        <div class="product-menu">
-
-          <div class="product-item">
-            <a href="">
-              <div class="image">
-                <img src="/images/prduits_en_vente/neural.jpg" alt="Produit 1">
-              </div>
-            </a>
-            <h5>Neural DSP Quad Cortex</h5>
-            <p>1699€</p>
-            <div class="container-button-nouveautes">
-              <button type="button" class="button-meilleurs-ventes">
-                <span>Ajouter au panier</span>
-              </button>
-            </div>
-          </div>
-
-          <div class="product-item">
-            <a href="">
-              <div class="image">
-                <img src="/images/prduits_en_vente/LAG.png" class="lag" alt="Produit 2">
-              </div>
-            </a>
-            <h5>Lag - LGTHV30ACE</h5>
-            <p>1399€</p>
-            <div class="container-button-nouveautes">
-              <button type="button" class="button-meilleurs-ventes">
-                <span>Ajouter au panier</span>
-              </button>
-            </div>
-          </div>
-
-          <div class="product-item">
-            <a href="">
-              <div class="image">
-                <img src="/images/prduits_en_vente/evh_5150.png" class="evh" alt="Produit 3">
-              </div>
-            </a>
-            <h5>EVH - 5150</h5>
-            <p>1199€</p>
-            <div class="container-button-nouveautes">
-              <button type="button" class="button-meilleurs-ventes">
-                <span>Ajouter au panier</span>
-              </button>
-            </div>
-          </div>
-
-          <div class="product-item">
-            <a href="">
-              <div class="image">
-                <img src="/images/prduits_en_vente/schecter_synystergates_bkgd.jpg" alt="Produit 2">
-              </div>
-            </a>
-            <h5>Schecter - Syn BKDG</h5>
-            <p>1799€</p>
-            <div class="container-button-nouveautes">
-              <button type="button" class="button-meilleurs-ventes">
-                <span>Ajouter au panier</span>
-              </button>
-            </div>
-          </div>
-
-          <div class="product-item">
-            <a href="">
-              <div class="image">
-                <img src="/images/prduits_en_vente/ovation.jpg" class="ovation" alt="Produit 2">
-              </div>
-            </a>
-            <h5>Ovation - Pro Serie Elite</h5>
-            <p>799€</p>
-            <div class="container-button-nouveautes">
-              <button type="button" class="button-meilleurs-ventes">
-                <span>Ajouter au panier</span>
-              </button>
-            </div>
-          </div>
-
-          <div class="product-item">
-            <a href="">
-              <div class="image">
-                <img src="/images/prduits_en_vente/charvel_joeduplantier.jpg" alt="Produit 2">
-              </div>
-            </a>
-            <h5>Charvel - Signature Duplantier</h5>
-            <p>629€</p>
-            <div class="container-button-nouveautes">
-              <button type="button" class="button-meilleurs-ventes">
-                <span>Ajouter au panier</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="titre">
-    <h2>Vos avis</h2>
-  </div>
-
-  <div class="horizontal-scroll_feedback">
-
-    <div class="feedback-menu">
-
-      <div class="container-feedback-item">
-        <div class="image_feedback">
-          <img src="emoticon-feedback/emoticon-satisfait.jpeg" alt="Photo client">
-        </div>
-        <h3>Nom Prénom</h3>
-        <div class="txt">
-          <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit,lorem ipsum dolor sit amet consectetur adipisicing elit!"</p>
-        </div>
-      </div>
-
-      <div class="container-feedback-item">
-        <div class="image_feedback">
-          <img src="emoticon-feedback/emoticon peace.jpeg" alt="Photo client">
-        </div>
-        <h3>Nom Prénom</h3>
-        <div class="txt">
-          <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit,lorem ipsum dolor sit amet consectetur adipisicing elit"</p>
-        </div>
-      </div>
-
-      <div class="container-feedback-item">
-        <div class="image_feedback">
-          <img src="emoticon-feedback/emoticon-content.jpeg" alt="Photo client">
-        </div>
-        <h3>Nom Prénom</h3>
-        <div class="txt">
-          <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing
-            elit,lorem ipsum dolor sit amet consectetur adipisicing elit!".</p>
-        </div>
-      </div>
-
-      <div class="container-feedback-item">
-        <div class="image_feedback">
-          <img src="emoticon-feedback/emoticon-content.jpeg" alt="Photo client">
-        </div>
-        <h3>Nom Prénom</h3>
-        <div class="txt">
-          <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit!!".</p>
-        </div>
-      </div>
-
-      <div class="container-feedback-item">
-        <div class="image_feedback">
-          <img src="emoticon-feedback/emoticon-sad.webp" alt="Photo client">
-        </div>
-        <h3>Nom Prénom</h3>
-        <div class="txt">
-          <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit, lorem ipsum dolor sit amet consectetur adipisicing elit".</p>
-        </div>
-      </div>
-
-      <div class="container-feedback-item">
-        <div class="image_feedback">
-          <img src="emoticon-feedback/emoticon-satisfait.jpeg" alt="Photo client">
-        </div>
-        <h3>Nom Prénom</h3>
-        <div class="txt">
-          <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit!".</p>
-        </div>
-      </div>
-
-
-    </div>
-  </div>
-
+</div>
   <footer>
     <div class="footer-container">
       <div class="footer-upper-container">

@@ -1,0 +1,57 @@
+.container-login{
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.formulaire{
+    display: block;
+}
+
+.formulaire-login,
+.formulaire-password{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin-top: 1rem;;
+}
+
+.container-button-connexion{
+    margin-top: 2rem;;
+    text-align: -webkit-center;
+}
+
+.button-connexion{
+    border: 1px solid black;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    color: white;
+    font-size: 0.5vw;
+    background-color:black;
+    border-radius: 10px;
+    font-size: 1rem;
+    width:125px;
+    height: 25px;
+    text-align: -webkit-;
+}
+
+.button-connexion:hover{
+    background-color: blueviolet;
+}
+
+.container-button-connexion a{
+    text-decoration: none;
+    color: black;
+}
+
+.container-button-connexion span{
+    margin-top:5px;
+    font-size: 0.7rem;
+}
