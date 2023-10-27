@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -6,41 +5,123 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Liste de nos produits - GuitHub</title>
+
+  <title>Guitare / basse électrique ou acoustique</title>
+
+  <!-- Moteurs de recherche : optimisation de la description de façon à ce que le snipet Google intègre le maximum de mots recherchés sur 150-160 caractères
+  Keywords : peu ou pas utilisé par Google -->
+  <meta name="description"
+    content="GUIT HUB est le spécialiste des instruments de musique de l'univers guitare / basse acoustique ou électrique, rock, folk, pop, jazz ou classique. Amplis, pédales d'effets et accessoires, c'est ici ! Nos conseillers passionnés sauront vous guider dans notre large choix et nos nouveautés régulières.">
+  <meta name="keywords"
+    content="GUITHUB, guitare, basse, acoustique, électrique, électro-acoustique, électroacoustique, pédale, effets, wah, ampli, amplificateur, micro, médiator, Gibson, Ibanez, Jackson, Shure, Dunlop">
+
+  <!-- Open Graph Protocol -->
+  <meta property="og:type" content="website">
+  <meta property="Og:site_name" content="GUIT HUB">
+  <meta property="og:title" content="Guitare / basse électrique ou acoustique">
+  <meta property="og:url" content="https://www.guithub.fr">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:image" content=”GUIT_HUB_ogimage.png”>
+  <meta property="og:description"
+    content="GUIT HUB est le spécialiste des instruments de musique de l'univers guitare / basse acoustique ou électrique, rock, folk, pop, jazz ou classique. Amplis, pédales d'effets et accessoires, c'est ici ! Nos conseillers passionnés sauront vous guider dans notre large choix et nos nouveautés régulières.">
+
+  <!-- Cards Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@guithub">
+  <meta name="twitter:title" content="Guitare / basse électrique ou acoustique">
+  <meta name="Twitter:description"
+    content="GUIT HUB est le spécialiste des instruments de musique de l'univers guitare / basse acoustique ou électrique, rock, folk, pop, jazz ou classique.">
+  <meta name="twitter:image" content="GUIT_HUB_ogimage.png">
+
+
+  <!-- chargement des polices de caractères -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mooli&family=Shadows+Into+Light&display=swap" rel="stylesheet">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="stylesheet" href="/projet_site_ecommerce/css/entete_v2-css.css">
-  <link rel="stylesheet" href="/projet_site_ecommerce/css/menu-css.css">
-  <link rel="stylesheet" href="/projet_site_ecommerce/css/Nos_categories.css">
-  <link rel="stylesheet" href="/projet_site_ecommerce/css/liste_produits.css">
-  <link rel="stylesheet" href="/projet_site_ecommerce/css/index.css">
-  <link rel="stylesheet" href="/projet_site_ecommerce/css/fil_ariane.css">
-  <link rel="stylesheet" href="/projet_site_ecommerce/css/footer-css_v2.css">
+
+
+  <!-- lien vers les fichiers CSS -->
+  <link rel="stylesheet" href="/css/entete_v2-css.css">
+  <link rel="stylesheet" href="/css/menu-css.css">
+  <link rel="stylesheet" href="/css/Nos_categories.css">
+  <link rel="stylesheet" href="/css/liste_produits.css">
+  <link rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="/css/fil_ariane.css">
+  <link rel="stylesheet" href="/css/footer-css_v2.css">
+  <link rel="stylesheet" href="/css/bouton_filtre-css.css">
+  <link rel="stylesheet" href="/css/filter-css.css">
+
+
+  <!-- <link rel="stylesheet" href="Feedback.css"> -->
+
 
   <!-- chargement responsif des favicons selon le type de device-->
-  <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/images/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
   <link rel="manifest" href="/manifest.json">
   <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+  <meta name="msapplication-TileImage" content="/images/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
+
   <!-- Demande au robot de Google de ne pas archiver le site, 
     qui pourrait au moment de l'archivage contenir une erreur (prix...).-->
-  <meta name="googlebot" content="noarchive">
+  <meta name="googlebot" content="follow, index, noarchive">
+
+  <!-- Données structurées pour moteurs de recherche -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "sku": "ibanez_alt30fm",
+      "image": [
+          "https://www.guithub.fr/images/16x9/Ibanez_ALT30.jpg"
+      ],
+      "name": "Guitare Ibanez ALT30FM",
+      "title": "Guitare Ibanez ALT30FM au meilleur prix !",
+      "description": "Faisant partie de la nouvelle série Ibanez Altstar, la guitare électro-acoustique ALT30FM combine
+      l'apparence et la sensation d'une guitare électrique avec celles d'une guitare acoustique à
+      caisse plate.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Ibanez"
+      },
+      "offers": {
+        "@type": "Offer",
+        "title": "Guitare Ibanez ALT30FM au meilleur prix !",
+        "url": "https://www.guithub.fr/pages_produit/Ibanez-Altstar-guitare-electro-acoustique-ALT30FM.html",
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "price": 419.00,
+          "priceValidUntil": "2023-11-20",
+          "priceCurrency": "EUR"
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "FR",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 60,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        }
+      }
+    }
+    </script>
 </head>
+
 
 <body onLoad="currentSlide(1)">
   <header>
@@ -48,7 +129,7 @@
       <div class="upper-zone">
         <div class="upper-zone-content">
           <div class="zone-1-upper">
-            <a href="nouscontacter.html">Nous contacter</a>
+            <a href="/nouscontacter.html">Nous contacter</a>
             <a href="a_propos.html">A propos</a>
           </div>
           <div class="zone-1-lower">
@@ -56,24 +137,25 @@
               <img src="/ressources_entete/bx-menu.svg" alt="menu">
             </button>
             <div class="container-menu" id="to-close-menu">
+              <!-- Menu drawer -->
               <div class="container-menu-div">
                 <div class="h3-close-menu">
                   <h3>Menu</h3>
-                  <button id="button-close" class="style-button-close"><img
-                      src="/ressources_entete/bx-x-36px.svg" alt="close-icon"></button>
+                  <button id="button-close" class="style-button-close"><img src="/ressources_entete/bx-x-36px.svg"
+                      alt="close-icon"></button>
                   <!-- <input type="checkbox" name="check-close" id="close" onclick="close()"> -->
                 </div>
                 <div class="separator"></div>
                 <div class="bloc-menu">
                   <div class="choix-menu">
                     <ul class="liste-menu">
-                      <li><a href="liste_produits.html">Tous nos produits</a></li>
-                      <li><a href="liste_guitares_acoustiques.html">Guitare Acoustique</a></li>
-                      <li><a href="liste_guitares_electriques.html">Guitare Electrique</a></li>
-                      <li><a href="liste_basses.html">Basse</a></li>
-                      <li><a href="liste_amplis.html">Ampli</a></li>
-                      <li><a href="liste_effets.html">Effets</a></li>
-                      <li><a href="liste_accessoires.html">Accessoires</a></li>
+                      <li><a href="/pages_liste_produits/liste_produits_1.html">Tous nos produits</a></li>
+                      <li><a href="/pages_liste_produits/liste_guitares_acoustiques.html">Guitare Acoustique</a></li>
+                      <li><a href="/pages_liste_produits/liste_guitares_electriques.html">Guitare Electrique</a></li>
+                      <li><a href="/pages_liste_produits/liste_basses.html">Basse</a></li>
+                      <li><a href="/pages_liste_produits/liste_amplis.html">Ampli</a></li>
+                      <li><a href="/pages_liste_produits/liste_effets.html">Effets</a></li>
+                      <li><a href="/pages_liste_produits/liste_accessoires.html">Accessoires</a></li>
                     </ul>
                   </div>
                 </div>
@@ -82,7 +164,7 @@
                 <div class="bloc-menu">
                   <div class="choix-menu">
                     <ul class="liste-menu">
-                      <li><a href="nouscontacter.html">Nous contacter</a></li>
+                      <li><a href="/nouscontacter.htmlr</a></li>
                       <li><a href="#">Questions fréquentes</a></li>
                       <li><a href="#">Frais de port et de livraison</a></li>
                       <li><a href="#">Retourner un produit</a></li>
@@ -94,7 +176,7 @@
                 <div class="bloc-menu">
                   <div class="choix-menu">
                     <ul class="liste-menu">
-                      <li><a href="a_propos.html">Informations Guithub</a></li>
+                      <li><a href="/a_propos.html">Informations Guithub</a></li>
                       <li><a href="#">Conditions générales</a></li>
                       <li><a href="#">L'univers Guithub</a></li>
                       <li><a href="#">Tuto make-up</a></li>
@@ -103,13 +185,13 @@
                 </div>
               </div>
             </div>
-            <a href="index.html#nouveautes" class="link-zone-1-lower">Nouveautés</a>
-            <a href="index.html#best_sellers" class="link-zone-1-lower">Best-seller</a>
+            <a href="/index.html#nouveautes" class="link-zone-1-lower">Nouveautés</a>
+            <a href="/index.html#best_sellers" class="link-zone-1-lower">Best-seller</a>
           </div>
           <div class="zone-2">
             <div class="zone-2-upper">
               <div class="bloc-image-entete">
-                <a href="index.html">
+                <a href="/index.html">
                   <img src="/images/logo_guit_hub_long.png" alt="" class="img-logo">
                 </a>
               </div>
@@ -133,7 +215,7 @@
               <a href="#"><img src="/ressources_entete/bx-user-circle.svg" alt="langue"></a>
             </div>
             <div class="img-entete">
-              <a href="#"><img src="/ressources_entete/bx-cart.svg" alt="langue"></a>
+              <a href="/pages_produits/panier.html"><img src="/ressources_entete/bx-cart.svg" alt="langue"></a>
             </div>
           </div>
         </div>
@@ -141,25 +223,25 @@
       <div class="bottom-zone">
         <nav class="menu-nav">
           <ol class="list-nav">
-            <a class="categorie_nav" href="liste_produits.html">
+            <a class="categorie_nav" href="/pages_liste_produits/liste_produits_1.html">
               <li>Tous nos produits</li>
             </a>
-            <a class="categorie_nav" href="liste_guitares_acoustiques.html">
+            <a class="categorie_nav" href="/pages_liste_produits/liste_guitares_acoustiques.html">
               <li>Guitares Acoustiques</li>
             </a>
-            <a class="categorie_nav" href="liste_guitares_electriques.html">
+            <a class="categorie_nav" href="/pages_liste_produits/liste_guitares_electriques.html">
               <li>Guitares Electriques</li>
             </a>
-            <a class="categorie_nav" href="liste_basses.html">
+            <a class="categorie_nav" href="/pages_liste_produits/liste_basses.html">
               <li>Basses</li>
             </a>
-            <a class="categorie_nav" href="liste_amplis.html">
+            <a class="categorie_nav" href="/pages_liste_produits/liste_amplis.html">
               <li>Amplis</li>
             </a>
-            <a class="categorie_nav" href="liste_effets.html">
+            <a class="categorie_nav" href="/pages_liste_produits/liste_effets.html">
               <li>Effets</li>
             </a>
-            <a class="categorie_nav" href="liste_accessoires.html">
+            <a class="categorie_nav" href="/pages_liste_produits/liste_accessoires.html">
               <li>Accessoires</li>
             </a>
           </ol>
@@ -169,11 +251,224 @@
   </header>
   <div class="fil_ariane">
     <div>
-      <a href="index.html" alt="Accueil"> &#8962;</a>
+      <a href="/index.html" alt="Accueil"> &#8962;</a>
     </div>
     <div>
-      <a href="liste_produits.html" alt="Lien vers tous nos produits">Tous les produits</a>
+      <a href="/pages_liste_produits/liste_produits_1.html">Tous les produits</a>
     </div>
+  </div>
+  <!-- Bouton filtre -->
+  <div class="container-button-filtre">
+    <button id="button-filtre-open" class="button-filtre">
+      <span><img src="/ressources_filtre/filtre.png" alt="" class="img-filtre"></span>
+    </button>
+  </div>
+  <!-- Composant Filtre -->
+  <!-- <div class="container-temp"> -->
+  <div class="filter-options-container" id="filter-component">
+    <div class="filter-options-extra-container">
+      <form action="input" method="post">
+        <div class="container-item-box">
+          <div class="constructeur">
+            <div class="h3-close-menu">
+              <h3 class="titre-filtre">Constructeurs</h3>
+              <button type="button" id="button-filtre-close" class="style-button-close">
+                <img src="/ressources_entete/bx-x-36px.svg" alt="close-icon">
+              </button>
+            </div>
+            <div class="separator"></div>
+            <div class="item-box">
+              <input type="checkbox" name="Charvel" id="charvel">
+              <label for="charvel">Charvel</label>
+            </div>
+            <div class="item-box">
+              <input type="checkbox" name="Danelectro" id="danelectro">
+              <label for="danelectro">Danelectro</label>
+            </div>
+            <div class="item-box">
+              <input type="checkbox" name="Jackson" id="jackson">
+              <label for="jackson">Jackson</label>
+            </div>
+            <div class="item-box">
+              <input type="checkbox" name="PRS" id="prs">
+              <label for="prs">PRS</label>
+            </div>
+            <div class="item-box">
+              <input type="checkbox" name="Schecter" id="schecter">
+              <label for="schecter">Schecter</label>
+            </div>
+          </div>
+        </div>
+        <div class="container-item-box">
+          <h4 class="titre-filtre">Echelle de prix</h4>
+          <div class="separator"></div>
+          <input type="number" inputmode="numeric" name="min-prix" id="prix-min" class="input-price">
+          <span> - </span>
+          <input type="number" inputmode="numeric" name="max-prix" id="prix-max" class="input-price">
+        </div>
+        <div class="container-item-box">
+          <h4 class="titre-filtre">Evaluations</h4>
+          <div class="separator"></div>
+          <div class="item-box">
+            <input type="checkbox" name="Evaluation-5" id="evaluation-5">
+            <div class="evaluation">
+              <img src="/ressources_filtre/bxs-star.svg" alt="notation">
+              <img src="/ressources_filtre/bxs-star.svg" alt="notation">
+              <img src="/ressources_filtre/bxs-star.svg" alt="notation">
+              <img src="/ressources_filtre/bxs-star.svg" alt="notation">
+              <img src="/ressources_filtre/bxs-star.svg" alt="notation">
+            </div>
+          </div>
+          <div class="item-box">
+            <input type="checkbox" name="Evaluation-4" id="evaluation-4">
+            <div class="evaluation">
+              <img src="/ressources_filtre/bxs-star.svg" alt="notation">
+              <img src="/ressources_filtre/bxs-star.svg" alt="notation">
+              <img src="/ressources_filtre/bxs-star.svg" alt="notation">
+              <img src="/ressources_filtre/bxs-star.svg" alt="notation">
+              <img src="/ressources_filtre/bx-star-empty.svg" alt="notation">
+            </div>
+          </div>
+          <div class="item-box">
+            <input type="checkbox" name="Evaluation-3" id="evaluation-3">
+            <div class="evaluation">
+              <img src="/ressources_filtre/bxs-star.svg" alt="notation">
+              <img src="/ressources_filtre/bxs-star.svg" alt="notation">
+              <img src="/ressources_filtre/bxs-star.svg" alt="notation">
+              <img src="/ressources_filtre/bx-star-empty.svg" alt="notation">
+              <img src="/ressources_filtre/bx-star-empty.svg" alt="notation">
+            </div>
+          </div>
+        </div>
+        <div class="choix-optionnels">
+          <div class="separator"></div>
+          <div class="bloc-optionnel">
+            <ul class="liste-deroulante">
+              <li>
+                <input type="checkbox" name="liste" id="first" class="checkbox-lvl-1">
+                <label for="first" class="label-bloc-optionnel">Couleur</label>
+                <div class="content">
+                  <div class="item-box">
+                    <input type="checkbox" name="Bleu" id="bleu">
+                    <label for="bleu">Bleu</label>
+                  </div>
+                  <div class="item-box">
+                    <input type="checkbox" name="Blanc" id="blanc">
+                    <label for="blanc">Blanc</label>
+                  </div>
+                  <div class="item-box">
+                    <input type="checkbox" name="Rouge" id="rouge">
+                    <label for="rouge">Rouge</label>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <input type="checkbox" name="liste" id="second" class="checkbox-lvl-1">
+                <label for="second" class="label-bloc-optionnel">Frettes</label>
+                <div class="content">
+                  <select name="Frette-min" id="frette-min" class="input-frette">
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="24">24</option>
+                  </select>
+                  <span> - </span>
+                  <select name="Frette-max" id="frette-max" class="input-frette">
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="24" selected>24</option>
+                  </select>
+                </div>
+              </li>
+              <li>
+                <input type="checkbox" name="liste" id="pan" class="checkbox-lvl-1">
+                <label for="pan" class="label-bloc-optionnel">Pan coupé</label>
+                <div class="content">
+                  <div class="item-box">
+                    <input type="checkbox" name="Pan-O" id="pan-O">
+                    <label for="pan-O">Oui</label>
+                  </div>
+                  <div class="item-box">
+                    <input type="checkbox" name="Pan-N" id="pan-n">
+                    <label for="pan-n">Non</label>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <input type="checkbox" name="liste" id="corps" class="checkbox-lvl-1">
+                <label for="corps" class="label-bloc-optionnel">Corps</label>
+                <div class="content">
+                  <div class="item-box">
+                    <input type="checkbox" name="Abachi" id="abachi">
+                    <label for="abachi">Abachi</label>
+                  </div>
+                  <div class="item-box">
+                    <input type="checkbox" name="Acajou" id="acajou">
+                    <label for="acajou">Acajou</label>
+                  </div>
+                  <div class="item-box">
+                    <input type="checkbox" name="Koa" id="koa">
+                    <label for="koa">Koa</label>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <input type="checkbox" name="liste" id="four" class="checkbox-lvl-1">
+                <label for="four" class="label-bloc-optionnel">Pédale Wah Wah</label>
+                <div class="content">
+                  <div class="item-box">
+                    <input type="checkbox" name="Wah-O" id="wah-o">
+                    <label for="wah-o">Oui</label>
+                  </div>
+                  <div class="item-box">
+                    <input type="checkbox" name="Wah-N" id="Wah-n">
+                    <label for="wah-n">Non</label>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <input type="checkbox" name="liste" id="five" class="checkbox-lvl-1">
+                <label for="five" class="label-bloc-optionnel">Distortion</label>
+                <div class="content">
+                  <div class="item-box">
+                    <input type="checkbox" name="Distortion-O" id="distortion-o">
+                    <label for="distortion-o">Oui</label>
+                  </div>
+                  <div class="item-box">
+                    <input type="checkbox" name="Distortion-N" id="distortion-n">
+                    <label for="distortion-n">Non</label>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <input type="checkbox" name="liste" id="six" class="checkbox-lvl-1">
+                <label for="six" class="label-bloc-optionnel">Alimentation par piles</label>
+                <div class="content">
+                  <div class="item-box">
+                    <input type="checkbox" name="Pile-O" id="pile-o">
+                    <label for="pile-o">AA</label>
+                  </div>
+                  <div class="item-box">
+                    <input type="checkbox" name="Pile-N" id="pile-n">
+                    <label for="pile-n">AAA</label>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="bloc-optionnel">
+            </div>
+            <div class="bloc-optionnel"></div>
+          </div>
+          <div class="bloc-submit-reset">
+            <input type="input" value="Valider la sélection" class="valider-filtres" onclick=filterClose() />
+            <input type="reset" value="Réinitisaliser les filtres" class="reset-filtres" />
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- </div> -->
   </div>
   <br>
   <br>
@@ -184,58 +479,57 @@
 
   <h3 class="titre_gauche">Boss - Super Chorus</h3>
   <section class="gauche">
-    <a class="aligner_voirplus" href="">
+    <a class="aligner_voirplus" href="/pages_produits/Boss-Super-Chorus-pedale-de-chorus.html">
       <p>Bien que disposant d'une entrée mono, la sortie est stéréo.
         Il est donc possible de la brancher sur deux amplis pour profiter d'un effet d'une richesse sonore accrue.
         Les commandes sont claires et efficaces et proposent d'agir sur le volume (E.Level), l'égalisation (EQ), la
         vitesse (Rate) et l'intensité de l'effet (Depth).
         Nous sommes clairement en présence d'une pédale de chorus simple à mettre en œuvre et d'une efficacité
-        redoutable. <br> 
+        redoutable. <br>
       </p>
     </a>
     <span class="prix">115€</span>
-    <a href="">
-      <img src="images/prduits_en_vente/boss_superchorus.jpg" alt="photo de la SuperChorus de Boss"
-        class="photo_produits_gauche">
+    <a href="/pages_produits/Boss-Super-Chorus-pedale-de-chorus.html">
+      <img src="/images/boss_super_chorus.jpg" alt="photo de la SuperChorus de Boss" class="photo_produits_gauche">
     </a>
   </section>
 
   <h3 class="titre_droite">Charvel Signature - Joe Duplantier</h3>
   <section class="droite">
-    <a href="">
-      <img src="images/prduits_en_vente/charvel_joeduplantier.jpg" alt="photo de la Charvel - Joe Duplantier Signature"
+    <a href="/pages_produits/Charvel-Signature-Joe-Duplantier-Guitare-Electrique.html">
+      <img src="/images/prduits_en_vente/charvel_joeduplantier.jpg" alt="photo de la Charvel - Joe Duplantier Signature"
         class="photo_produits_droite">
     </a>
-    <a href="" class="aligner_voirplus">
+    <a href="/pages_produits/Charvel-Signature-Joe-Duplantier-Guitare-Electrique.html" class="aligner_voirplus">
       <p>Bien que cette forme de guitare ne soit pas directement liée au metal et à ses dérivés, elle n'en demeure pas
         moins de plus en plus populaire depuis quelques années.
         Joe Duplantier, chanteur-guitariste de Gojira, a choisi ce type de guitare en la dotant de quelques
-        caractéristiques qui devraient faire rougir quelques instruments à l'allure bien plus agressive. </p><br> 
+        caractéristiques qui devraient faire rougir quelques instruments à l'allure bien plus agressive. </p><br>
     </a>
     <span class="prix">729€</span>
   </section>
 
   <h3 class="titre_gauche">Cort A4</h3>
   <section class="gauche">
-    <a href="" class="aligner_voirplus">
+    <a href="/pages_produits/Cort-A4-Plus-FMMH-OPBC-basse-electrique.html" class="aligner_voirplus">
       <p> Cette basse électrique A4 Plus FMMH conçue par Cort affiche une finition de toute beauté et vous offre toutes
         les commodités modernes en matière de son,
         de confort de jeu et d'esthétique, le tout à un prix sans précédent dans sa catégorie.
         Cette basse solid body présente une finition open pore à l'aspect et au toucher naturels.
-      </p><br> 
+      </p><br>
     </a>
     <span class="prix">729€</span>
-    <a href="">
-      <img src="images/prduits_en_vente/cort-a4.jpg" alt="photo de la Cort A4" class="photo_produits_gauche">
+    <a href="/pages_produits/Cort-A4-Plus-FMMH-OPBC-basse-electrique.html">
+      <img src="/images/prduits_en_vente/cort-a4.jpg" alt="photo de la Cort A4" class="photo_produits_gauche">
     </a>
   </section>
 
   <h3 class="titre_droite">Danelectro 67 Red</h3>
   <section class="droite">
-    <a href="">
-      <img src="images/prduits_en_vente/danelectro.png" alt="photo de la Danelectro 67 Red" class="danelectro">
+    <a href="/pages_produits/Danelectro-67-Red-Guitare-electrique.html">
+      <img src="/images/prduits_en_vente/danelectro.png" alt="photo de la Danelectro 67 Red" class="danelectro">
     </a>
-    <a href="" class="aligner_voirplus">
+    <a href="/pages_produits/Danelectro-67-Red-Guitare-electrique.html" class="aligner_voirplus">
       <p>La géniale guitare électrique est une référence de polyvalence. Tout le savoir-faire que la marque Danelectro a
         acquis depuis toutes ces années se voit sur cette guitare.
 
@@ -247,70 +541,70 @@
 
         Le savoir-faire de Danelectro se retrouve dans cette guitare GUITARMODEL. Elle mélange des caractéristiques
         avantageuses et des matériaux qualitatifs avec tout le passé de la marque Danelectro pour créer au final une
-        guitare électrique équilibrée et contemporaine.</p><br> 
+        guitare électrique équilibrée et contemporaine.</p><br>
     </a>
     <span class="prix">559€</span>
   </section>
   <h3 class="titre_gauche">Dunlop - Cry Baby</h3>
   <section class="gauche">
-    <a class="aligner_voirplus" href="">
+    <a class="aligner_voirplus" href="/pages_produits/Dunlop-Crybaby-classic.html">
       <p>La Cry Baby de Dunlop est une pédale très simple d'utilisation.
         Branchez votre guitare via l'entrée instrument jack 6,35 mm, et connectez votre ampli à la sortie, elle aussi
         sur jack.
         Appuyez sur la semelle jusqu'à déclencher le footswitch et gérer l'effet comme bon vous semble, en allant et
-        venant de manière plus ou moins prononcée et régulière !</p><br> 
+        venant de manière plus ou moins prononcée et régulière !</p><br>
     </a>
-    <span class="prix">112€</span>
-    <a href="">
-      <img src="images/prduits_en_vente/dunlop_crybaby.jpg" alt="photo de la Dunlop Crybaby"
+    <span class="prix">1 12€</span>
+    <a href="/pages_produits/Dunlop-Crybaby-classic.html">
+      <img src="/images/prduits_en_vente/dunlop_crybaby.jpg" alt="photo de la Dunlop Crybaby"
         class="photo_produits_gauche">
     </a>
   </section>
   <h3 class="titre_droite">Dunlop - Pick 0.5mm</h3>
   <section class="droite">
-    <a href="">
-      <img src="images/prduits_en_vente/dunlop_mediator_0.5.jpg" alt="photo de la Gibson Explorer Antique Natural"
+    <a href="/pages_produits/Dunlop_Tortex_pick_0_5.html">
+      <img src="/images/prduits_en_vente/dunlop_mediator_0.5.jpg" alt="photo de la Gibson Explorer Antique Natural"
         class="photo_produits_droite">
     </a>
-    <a href="" class="aligner_voirplus">
+    <a href="/pages_produits/Dunlop_Tortex_pick_0_5.html" class="aligner_voirplus">
       <p>Fusion des modèles Tortex et Jazz III, le Tortex TIII ravira tous les guitaristes, que vous préfériez le jazz,
         le rock ou encore le metal ! Ce lot comprend 12 médiators d'une épaisseur de 0,50 mm qui sont fabriqués en
-        tortex, un matériau très solide assurant une longue durée de vie.</p><br> 
+        tortex, un matériau très solide assurant une longue durée de vie.</p><br>
     </a>
     <span class="prix">7€</span>
   </section>
 
   <h3 class="titre_gauche">Dunlop - Pick 1.0</h3>
   <section class="gauche">
-    <a class="aligner_voirplus" href="">
+    <a class="aligner_voirplus" href="/pages_produits/Dunlop_Tortex_pick_1_0.html">
       <p>Fusion des modèles Tortex et Jazz III, le Tortex TIII ravira tous les guitaristes, que vous préfériez le jazz,
         le rock ou encore le metal ! Ce lot comprend 12 médiators d'une épaisseur de 1mm qui sont fabriqués en
-        tortex, un matériau très solide assurant une longue durée de vie.</p><br> 
+        tortex, un matériau très solide assurant une longue durée de vie.</p><br>
     </a>
     <span class="prix">7€</span>
-    <a href="">
-      <img src="images/prduits_en_vente/dunlop_mediator1.0.jpg" alt="photo de la Dunlop Crybaby"
+    <a href="/pages_produits/Dunlop_Tortex_pick_1_0.html">
+      <img src="/images/prduits_en_vente/dunlop_mediator1.0.jpg" alt="photo de la Dunlop Crybaby"
         class="photo_produits_gauche">
     </a>
   </section>
 
   <h3 class="titre_droite">ElectroHarmonix - Silencer</h3>
   <section class="droite">
-    <a href="">
-      <img src="images/prduits_en_vente/electro_harmonix_silencer.jpg" alt="photo de la Gibson Explorer Antique Natural"
-        class="photo_produits_droite">
+    <a href="/pages_produits/ElectroHarmomix-Pedale-effet-Silencer-pour-guitare-electrique.html">
+      <img src="/images/prduits_en_vente/electro_harmonix_silencer.jpg"
+        alt="photo de la Gibson Explorer Antique Natural" class="photo_produits_droite">
     </a>
-    <a href="" class="aligner_voirplus">
+    <a href="/pages_produits/ElectroHarmomix-Pedale-effet-Silencer-pour-guitare-electrique.html" class="aligner_voirplus">
       <p>La pédale d'effet Silencer est un noise gate qui réduit les bruits ambiants indésirables au minimum.
         En studio comme sur scène, vous n'aurez plus peur de pousser à fond vos commandes de gain ou de distorsion.
         La pédale noise gate Silencer d'Electro Harmonix élimine le ronflement gênant que produisent les pédales de
-        votre pedalboard.</p><br> 
+        votre pedalboard.</p><br>
     </a>
     <span class="prix">86€</span>
   </section>
   <h3 class="titre_gauche">Engl - E633</h3>
   <section class="gauche">
-    <a class="aligner_voirplus" href="">
+    <a class="aligner_voirplus" href="/pages_produits/Engl-E633-Fireball-25-ampli-a-lampes.html">
       <p>Le Engl E633 Fireball 25 est l'ampli regroupe la puissance concentrée à gain élevé de la célèbre lampe Fireball
         dans un format plus pratique,
         qui convient aussi bien au studio d'enregistrement qu'à la salle de répétition et au salon grâce à la réduction
@@ -318,29 +612,29 @@
         Selon la position du contrôle de gain, le canal propre de l'Engle délivre des sons cristallins ou un crunch
         crémeux,
         tandis que le canal principal fournit un tableau officiel qui peut être boosté d'une distorsion rocheuse modérée
-        à un marteau à vapeur métallique brut à gain élevé. <br> 
+        à un marteau à vapeur métallique brut à gain élevé. <br>
       </p>
     </a>
     <span class="prix">840€</span>
-    <a href="">
-      <img src="images/prduits_en_vente/engl_633.jpg" alt="photo du ENGL E633" class="photo_produits_gauche">
+    <a href="/pages_produits/Engl-E633-Fireball-25-ampli-a-lampes.html">
+      <img src="/images/prduits_en_vente/engl_633.jpg" alt="photo du ENGL E633" class="photo_produits_gauche">
     </a>
 
 
   </section>
   <h3 class="titre_droite">EVH - 5150</h3>
   <section class="droite">
-    <a href="">
-      <img src="images/prduits_en_vente/evh_5150.png" alt="photo du EVH 5150" class="photo_produits_droite">
+    <a href="/pages_produits/Evh_5150_III_100S_EL34_tete_ampli_a_lampes_edition_Eddie_Van_Halen.html">
+      <img src="/images/prduits_en_vente/evh_5150.png" alt="photo du EVH 5150" class="photo_produits_droite">
     </a>
-    <a href="" class="aligner_voirplus">
+    <a href="/pages_produits/Evh_5150_III_100S_EL34_tete_ampli_a_lampes_edition_Eddie_Van_Halen.html" class="aligner_voirplus">
       <p> Si vous souhaitez profiter du son live le plus récent d'Eddie van Halen, EVH propose la 5150 III 50S Stealth
         Head pour une utilisation sur des scènes de petite à moyenne taille.
         Après la sortie de la version 100W 5150,
         ce modèle 50W vous accompagnera sans problème lorsque vous aurez besoin d’un son de guitare à lampes marqué sans
-        trop avoir à pousser le volume.</p><br> 
+        trop avoir à pousser le volume.</p><br>
     </a>
-    <span class="prix">1999€</span>
+    <span class="prix">1 999€</span>
   </section>
   <h3 class="titre_gauche">Gibson - HummingBird</h3>
   <section class="gauche">
@@ -350,9 +644,9 @@
         (table Epicéa Sitka, dos/éclisses/manche Acajou et touche en Palissandre indien).
         Pré-amplification LR Baggs VTC intégrée (mollettes volume/tonalité dans la rosace) .</p>
     </a>
-    <br> <span class="prix">3769€</span>
+    <br> <span class="prix">3 769€</span>
     <a href="">
-      <img src="images/prduits_en_vente/Gibson_hummingbird.png" alt="photo de la Charvel - Joe Duplantier Signature"
+      <img src="/images/prduits_en_vente/Gibson_hummingbird.png" alt="photo de la Charvel - Joe Duplantier Signature"
         class="photo_produits_gauche">
     </a>
 
@@ -360,16 +654,16 @@
   </section>
   <h3 class="titre_droite">Ibanez - Alt30</h3>
   <section class="droite">
-    <a href="">
-      <img src="images/prduits_en_vente/ibanez_alt30.png" alt="photo de l'Ibanez Alt30" class="photo_produits_droite">
+    <a href="/pages_produits/Ibanez-Altstar-guitare-electro-acoustique-ALT30FM.html">
+      <img src="/images/prduits_en_vente/ibanez_alt30.png" alt="photo de l'Ibanez Alt30" class="photo_produits_droite">
     </a>
-    <a href="" class="aligner_voirplus">
+    <a href="/pages_produits/Ibanez-Altstar-guitare-electro-acoustique-ALT30FM.html" class="aligner_voirplus">
       <p>
         Faisant partie de la nouvelle série Ibanez Altstar, la guitare électro-acoustique ALT30FM combine l'apparence et
         la sensation d'une guitare électrique avec celles d'une guitare acoustique à caisse plate.
         En plus d'un manche Comfort Grip confortable, ce modèle abordable présente une tête classique à six mécaniques
         alignées du même côté, des incrustations de repères de position Altstar spécialement conçues,
-        et les chevilles de pont Advantage auto-développées par Ibanez.</p><br> 
+        et les chevilles de pont Advantage auto-développées par Ibanez.</p><br>
     </a>
     <span class="prix">419€</span>
   </section>
@@ -377,7 +671,7 @@
   <nav class="pages" aria-label="pagination">
     <ul class="pagination">
       <li><a href="">«</a></li>
-      <li><a href="liste_produits.html">1</a></li>
+      <li><a href="liste_produits_1.html">1</a></li>
       <li><a href="liste_produits_2.html">2</a></li>
       <li><a href="liste_produits_3.html">3</a></li>
       <li><a href="liste_produits_2.html">»</a></li>
@@ -385,141 +679,144 @@
   </nav>
   <footer>
     <div class="footer-container">
-        <div class="footer-upper-container">
-            <div class="footer-upper-container-with-margin">
-                <div class="footer-autopromo">
-                    <div class="option-paiement">
-                        <h4>Achetez et payez en toute sécurité</h4>
-                        <div class="icon-paiement">
-                            <div class="payment-icon">
-                                <img src="/ressources_footer/binance-svgrepo-com.svg" alt="Binance" class="icon-footer">
-                            </div>
-                            <div class="payment-icon">
-                                <img src="/ressources_footer/paypal-v2-svgrepo-com.svg" alt="Paypal" class="icon-footer">
-                            </div>
-                            <div class="payment-icon">
-                                <img src="/ressources_footer/jagex-svgrepo-com.svg" alt="Jagex" class="icon-footer">
-                            </div>
-                            <div class="payment-icon">
-                                <img src="/ressources_footer/nexo-svgrepo-com.svg" alt="Nexo" class="icon-footer">
-                            </div>
-                            <div class="payment-icon">
-                                <img src="/ressources_footer/wyze-svgrepo-com.svg" alt="Notabug" class="icon-footer">
-                            </div>
-                            <div class="payment-icon">
-                                <img src="/ressources_footer/firefly-iii-svgrepo-com.svg" alt="Firefly" class="icon-footer">
-                            </div>
-                            <div class="payment-icon">
-                                <img src="/ressources_footer/discord-v2-svgrepo-com.svg" alt="Discord" class="icon-footer">
-                            </div>
-
-                        </div>
-                        <p class="option-paiement-conclusion">
-                            Crache la monnaie, mon gars ! Tu peux dépenser comme tu le veux !
-                        </p>
-                    </div>
-                    <div class="avantages">
-                        <h4>Vos avantages</h4>
-                        <ul>
-                            <li class="li-display">Garantie Guithub 3 an</li>
-                            <li>Garantie 30 jours satisfait ou remboursé</li>
-                            <li>Service de réparation</li>
-                            <li>Conseils d'experts en la matière</li>
-                            <li>Garantie satisfait ou remboursé</li>
-                            <li>Le plus grand stock d'Europe</li>
-                        </ul>
-                    </div>
-                    <div class="services">
-                        <h4>Nos services</h4>
-                        <ul>
-                            <li>Frais de port et délais de livraison</li>
-                            <li>Centre de service</li>
-                            <li>Bons d'achat</li>
-                            <li>Vente en magasin</li>
-                            <li>Aperçu du service</li>
-                            <li>Nous contacter</li>
-                        </ul>
-                    </div>
+      <div class="footer-upper-container">
+        <div class="footer-upper-container-with-margin">
+          <div class="footer-autopromo">
+            <div class="option-paiement">
+              <h4>Achetez et payez en toute sécurité</h4>
+              <div class="icon-paiement">
+                <div class="payment-icon">
+                  <img src="/ressources_footer/binance-svgrepo-com.svg" alt="Binance" class="icon-footer">
                 </div>
-            </div>
-
-        </div>
-        <div class="footer-lower-container">
-            <div class="footer-lower-with-margins">
-                <div class="footer-lower-left-right">
-                    <div class="footer-lower-left--">
-                        <ul>
-                            <li><a href="#">CGV / Infos légales</a></li>
-                            <li><a href="#">Politique de confidentialité</a></li>
-                            <li><a href="#">Paramètres de confidentialité</a></li>
-                            <li><a href="#">Droit de rétractation du consommateur</a></li>
-                            <li><a href="#">Processus de commande</a></li>
-                            <li><a href="#">Garantie légale de conformité</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-lower-right--">
-                        <div class="reseaux-sociaux">
-                            <div class="rs-row-1">
-                                <a href="#">
-                                    <div class="icon-rs"><img src="/ressources_footer/instagram-svgrepo-com.svg" alt="Insta"></div>
-                                </a>
-                                <a href="#">
-                                    <div class="icon-rs"><img src="/ressources_footer/pinterest-v2-svgrepo-com.svg" alt="Pinterest"></div>
-                                </a>
-                                <a href="#">
-                                    <div class="icon-rs"><img src="/ressources_footer/facebook-v2-svgrepo-com.svg" alt="Facebook"></div>
-                                </a>
-                            </div>
-                            <div class="rs-row-2">
-                                <a href="#">
-                                    <div class="icon-rs"><img src="/ressources_footer/rockstar-games-svgrepo-com.svg" alt="Rockstar"></div>
-                                </a>
-                                <a href="#">
-                                    <div class="icon-rs"><img src="/ressources_footer/tesla-svgrepo-com.svg" alt="Tesla"></div>
-                                </a>
-                                <a href="#">
-                                    <div class="icon-rs"><img src="/ressources_footer/sync-svgrepo-com.svg" alt="sync">
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <ul>
-                            <li><a href="#">A propos</a></li>
-                            <li><a href="#">Carrières et recrutement</a></li>
-                            <li><a href="#">Petites annonces</a></li>
-                            <li><a href="#">Blog</a></li>
-                        </ul>
-
-                    </div>
-                    <div class="copyright">
-                        <div class="stores">
-                            <div class="store">
-                                <a href="#"><img src="/ressources_footer/apple_store_icon.svg" alt=""></a>
-                            </div>
-                            <div class="store">
-                                <a href="#"><img src="/ressources_footer/play_store_icon.svg" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="formulaire-newsletter">
-                            <form action="" method="post">
-                                <label for="newsletter" class="label-newsletter">Recevoir la newsletter : </label>
-                                    <input type="text" name="champ-mail" id="newsletter" 
-                                        placeholder="  jean.bonbeurre@email.com" class="input-newsletter">
-                                    <button id="Envoyer" class="button-newsletter">Inscrivez-moi !</button>
-                            </form>
-                        </div>
-                        <div class="conclusion">
-                            <span>© OG Guithub content</span>
-                            <span>Le HTML et CSS, c'est fantastique !</span>
-                        </div>
-                    </div>
+                <div class="payment-icon">
+                  <img src="/ressources_footer/paypal-v2-svgrepo-com.svg" alt="Paypal" class="icon-footer">
                 </div>
-            </div>
+                <div class="payment-icon">
+                  <img src="/ressources_footer/jagex-svgrepo-com.svg" alt="Jagex" class="icon-footer">
+                </div>
+                <div class="payment-icon">
+                  <img src="/ressources_footer/nexo-svgrepo-com.svg" alt="Nexo" class="icon-footer">
+                </div>
+                <div class="payment-icon">
+                  <img src="/ressources_footer/wyze-svgrepo-com.svg" alt="Notabug" class="icon-footer">
+                </div>
+                <div class="payment-icon">
+                  <img src="/ressources_footer/firefly-iii-svgrepo-com.svg" alt="Firefly" class="icon-footer">
+                </div>
+                <div class="payment-icon">
+                  <img src="/ressources_footer/discord-v2-svgrepo-com.svg" alt="Discord" class="icon-footer">
+                </div>
 
+              </div>
+              <p class="option-paiement-conclusion">
+                Crache la monnaie, mon gars ! Tu peux dépenser comme tu le veux !
+              </p>
+            </div>
+            <div class="avantages">
+              <h4>Vos avantages</h4>
+              <ul>
+                <li class="li-display">Garantie Guithub 3 an</li>
+                <li>Garantie 30 jours satisfait ou remboursé</li>
+                <li>Service de réparation</li>
+                <li>Conseils d'experts en la matière</li>
+                <li>Garantie satisfait ou remboursé</li>
+                <li>Le plus grand stock d'Europe</li>
+              </ul>
+            </div>
+            <div class="services">
+              <h4>Nos services</h4>
+              <ul>
+                <li>Frais de port et délais de livraison</li>
+                <li>Centre de service</li>
+                <li>Bons d'achat</li>
+                <li>Vente en magasin</li>
+                <li>Aperçu du service</li>
+                <li>Nous contacter</li>
+              </ul>
+            </div>
+          </div>
         </div>
+
+      </div>
+      <div class="footer-lower-container">
+        <div class="footer-lower-with-margins">
+          <div class="footer-lower-left-right">
+            <div class="footer-lower-left--">
+              <ul>
+                <li><a href="#">CGV / Infos légales</a></li>
+                <li><a href="#">Politique de confidentialité</a></li>
+                <li><a href="#">Paramètres de confidentialité</a></li>
+                <li><a href="#">Droit de rétractation du consommateur</a></li>
+                <li><a href="#">Processus de commande</a></li>
+                <li><a href="#">Garantie légale de conformité</a></li>
+              </ul>
+            </div>
+            <div class="footer-lower-right--">
+              <div class="reseaux-sociaux">
+                <div class="rs-row-1">
+                  <a href="#">
+                    <div class="icon-rs"><img src="/ressources_footer/instagram-svgrepo-com.svg" alt="Insta"></div>
+                  </a>
+                  <a href="#">
+                    <div class="icon-rs"><img src="/ressources_footer/pinterest-v2-svgrepo-com.svg" alt="Pinterest">
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="icon-rs"><img src="/ressources_footer/facebook-v2-svgrepo-com.svg" alt="Facebook"></div>
+                  </a>
+                </div>
+                <div class="rs-row-2">
+                  <a href="#">
+                    <div class="icon-rs"><img src="/ressources_footer/rockstar-games-svgrepo-com.svg" alt="Rockstar">
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="icon-rs"><img src="/ressources_footer/tesla-svgrepo-com.svg" alt="Tesla"></div>
+                  </a>
+                  <a href="#">
+                    <div class="icon-rs"><img src="/ressources_footer/sync-svgrepo-com.svg" alt="sync">
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <ul>
+                <li><a href="#">A propos</a></li>
+                <li><a href="#">Carrières et recrutement</a></li>
+                <li><a href="#">Petites annonces</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+
+            </div>
+            <div class="copyright">
+              <div class="stores">
+                <div class="store">
+                  <a href="#"><img src="/ressources_footer/apple_store_icon.svg" alt=""></a>
+                </div>
+                <div class="store">
+                  <a href="#"><img src="/ressources_footer/play_store_icon.svg" alt=""></a>
+                </div>
+              </div>
+              <div class="formulaire-newsletter">
+                <form action="" method="post">
+                  <label for="newsletter" class="label-newsletter">Recevoir la newsletter : </label>
+                  <input type="text" name="champ-mail" id="newsletter" placeholder="  jean.bonbeurre@email.com"
+                    class="input-newsletter">
+                  <button id="Envoyer" class="button-newsletter">Inscrivez-moi !</button>
+                </form>
+              </div>
+              <div class="conclusion">
+                <span>© OG Guithub content</span>
+                <span>Le HTML et CSS, c'est fantastique !</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
-</footer>
+  </footer>
   <script src="/js/scriptClose.js"></script>
+  <script src="/js/scriptFilterClose.js"></script>
 </body>
 
 </html>
