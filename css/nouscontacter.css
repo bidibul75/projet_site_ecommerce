@@ -54,8 +54,24 @@ textarea{
     resize: none;
 }
 
-button{
-    max-width: auto;
+.form_contact{
+    max-width: 20vw;
+    height: 3vw;
+    border: none;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    color: #eeeeee;
+    font-weight: 600;
+    font-size: 0.5vw;
+    background-color: black;
+    padding: 0.5vw 1vw;
+    border-radius: 2vw;
+    font-size: 1vw;
 }
 @media (max-width: 800px){
 .contact{
@@ -70,7 +86,11 @@ button{
 
 
 @media (max-width: 426px){
-    
+    .form_contact{
+        max-width: 19vw;
+        height: 7vw;
+        font-size: 0.5em;
+    }
 
     ul{
         display: flex;
@@ -86,7 +106,10 @@ button{
 }
 
 @media (max-width: 376px){
-    button{
-        max-width: 14vw;
+    .form_contact{
+        max-width: 19vw;
+        height: 7vw;
+        font-size: 0.5em;
     }
+
 }
