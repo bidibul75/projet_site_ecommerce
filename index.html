@@ -5,19 +5,56 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Accueil - GuitHub</title>
+
+  <title>Guitare / basse électrique ou acoustique</title>
+
+  <!-- Moteurs de recherche : optimisation de la description de façon à ce que le snipet Google intègre le maximum de mots recherchés sur 150-160 caractères
+  Keywords : peu ou pas utilisé par Google -->
+  <meta name="description"
+    content="GUIT HUB est le spécialiste des instruments de musique de l'univers guitare / basse acoustique ou électrique, rock, folk, pop, jazz ou classique. Amplis, pédales d'effets et accessoires, c'est ici ! Nos conseillers passionnés sauront vous guider dans notre large choix et nos nouveautés régulières.">
+  <meta name="keywords"
+    content="GUITHUB, guitare, basse, acoustique, électrique, électro-acoustique, électroacoustique, pédale, effets, wah, ampli, amplificateur, micro, médiator, Gibson, Ibanez, Jackson, Shure, Dunlop">
+
+  <!-- Open Graph Protocol -->
+  <meta property="og:type" content="website">
+  <meta property="Og:site_name" content="GUIT HUB">
+  <meta property="og:title" content="Guitare / basse électrique ou acoustique">
+  <meta property="og:url" content="https://www.guithub.fr">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:image" content=”GUIT_HUB_ogimage.png”>
+  <meta property="og:description"
+    content="GUIT HUB est le spécialiste des instruments de musique de l'univers guitare / basse acoustique ou électrique, rock, folk, pop, jazz ou classique. Amplis, pédales d'effets et accessoires, c'est ici ! Nos conseillers passionnés sauront vous guider dans notre large choix et nos nouveautés régulières.">
+
+  <!-- Cards Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@guithub">
+  <meta name="twitter:title" content="Guitare / basse électrique ou acoustique">
+  <meta name="Twitter:description"
+    content="GUIT HUB est le spécialiste des instruments de musique de l'univers guitare / basse acoustique ou électrique, rock, folk, pop, jazz ou classique.">
+  <meta name="twitter:image" content="GUIT_HUB_ogimage.png">
+
+
+  <!-- chargement des polices de caractères -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mooli&family=Shadows+Into+Light&display=swap" rel="stylesheet">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="stylesheet" href="css/entete_v2-css.css">
-  <link rel="stylesheet" href="css/menu-css.css">
-  <link rel="stylesheet" href="css/carrousel.css">
-  <link rel="stylesheet" href="css/Nos_categories.css">
-  <link rel="stylesheet" href="css/meilleursVentes.css">
-  <link rel="stylesheet" href="css/footer-css_v2.css">
-  <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="css/Feedback.css">
+
+
+  <!-- lien vers les fichiers CSS -->
+  <link rel="stylesheet" href="/css/entete_v2-css.css">
+  <link rel="stylesheet" href="/css/menu-css.css">
+  <link rel="stylesheet" href="/css/carrousel.css">
+  <link rel="stylesheet" href="/css/Nos_categories.css">
+  <link rel="stylesheet" href="/css/meilleursVentes.css">
+  <link rel="stylesheet" href="/css/footer-css_v2.css">
+  <link rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="/css/Feedback.css">
+  <!-- <link rel="stylesheet" href="/css/pages_produits.css"> -->
+
+
+  <!-- <link rel="stylesheet" href="Feedback.css"> -->
+
 
   <!-- chargement responsif des favicons selon le type de device-->
   <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
@@ -37,9 +74,52 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/images/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
+
   <!-- Demande au robot de Google de ne pas archiver le site, 
-  qui pourrait au moment de l'archivage contenir une erreur (prix...).-->
-  <meta name="googlebot" content="noarchive">
+    qui pourrait au moment de l'archivage contenir une erreur (prix...).-->
+  <meta name="googlebot" content="follow, index, noarchive">
+
+  <!-- Données structurées pour moteurs de recherche -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "sku": "ibanez_alt30fm",
+      "image": [
+          "https://www.guithub.fr/images/16x9/Ibanez_ALT30.jpg"
+      ],
+      "name": "Guitare Ibanez ALT30FM",
+      "title": "Guitare Ibanez ALT30FM au meilleur prix !",
+      "description": "Faisant partie de la nouvelle série Ibanez Altstar, la guitare électro-acoustique ALT30FM combine
+      l'apparence et la sensation d'une guitare électrique avec celles d'une guitare acoustique à
+      caisse plate.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Ibanez"
+      },
+      "offers": {
+        "@type": "Offer",
+        "title": "Guitare Ibanez ALT30FM au meilleur prix !",
+        "url": "https://www.guithub.fr/pages_produit/Ibanez-Altstar-guitare-electro-acoustique-ALT30FM.html",
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "price": 419.00,
+          "priceValidUntil": "2023-11-20",
+          "priceCurrency": "EUR"
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "FR",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 60,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        }
+      }
+    }
+    </script>
 </head>
 
 <body onLoad="currentSlide(1)">

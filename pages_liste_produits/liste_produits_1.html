@@ -5,11 +5,43 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Liste de nos produits - GuitHub</title>
+
+  <title>Guitare / basse électrique ou acoustique</title>
+
+  <!-- Moteurs de recherche : optimisation de la description de façon à ce que le snipet Google intègre le maximum de mots recherchés sur 150-160 caractères
+  Keywords : peu ou pas utilisé par Google -->
+  <meta name="description"
+    content="GUIT HUB est le spécialiste des instruments de musique de l'univers guitare / basse acoustique ou électrique, rock, folk, pop, jazz ou classique. Amplis, pédales d'effets et accessoires, c'est ici ! Nos conseillers passionnés sauront vous guider dans notre large choix et nos nouveautés régulières.">
+  <meta name="keywords"
+    content="GUITHUB, guitare, basse, acoustique, électrique, électro-acoustique, électroacoustique, pédale, effets, wah, ampli, amplificateur, micro, médiator, Gibson, Ibanez, Jackson, Shure, Dunlop">
+
+  <!-- Open Graph Protocol -->
+  <meta property="og:type" content="website">
+  <meta property="Og:site_name" content="GUIT HUB">
+  <meta property="og:title" content="Guitare / basse électrique ou acoustique">
+  <meta property="og:url" content="https://www.guithub.fr">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:image" content=”GUIT_HUB_ogimage.png”>
+  <meta property="og:description"
+    content="GUIT HUB est le spécialiste des instruments de musique de l'univers guitare / basse acoustique ou électrique, rock, folk, pop, jazz ou classique. Amplis, pédales d'effets et accessoires, c'est ici ! Nos conseillers passionnés sauront vous guider dans notre large choix et nos nouveautés régulières.">
+
+  <!-- Cards Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@guithub">
+  <meta name="twitter:title" content="Guitare / basse électrique ou acoustique">
+  <meta name="Twitter:description"
+    content="GUIT HUB est le spécialiste des instruments de musique de l'univers guitare / basse acoustique ou électrique, rock, folk, pop, jazz ou classique.">
+  <meta name="twitter:image" content="GUIT_HUB_ogimage.png">
+
+
+  <!-- chargement des polices de caractères -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mooli&family=Shadows+Into+Light&display=swap" rel="stylesheet">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+  <!-- lien vers les fichiers CSS -->
   <link rel="stylesheet" href="/css/entete_v2-css.css">
   <link rel="stylesheet" href="/css/menu-css.css">
   <link rel="stylesheet" href="/css/Nos_categories.css">
@@ -19,6 +51,11 @@
   <link rel="stylesheet" href="/css/footer-css_v2.css">
   <link rel="stylesheet" href="/css/bouton_filtre-css.css">
   <link rel="stylesheet" href="/css/filter-css.css">
+
+
+  <!-- <link rel="stylesheet" href="Feedback.css"> -->
+
+
   <!-- chargement responsif des favicons selon le type de device-->
   <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png">
@@ -37,10 +74,54 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/images/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
+
   <!-- Demande au robot de Google de ne pas archiver le site, 
     qui pourrait au moment de l'archivage contenir une erreur (prix...).-->
-  <meta name="googlebot" content="noarchive">
+  <meta name="googlebot" content="follow, index, noarchive">
+
+  <!-- Données structurées pour moteurs de recherche -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "sku": "ibanez_alt30fm",
+      "image": [
+          "https://www.guithub.fr/images/16x9/Ibanez_ALT30.jpg"
+      ],
+      "name": "Guitare Ibanez ALT30FM",
+      "title": "Guitare Ibanez ALT30FM au meilleur prix !",
+      "description": "Faisant partie de la nouvelle série Ibanez Altstar, la guitare électro-acoustique ALT30FM combine
+      l'apparence et la sensation d'une guitare électrique avec celles d'une guitare acoustique à
+      caisse plate.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Ibanez"
+      },
+      "offers": {
+        "@type": "Offer",
+        "title": "Guitare Ibanez ALT30FM au meilleur prix !",
+        "url": "https://www.guithub.fr/pages_produit/Ibanez-Altstar-guitare-electro-acoustique-ALT30FM.html",
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "price": 419.00,
+          "priceValidUntil": "2023-11-20",
+          "priceCurrency": "EUR"
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "FR",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 60,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        }
+      }
+    }
+    </script>
 </head>
+
 
 <body onLoad="currentSlide(1)">
   <header>
@@ -184,210 +265,209 @@
   </div>
   <!-- Composant Filtre -->
   <!-- <div class="container-temp"> -->
-    <div class="filter-options-container" id="filter-component">
-      <div class="filter-options-extra-container">
-        <form action="input" method="post">
-          <div class="container-item-box">
-            <div class="constructeur">
-              <div class="h3-close-menu">
-                <h3 class="titre-filtre">Constructeurs</h3>
-                <button type="button" id="button-filtre-close" class="style-button-close">
-                  <img src="/ressources_entete/bx-x-36px.svg"
-                    alt="close-icon">
-                  </button>
-              </div>
-              <div class="separator"></div>
-              <div class="item-box">
-                <input type="checkbox" name="Charvel" id="charvel">
-                <label for="charvel">Charvel</label>
-              </div>
-              <div class="item-box">
-                <input type="checkbox" name="Danelectro" id="danelectro">
-                <label for="danelectro">Danelectro</label>
-              </div>
-              <div class="item-box">
-                <input type="checkbox" name="Jackson" id="jackson">
-                <label for="jackson">Jackson</label>
-              </div>
-              <div class="item-box">
-                <input type="checkbox" name="PRS" id="prs">
-                <label for="prs">PRS</label>
-              </div>
-              <div class="item-box">
-                <input type="checkbox" name="Schecter" id="schecter">
-                <label for="schecter">Schecter</label>
-              </div>
+  <div class="filter-options-container" id="filter-component">
+    <div class="filter-options-extra-container">
+      <form action="input" method="post">
+        <div class="container-item-box">
+          <div class="constructeur">
+            <div class="h3-close-menu">
+              <h3 class="titre-filtre">Constructeurs</h3>
+              <button type="button" id="button-filtre-close" class="style-button-close">
+                <img src="/ressources_entete/bx-x-36px.svg" alt="close-icon">
+              </button>
             </div>
-          </div>
-          <div class="container-item-box">
-            <h4 class="titre-filtre">Echelle de prix</h4>
-            <div class="separator"></div>
-            <input type="number" inputmode="numeric" name="min-prix" id="prix-min" class="input-price">
-            <span> - </span>
-            <input type="number" inputmode="numeric" name="max-prix" id="prix-max" class="input-price">
-          </div>
-          <div class="container-item-box">
-            <h4 class="titre-filtre">Evaluations</h4>
             <div class="separator"></div>
             <div class="item-box">
-              <input type="checkbox" name="Evaluation-5" id="evaluation-5">
-              <div class="evaluation">
-                <img src="/ressources_filtre/bxs-star.svg" alt="notation">
-                <img src="/ressources_filtre/bxs-star.svg" alt="notation">
-                <img src="/ressources_filtre/bxs-star.svg" alt="notation">
-                <img src="/ressources_filtre/bxs-star.svg" alt="notation">
-                <img src="/ressources_filtre/bxs-star.svg" alt="notation">
-              </div>
+              <input type="checkbox" name="Charvel" id="charvel">
+              <label for="charvel">Charvel</label>
             </div>
             <div class="item-box">
-              <input type="checkbox" name="Evaluation-4" id="evaluation-4">
-              <div class="evaluation">
-                <img src="/ressources_filtre/bxs-star.svg" alt="notation">
-                <img src="/ressources_filtre/bxs-star.svg" alt="notation">
-                <img src="/ressources_filtre/bxs-star.svg" alt="notation">
-                <img src="/ressources_filtre/bxs-star.svg" alt="notation">
-                <img src="/ressources_filtre/bx-star-empty.svg" alt="notation">
-              </div>
+              <input type="checkbox" name="Danelectro" id="danelectro">
+              <label for="danelectro">Danelectro</label>
             </div>
             <div class="item-box">
-              <input type="checkbox" name="Evaluation-3" id="evaluation-3">
-              <div class="evaluation">
-                <img src="/ressources_filtre/bxs-star.svg" alt="notation">
-                <img src="/ressources_filtre/bxs-star.svg" alt="notation">
-                <img src="/ressources_filtre/bxs-star.svg" alt="notation">
-                <img src="/ressources_filtre/bx-star-empty.svg" alt="notation">
-                <img src="/ressources_filtre/bx-star-empty.svg" alt="notation">
-              </div>
+              <input type="checkbox" name="Jackson" id="jackson">
+              <label for="jackson">Jackson</label>
+            </div>
+            <div class="item-box">
+              <input type="checkbox" name="PRS" id="prs">
+              <label for="prs">PRS</label>
+            </div>
+            <div class="item-box">
+              <input type="checkbox" name="Schecter" id="schecter">
+              <label for="schecter">Schecter</label>
             </div>
           </div>
-          <div class="choix-optionnels">
-            <div class="separator"></div>
-            <div class="bloc-optionnel">
-              <ul class="liste-deroulante">
-                <li>
-                  <input type="checkbox" name="liste" id="first" class="checkbox-lvl-1">
-                  <label for="first" class="label-bloc-optionnel">Couleur</label>
-                  <div class="content">
-                    <div class="item-box">
-                      <input type="checkbox" name="Bleu" id="bleu">
-                      <label for="bleu">Bleu</label>
-                    </div>
-                    <div class="item-box">
-                      <input type="checkbox" name="Blanc" id="blanc">
-                      <label for="blanc">Blanc</label>
-                    </div>
-                    <div class="item-box">
-                      <input type="checkbox" name="Rouge" id="rouge">
-                      <label for="rouge">Rouge</label>
-                    </div>
+        </div>
+        <div class="container-item-box">
+          <h4 class="titre-filtre">Echelle de prix</h4>
+          <div class="separator"></div>
+          <input type="number" inputmode="numeric" name="min-prix" id="prix-min" class="input-price">
+          <span> - </span>
+          <input type="number" inputmode="numeric" name="max-prix" id="prix-max" class="input-price">
+        </div>
+        <div class="container-item-box">
+          <h4 class="titre-filtre">Evaluations</h4>
+          <div class="separator"></div>
+          <div class="item-box">
+            <input type="checkbox" name="Evaluation-5" id="evaluation-5">
+            <div class="evaluation">
+              <img src="/ressources_filtre/bxs-star.svg" alt="notation">
+              <img src="/ressources_filtre/bxs-star.svg" alt="notation">
+              <img src="/ressources_filtre/bxs-star.svg" alt="notation">
+              <img src="/ressources_filtre/bxs-star.svg" alt="notation">
+              <img src="/ressources_filtre/bxs-star.svg" alt="notation">
+            </div>
+          </div>
+          <div class="item-box">
+            <input type="checkbox" name="Evaluation-4" id="evaluation-4">
+            <div class="evaluation">
+              <img src="/ressources_filtre/bxs-star.svg" alt="notation">
+              <img src="/ressources_filtre/bxs-star.svg" alt="notation">
+              <img src="/ressources_filtre/bxs-star.svg" alt="notation">
+              <img src="/ressources_filtre/bxs-star.svg" alt="notation">
+              <img src="/ressources_filtre/bx-star-empty.svg" alt="notation">
+            </div>
+          </div>
+          <div class="item-box">
+            <input type="checkbox" name="Evaluation-3" id="evaluation-3">
+            <div class="evaluation">
+              <img src="/ressources_filtre/bxs-star.svg" alt="notation">
+              <img src="/ressources_filtre/bxs-star.svg" alt="notation">
+              <img src="/ressources_filtre/bxs-star.svg" alt="notation">
+              <img src="/ressources_filtre/bx-star-empty.svg" alt="notation">
+              <img src="/ressources_filtre/bx-star-empty.svg" alt="notation">
+            </div>
+          </div>
+        </div>
+        <div class="choix-optionnels">
+          <div class="separator"></div>
+          <div class="bloc-optionnel">
+            <ul class="liste-deroulante">
+              <li>
+                <input type="checkbox" name="liste" id="first" class="checkbox-lvl-1">
+                <label for="first" class="label-bloc-optionnel">Couleur</label>
+                <div class="content">
+                  <div class="item-box">
+                    <input type="checkbox" name="Bleu" id="bleu">
+                    <label for="bleu">Bleu</label>
                   </div>
-                </li>
-                <li>
-                  <input type="checkbox" name="liste" id="second" class="checkbox-lvl-1">
-                  <label for="second" class="label-bloc-optionnel">Frettes</label>
-                  <div class="content">
-                    <select name="Frette-min" id="frette-min" class="input-frette">
-                      <option value="19">19</option>
-                      <option value="20">20</option>
-                      <option value="21">21</option>
-                      <option value="24">24</option>
-                    </select>
-                    <span> - </span>
-                    <select name="Frette-max" id="frette-max" class="input-frette">
-                      <option value="19">19</option>
-                      <option value="20">20</option>
-                      <option value="21">21</option>
-                      <option value="24" selected>24</option>
-                    </select>
+                  <div class="item-box">
+                    <input type="checkbox" name="Blanc" id="blanc">
+                    <label for="blanc">Blanc</label>
                   </div>
-                </li>
-                <li>
-                  <input type="checkbox" name="liste" id="pan" class="checkbox-lvl-1">
-                  <label for="pan" class="label-bloc-optionnel">Pan coupé</label>
-                  <div class="content">
-                    <div class="item-box">
-                      <input type="checkbox" name="Pan-O" id="pan-O">
-                      <label for="pan-O">Oui</label>
-                    </div>
-                    <div class="item-box">
-                      <input type="checkbox" name="Pan-N" id="pan-n">
-                      <label for="pan-n">Non</label>
-                    </div>
+                  <div class="item-box">
+                    <input type="checkbox" name="Rouge" id="rouge">
+                    <label for="rouge">Rouge</label>
                   </div>
-                </li>
-                <li>
-                  <input type="checkbox" name="liste" id="corps" class="checkbox-lvl-1">
-                  <label for="corps" class="label-bloc-optionnel">Corps</label>
-                  <div class="content">
-                    <div class="item-box">
-                      <input type="checkbox" name="Abachi" id="abachi">
-                      <label for="abachi">Abachi</label>
-                    </div>
-                    <div class="item-box">
-                      <input type="checkbox" name="Acajou" id="acajou">
-                      <label for="acajou">Acajou</label>
-                    </div>
-                    <div class="item-box">
-                      <input type="checkbox" name="Koa" id="koa">
-                      <label for="koa">Koa</label>
-                    </div>
+                </div>
+              </li>
+              <li>
+                <input type="checkbox" name="liste" id="second" class="checkbox-lvl-1">
+                <label for="second" class="label-bloc-optionnel">Frettes</label>
+                <div class="content">
+                  <select name="Frette-min" id="frette-min" class="input-frette">
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="24">24</option>
+                  </select>
+                  <span> - </span>
+                  <select name="Frette-max" id="frette-max" class="input-frette">
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="24" selected>24</option>
+                  </select>
+                </div>
+              </li>
+              <li>
+                <input type="checkbox" name="liste" id="pan" class="checkbox-lvl-1">
+                <label for="pan" class="label-bloc-optionnel">Pan coupé</label>
+                <div class="content">
+                  <div class="item-box">
+                    <input type="checkbox" name="Pan-O" id="pan-O">
+                    <label for="pan-O">Oui</label>
                   </div>
-                </li>
+                  <div class="item-box">
+                    <input type="checkbox" name="Pan-N" id="pan-n">
+                    <label for="pan-n">Non</label>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <input type="checkbox" name="liste" id="corps" class="checkbox-lvl-1">
+                <label for="corps" class="label-bloc-optionnel">Corps</label>
+                <div class="content">
+                  <div class="item-box">
+                    <input type="checkbox" name="Abachi" id="abachi">
+                    <label for="abachi">Abachi</label>
+                  </div>
+                  <div class="item-box">
+                    <input type="checkbox" name="Acajou" id="acajou">
+                    <label for="acajou">Acajou</label>
+                  </div>
+                  <div class="item-box">
+                    <input type="checkbox" name="Koa" id="koa">
+                    <label for="koa">Koa</label>
+                  </div>
+                </div>
+              </li>
 
-                <li>
-                  <input type="checkbox" name="liste" id="four" class="checkbox-lvl-1">
-                  <label for="four" class="label-bloc-optionnel">Pédale Wah Wah</label>
-                  <div class="content">
-                    <div class="item-box">
-                      <input type="checkbox" name="Wah-O" id="wah-o">
-                      <label for="wah-o">Oui</label>
-                    </div>
-                    <div class="item-box">
-                      <input type="checkbox" name="Wah-N" id="Wah-n">
-                      <label for="wah-n">Non</label>
-                    </div>
+              <li>
+                <input type="checkbox" name="liste" id="four" class="checkbox-lvl-1">
+                <label for="four" class="label-bloc-optionnel">Pédale Wah Wah</label>
+                <div class="content">
+                  <div class="item-box">
+                    <input type="checkbox" name="Wah-O" id="wah-o">
+                    <label for="wah-o">Oui</label>
                   </div>
-                </li>
-                <li>
-                  <input type="checkbox" name="liste" id="five" class="checkbox-lvl-1">
-                  <label for="five" class="label-bloc-optionnel">Distortion</label>
-                  <div class="content">
-                    <div class="item-box">
-                      <input type="checkbox" name="Distortion-O" id="distortion-o">
-                      <label for="distortion-o">Oui</label>
-                    </div>
-                    <div class="item-box">
-                      <input type="checkbox" name="Distortion-N" id="distortion-n">
-                      <label for="distortion-n">Non</label>
-                    </div>
+                  <div class="item-box">
+                    <input type="checkbox" name="Wah-N" id="Wah-n">
+                    <label for="wah-n">Non</label>
                   </div>
-                </li>
-                <li>
-                  <input type="checkbox" name="liste" id="six" class="checkbox-lvl-1">
-                  <label for="six" class="label-bloc-optionnel">Alimentation par piles</label>
-                  <div class="content">
-                    <div class="item-box">
-                      <input type="checkbox" name="Pile-O" id="pile-o">
-                      <label for="pile-o">AA</label>
-                    </div>
-                    <div class="item-box">
-                      <input type="checkbox" name="Pile-N" id="pile-n">
-                      <label for="pile-n">AAA</label>
-                    </div>
+                </div>
+              </li>
+              <li>
+                <input type="checkbox" name="liste" id="five" class="checkbox-lvl-1">
+                <label for="five" class="label-bloc-optionnel">Distortion</label>
+                <div class="content">
+                  <div class="item-box">
+                    <input type="checkbox" name="Distortion-O" id="distortion-o">
+                    <label for="distortion-o">Oui</label>
                   </div>
-                </li>
-              </ul>
-              <div class="bloc-optionnel">
-              </div>
-              <div class="bloc-optionnel"></div>
+                  <div class="item-box">
+                    <input type="checkbox" name="Distortion-N" id="distortion-n">
+                    <label for="distortion-n">Non</label>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <input type="checkbox" name="liste" id="six" class="checkbox-lvl-1">
+                <label for="six" class="label-bloc-optionnel">Alimentation par piles</label>
+                <div class="content">
+                  <div class="item-box">
+                    <input type="checkbox" name="Pile-O" id="pile-o">
+                    <label for="pile-o">AA</label>
+                  </div>
+                  <div class="item-box">
+                    <input type="checkbox" name="Pile-N" id="pile-n">
+                    <label for="pile-n">AAA</label>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="bloc-optionnel">
             </div>
-            <div class="bloc-submit-reset">
-              <input type="input" value="Valider la sélection" class="valider-filtres" onclick=filterClose() />
-              <input type="reset" value="Réinitisaliser les filtres" class="reset-filtres" />
-            </div>
+            <div class="bloc-optionnel"></div>
           </div>
-        </form>
-      </div>
+          <div class="bloc-submit-reset">
+            <input type="input" value="Valider la sélection" class="valider-filtres" onclick=filterClose() />
+            <input type="reset" value="Réinitisaliser les filtres" class="reset-filtres" />
+          </div>
+        </div>
+      </form>
+    </div>
     <!-- </div> -->
   </div>
   <br>
