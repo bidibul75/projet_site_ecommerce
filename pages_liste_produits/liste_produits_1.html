@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -18,6 +17,8 @@
   <link rel="stylesheet" href="/css/index.css">
   <link rel="stylesheet" href="/css/fil_ariane.css">
   <link rel="stylesheet" href="/css/footer-css_v2.css">
+  <link rel="stylesheet" href="/css/bouton_filtre-css.css">
+  <link rel="stylesheet" href="/css/filter-css.css">
   <!-- chargement responsif des favicons selon le type de device-->
   <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png">
@@ -55,11 +56,12 @@
               <img src="/ressources_entete/bx-menu.svg" alt="menu">
             </button>
             <div class="container-menu" id="to-close-menu">
+              <!-- Menu drawer -->
               <div class="container-menu-div">
                 <div class="h3-close-menu">
                   <h3>Menu</h3>
-                  <button id="button-close" class="style-button-close"><img
-                      src="/ressources_entete/bx-x-36px.svg" alt="close-icon"></button>
+                  <button id="button-close" class="style-button-close"><img src="/ressources_entete/bx-x-36px.svg"
+                      alt="close-icon"></button>
                   <!-- <input type="checkbox" name="check-close" id="close" onclick="close()"> -->
                 </div>
                 <div class="separator"></div>
@@ -174,6 +176,220 @@
       <a href="/pages_liste_produits/liste_produits.html" alt="Lien vers tous nos produits">Tous les produits</a>
     </div>
   </div>
+  <!-- Bouton filtre -->
+  <div class="container-button-filtre">
+    <button id="button-filtre-open" class="button-filtre">
+      <span><img src="/ressources_filtre/filtre.png" alt="" class="img-filtre"></span>
+    </button>
+  </div>
+  <!-- Composant Filtre -->
+  <!-- <div class="container-temp"> -->
+    <div class="filter-options-container" id="filter-component">
+      <div class="filter-options-extra-container">
+        <form action="input" method="post">
+          <div class="container-item-box">
+            <div class="constructeur">
+              <div class="h3-close-menu">
+                <h3 class="titre-filtre">Constructeurs</h3>
+                <button type="button" id="button-filtre-close" class="style-button-close">
+                  <img src="/ressources_entete/bx-x-36px.svg"
+                    alt="close-icon">
+                  </button>
+              </div>
+              <div class="separator"></div>
+              <div class="item-box">
+                <input type="checkbox" name="Charvel" id="charvel">
+                <label for="charvel">Charvel</label>
+              </div>
+              <div class="item-box">
+                <input type="checkbox" name="Danelectro" id="danelectro">
+                <label for="danelectro">Danelectro</label>
+              </div>
+              <div class="item-box">
+                <input type="checkbox" name="Jackson" id="jackson">
+                <label for="jackson">Jackson</label>
+              </div>
+              <div class="item-box">
+                <input type="checkbox" name="PRS" id="prs">
+                <label for="prs">PRS</label>
+              </div>
+              <div class="item-box">
+                <input type="checkbox" name="Schecter" id="schecter">
+                <label for="schecter">Schecter</label>
+              </div>
+            </div>
+          </div>
+          <div class="container-item-box">
+            <h4 class="titre-filtre">Echelle de prix</h4>
+            <div class="separator"></div>
+            <input type="number" inputmode="numeric" name="min-prix" id="prix-min" class="input-price">
+            <span> - </span>
+            <input type="number" inputmode="numeric" name="max-prix" id="prix-max" class="input-price">
+          </div>
+          <div class="container-item-box">
+            <h4 class="titre-filtre">Evaluations</h4>
+            <div class="separator"></div>
+            <div class="item-box">
+              <input type="checkbox" name="Evaluation-5" id="evaluation-5">
+              <div class="evaluation">
+                <img src="/ressources_filtre/bxs-star.svg" alt="notation">
+                <img src="/ressources_filtre/bxs-star.svg" alt="notation">
+                <img src="/ressources_filtre/bxs-star.svg" alt="notation">
+                <img src="/ressources_filtre/bxs-star.svg" alt="notation">
+                <img src="/ressources_filtre/bxs-star.svg" alt="notation">
+              </div>
+            </div>
+            <div class="item-box">
+              <input type="checkbox" name="Evaluation-4" id="evaluation-4">
+              <div class="evaluation">
+                <img src="/ressources_filtre/bxs-star.svg" alt="notation">
+                <img src="/ressources_filtre/bxs-star.svg" alt="notation">
+                <img src="/ressources_filtre/bxs-star.svg" alt="notation">
+                <img src="/ressources_filtre/bxs-star.svg" alt="notation">
+                <img src="/ressources_filtre/bx-star-empty.svg" alt="notation">
+              </div>
+            </div>
+            <div class="item-box">
+              <input type="checkbox" name="Evaluation-3" id="evaluation-3">
+              <div class="evaluation">
+                <img src="/ressources_filtre/bxs-star.svg" alt="notation">
+                <img src="/ressources_filtre/bxs-star.svg" alt="notation">
+                <img src="/ressources_filtre/bxs-star.svg" alt="notation">
+                <img src="/ressources_filtre/bx-star-empty.svg" alt="notation">
+                <img src="/ressources_filtre/bx-star-empty.svg" alt="notation">
+              </div>
+            </div>
+          </div>
+          <div class="choix-optionnels">
+            <div class="separator"></div>
+            <div class="bloc-optionnel">
+              <ul class="liste-deroulante">
+                <li>
+                  <input type="checkbox" name="liste" id="first" class="checkbox-lvl-1">
+                  <label for="first" class="label-bloc-optionnel">Couleur</label>
+                  <div class="content">
+                    <div class="item-box">
+                      <input type="checkbox" name="Bleu" id="bleu">
+                      <label for="bleu">Bleu</label>
+                    </div>
+                    <div class="item-box">
+                      <input type="checkbox" name="Blanc" id="blanc">
+                      <label for="blanc">Blanc</label>
+                    </div>
+                    <div class="item-box">
+                      <input type="checkbox" name="Rouge" id="rouge">
+                      <label for="rouge">Rouge</label>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <input type="checkbox" name="liste" id="second" class="checkbox-lvl-1">
+                  <label for="second" class="label-bloc-optionnel">Frettes</label>
+                  <div class="content">
+                    <select name="Frette-min" id="frette-min" class="input-frette">
+                      <option value="19">19</option>
+                      <option value="20">20</option>
+                      <option value="21">21</option>
+                      <option value="24">24</option>
+                    </select>
+                    <span> - </span>
+                    <select name="Frette-max" id="frette-max" class="input-frette">
+                      <option value="19">19</option>
+                      <option value="20">20</option>
+                      <option value="21">21</option>
+                      <option value="24" selected>24</option>
+                    </select>
+                  </div>
+                </li>
+                <li>
+                  <input type="checkbox" name="liste" id="pan" class="checkbox-lvl-1">
+                  <label for="pan" class="label-bloc-optionnel">Pan coupé</label>
+                  <div class="content">
+                    <div class="item-box">
+                      <input type="checkbox" name="Pan-O" id="pan-O">
+                      <label for="pan-O">Oui</label>
+                    </div>
+                    <div class="item-box">
+                      <input type="checkbox" name="Pan-N" id="pan-n">
+                      <label for="pan-n">Non</label>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <input type="checkbox" name="liste" id="corps" class="checkbox-lvl-1">
+                  <label for="corps" class="label-bloc-optionnel">Corps</label>
+                  <div class="content">
+                    <div class="item-box">
+                      <input type="checkbox" name="Abachi" id="abachi">
+                      <label for="abachi">Abachi</label>
+                    </div>
+                    <div class="item-box">
+                      <input type="checkbox" name="Acajou" id="acajou">
+                      <label for="acajou">Acajou</label>
+                    </div>
+                    <div class="item-box">
+                      <input type="checkbox" name="Koa" id="koa">
+                      <label for="koa">Koa</label>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <input type="checkbox" name="liste" id="four" class="checkbox-lvl-1">
+                  <label for="four" class="label-bloc-optionnel">Pédale Wah Wah</label>
+                  <div class="content">
+                    <div class="item-box">
+                      <input type="checkbox" name="Wah-O" id="wah-o">
+                      <label for="wah-o">Oui</label>
+                    </div>
+                    <div class="item-box">
+                      <input type="checkbox" name="Wah-N" id="Wah-n">
+                      <label for="wah-n">Non</label>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <input type="checkbox" name="liste" id="five" class="checkbox-lvl-1">
+                  <label for="five" class="label-bloc-optionnel">Distortion</label>
+                  <div class="content">
+                    <div class="item-box">
+                      <input type="checkbox" name="Distortion-O" id="distortion-o">
+                      <label for="distortion-o">Oui</label>
+                    </div>
+                    <div class="item-box">
+                      <input type="checkbox" name="Distortion-N" id="distortion-n">
+                      <label for="distortion-n">Non</label>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <input type="checkbox" name="liste" id="six" class="checkbox-lvl-1">
+                  <label for="six" class="label-bloc-optionnel">Alimentation par piles</label>
+                  <div class="content">
+                    <div class="item-box">
+                      <input type="checkbox" name="Pile-O" id="pile-o">
+                      <label for="pile-o">AA</label>
+                    </div>
+                    <div class="item-box">
+                      <input type="checkbox" name="Pile-N" id="pile-n">
+                      <label for="pile-n">AAA</label>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="bloc-optionnel">
+              </div>
+              <div class="bloc-optionnel"></div>
+            </div>
+            <div class="bloc-submit-reset">
+              <input type="input" value="Valider la sélection" class="valider-filtres" onclick=filterClose() />
+              <input type="reset" value="Réinitisaliser les filtres" class="reset-filtres" />
+            </div>
+          </div>
+        </form>
+      </div>
+    <!-- </div> -->
+  </div>
   <br>
   <br>
   <br>
@@ -189,13 +405,12 @@
         Les commandes sont claires et efficaces et proposent d'agir sur le volume (E.Level), l'égalisation (EQ), la
         vitesse (Rate) et l'intensité de l'effet (Depth).
         Nous sommes clairement en présence d'une pédale de chorus simple à mettre en œuvre et d'une efficacité
-        redoutable. <br> 
+        redoutable. <br>
       </p>
     </a>
     <span class="prix">115€</span>
     <a href="">
-      <img src="/images/boss_super_chorus.jpg" alt="photo de la SuperChorus de Boss"
-        class="photo_produits_gauche">
+      <img src="/images/boss_super_chorus.jpg" alt="photo de la SuperChorus de Boss" class="photo_produits_gauche">
     </a>
   </section>
 
@@ -209,7 +424,7 @@
       <p>Bien que cette forme de guitare ne soit pas directement liée au metal et à ses dérivés, elle n'en demeure pas
         moins de plus en plus populaire depuis quelques années.
         Joe Duplantier, chanteur-guitariste de Gojira, a choisi ce type de guitare en la dotant de quelques
-        caractéristiques qui devraient faire rougir quelques instruments à l'allure bien plus agressive. </p><br> 
+        caractéristiques qui devraient faire rougir quelques instruments à l'allure bien plus agressive. </p><br>
     </a>
     <span class="prix">729€</span>
   </section>
@@ -221,7 +436,7 @@
         les commodités modernes en matière de son,
         de confort de jeu et d'esthétique, le tout à un prix sans précédent dans sa catégorie.
         Cette basse solid body présente une finition open pore à l'aspect et au toucher naturels.
-      </p><br> 
+      </p><br>
     </a>
     <span class="prix">729€</span>
     <a href="">
@@ -246,7 +461,7 @@
 
         Le savoir-faire de Danelectro se retrouve dans cette guitare GUITARMODEL. Elle mélange des caractéristiques
         avantageuses et des matériaux qualitatifs avec tout le passé de la marque Danelectro pour créer au final une
-        guitare électrique équilibrée et contemporaine.</p><br> 
+        guitare électrique équilibrée et contemporaine.</p><br>
     </a>
     <span class="prix">559€</span>
   </section>
@@ -257,7 +472,7 @@
         Branchez votre guitare via l'entrée instrument jack 6,35 mm, et connectez votre ampli à la sortie, elle aussi
         sur jack.
         Appuyez sur la semelle jusqu'à déclencher le footswitch et gérer l'effet comme bon vous semble, en allant et
-        venant de manière plus ou moins prononcée et régulière !</p><br> 
+        venant de manière plus ou moins prononcée et régulière !</p><br>
     </a>
     <span class="prix">1 12€</span>
     <a href="">
@@ -274,7 +489,7 @@
     <a href="" class="aligner_voirplus">
       <p>Fusion des modèles Tortex et Jazz III, le Tortex TIII ravira tous les guitaristes, que vous préfériez le jazz,
         le rock ou encore le metal ! Ce lot comprend 12 médiators d'une épaisseur de 0,50 mm qui sont fabriqués en
-        tortex, un matériau très solide assurant une longue durée de vie.</p><br> 
+        tortex, un matériau très solide assurant une longue durée de vie.</p><br>
     </a>
     <span class="prix">7€</span>
   </section>
@@ -284,7 +499,7 @@
     <a class="aligner_voirplus" href="">
       <p>Fusion des modèles Tortex et Jazz III, le Tortex TIII ravira tous les guitaristes, que vous préfériez le jazz,
         le rock ou encore le metal ! Ce lot comprend 12 médiators d'une épaisseur de 1mm qui sont fabriqués en
-        tortex, un matériau très solide assurant une longue durée de vie.</p><br> 
+        tortex, un matériau très solide assurant une longue durée de vie.</p><br>
     </a>
     <span class="prix">7€</span>
     <a href="">
@@ -296,14 +511,14 @@
   <h3 class="titre_droite">ElectroHarmonix - Silencer</h3>
   <section class="droite">
     <a href="">
-      <img src="/images/prduits_en_vente/electro_harmonix_silencer.jpg" alt="photo de la Gibson Explorer Antique Natural"
-        class="photo_produits_droite">
+      <img src="/images/prduits_en_vente/electro_harmonix_silencer.jpg"
+        alt="photo de la Gibson Explorer Antique Natural" class="photo_produits_droite">
     </a>
     <a href="" class="aligner_voirplus">
       <p>La pédale d'effet Silencer est un noise gate qui réduit les bruits ambiants indésirables au minimum.
         En studio comme sur scène, vous n'aurez plus peur de pousser à fond vos commandes de gain ou de distorsion.
         La pédale noise gate Silencer d'Electro Harmonix élimine le ronflement gênant que produisent les pédales de
-        votre pedalboard.</p><br> 
+        votre pedalboard.</p><br>
     </a>
     <span class="prix">86€</span>
   </section>
@@ -317,7 +532,7 @@
         Selon la position du contrôle de gain, le canal propre de l'Engle délivre des sons cristallins ou un crunch
         crémeux,
         tandis que le canal principal fournit un tableau officiel qui peut être boosté d'une distorsion rocheuse modérée
-        à un marteau à vapeur métallique brut à gain élevé. <br> 
+        à un marteau à vapeur métallique brut à gain élevé. <br>
       </p>
     </a>
     <span class="prix">840€</span>
@@ -337,7 +552,7 @@
         Head pour une utilisation sur des scènes de petite à moyenne taille.
         Après la sortie de la version 100W 5150,
         ce modèle 50W vous accompagnera sans problème lorsque vous aurez besoin d’un son de guitare à lampes marqué sans
-        trop avoir à pousser le volume.</p><br> 
+        trop avoir à pousser le volume.</p><br>
     </a>
     <span class="prix">1 999€</span>
   </section>
@@ -368,7 +583,7 @@
         la sensation d'une guitare électrique avec celles d'une guitare acoustique à caisse plate.
         En plus d'un manche Comfort Grip confortable, ce modèle abordable présente une tête classique à six mécaniques
         alignées du même côté, des incrustations de repères de position Altstar spécialement conçues,
-        et les chevilles de pont Advantage auto-développées par Ibanez.</p><br> 
+        et les chevilles de pont Advantage auto-développées par Ibanez.</p><br>
     </a>
     <span class="prix">419€</span>
   </section>
@@ -384,141 +599,144 @@
   </nav>
   <footer>
     <div class="footer-container">
-        <div class="footer-upper-container">
-            <div class="footer-upper-container-with-margin">
-                <div class="footer-autopromo">
-                    <div class="option-paiement">
-                        <h4>Achetez et payez en toute sécurité</h4>
-                        <div class="icon-paiement">
-                            <div class="payment-icon">
-                                <img src="/ressources_footer/binance-svgrepo-com.svg" alt="Binance" class="icon-footer">
-                            </div>
-                            <div class="payment-icon">
-                                <img src="/ressources_footer/paypal-v2-svgrepo-com.svg" alt="Paypal" class="icon-footer">
-                            </div>
-                            <div class="payment-icon">
-                                <img src="/ressources_footer/jagex-svgrepo-com.svg" alt="Jagex" class="icon-footer">
-                            </div>
-                            <div class="payment-icon">
-                                <img src="/ressources_footer/nexo-svgrepo-com.svg" alt="Nexo" class="icon-footer">
-                            </div>
-                            <div class="payment-icon">
-                                <img src="/ressources_footer/wyze-svgrepo-com.svg" alt="Notabug" class="icon-footer">
-                            </div>
-                            <div class="payment-icon">
-                                <img src="/ressources_footer/firefly-iii-svgrepo-com.svg" alt="Firefly" class="icon-footer">
-                            </div>
-                            <div class="payment-icon">
-                                <img src="/ressources_footer/discord-v2-svgrepo-com.svg" alt="Discord" class="icon-footer">
-                            </div>
-
-                        </div>
-                        <p class="option-paiement-conclusion">
-                            Crache la monnaie, mon gars ! Tu peux dépenser comme tu le veux !
-                        </p>
-                    </div>
-                    <div class="avantages">
-                        <h4>Vos avantages</h4>
-                        <ul>
-                            <li class="li-display">Garantie Guithub 3 an</li>
-                            <li>Garantie 30 jours satisfait ou remboursé</li>
-                            <li>Service de réparation</li>
-                            <li>Conseils d'experts en la matière</li>
-                            <li>Garantie satisfait ou remboursé</li>
-                            <li>Le plus grand stock d'Europe</li>
-                        </ul>
-                    </div>
-                    <div class="services">
-                        <h4>Nos services</h4>
-                        <ul>
-                            <li>Frais de port et délais de livraison</li>
-                            <li>Centre de service</li>
-                            <li>Bons d'achat</li>
-                            <li>Vente en magasin</li>
-                            <li>Aperçu du service</li>
-                            <li>Nous contacter</li>
-                        </ul>
-                    </div>
+      <div class="footer-upper-container">
+        <div class="footer-upper-container-with-margin">
+          <div class="footer-autopromo">
+            <div class="option-paiement">
+              <h4>Achetez et payez en toute sécurité</h4>
+              <div class="icon-paiement">
+                <div class="payment-icon">
+                  <img src="/ressources_footer/binance-svgrepo-com.svg" alt="Binance" class="icon-footer">
                 </div>
-            </div>
-
-        </div>
-        <div class="footer-lower-container">
-            <div class="footer-lower-with-margins">
-                <div class="footer-lower-left-right">
-                    <div class="footer-lower-left--">
-                        <ul>
-                            <li><a href="#">CGV / Infos légales</a></li>
-                            <li><a href="#">Politique de confidentialité</a></li>
-                            <li><a href="#">Paramètres de confidentialité</a></li>
-                            <li><a href="#">Droit de rétractation du consommateur</a></li>
-                            <li><a href="#">Processus de commande</a></li>
-                            <li><a href="#">Garantie légale de conformité</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-lower-right--">
-                        <div class="reseaux-sociaux">
-                            <div class="rs-row-1">
-                                <a href="#">
-                                    <div class="icon-rs"><img src="/ressources_footer/instagram-svgrepo-com.svg" alt="Insta"></div>
-                                </a>
-                                <a href="#">
-                                    <div class="icon-rs"><img src="/ressources_footer/pinterest-v2-svgrepo-com.svg" alt="Pinterest"></div>
-                                </a>
-                                <a href="#">
-                                    <div class="icon-rs"><img src="/ressources_footer/facebook-v2-svgrepo-com.svg" alt="Facebook"></div>
-                                </a>
-                            </div>
-                            <div class="rs-row-2">
-                                <a href="#">
-                                    <div class="icon-rs"><img src="/ressources_footer/rockstar-games-svgrepo-com.svg" alt="Rockstar"></div>
-                                </a>
-                                <a href="#">
-                                    <div class="icon-rs"><img src="/ressources_footer/tesla-svgrepo-com.svg" alt="Tesla"></div>
-                                </a>
-                                <a href="#">
-                                    <div class="icon-rs"><img src="/ressources_footer/sync-svgrepo-com.svg" alt="sync">
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <ul>
-                            <li><a href="#">A propos</a></li>
-                            <li><a href="#">Carrières et recrutement</a></li>
-                            <li><a href="#">Petites annonces</a></li>
-                            <li><a href="#">Blog</a></li>
-                        </ul>
-
-                    </div>
-                    <div class="copyright">
-                        <div class="stores">
-                            <div class="store">
-                                <a href="#"><img src="/ressources_footer/apple_store_icon.svg" alt=""></a>
-                            </div>
-                            <div class="store">
-                                <a href="#"><img src="/ressources_footer/play_store_icon.svg" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="formulaire-newsletter">
-                            <form action="" method="post">
-                                <label for="newsletter" class="label-newsletter">Recevoir la newsletter : </label>
-                                    <input type="text" name="champ-mail" id="newsletter" 
-                                        placeholder="  jean.bonbeurre@email.com" class="input-newsletter">
-                                    <button id="Envoyer" class="button-newsletter">Inscrivez-moi !</button>
-                            </form>
-                        </div>
-                        <div class="conclusion">
-                            <span>© OG Guithub content</span>
-                            <span>Le HTML et CSS, c'est fantastique !</span>
-                        </div>
-                    </div>
+                <div class="payment-icon">
+                  <img src="/ressources_footer/paypal-v2-svgrepo-com.svg" alt="Paypal" class="icon-footer">
                 </div>
-            </div>
+                <div class="payment-icon">
+                  <img src="/ressources_footer/jagex-svgrepo-com.svg" alt="Jagex" class="icon-footer">
+                </div>
+                <div class="payment-icon">
+                  <img src="/ressources_footer/nexo-svgrepo-com.svg" alt="Nexo" class="icon-footer">
+                </div>
+                <div class="payment-icon">
+                  <img src="/ressources_footer/wyze-svgrepo-com.svg" alt="Notabug" class="icon-footer">
+                </div>
+                <div class="payment-icon">
+                  <img src="/ressources_footer/firefly-iii-svgrepo-com.svg" alt="Firefly" class="icon-footer">
+                </div>
+                <div class="payment-icon">
+                  <img src="/ressources_footer/discord-v2-svgrepo-com.svg" alt="Discord" class="icon-footer">
+                </div>
 
+              </div>
+              <p class="option-paiement-conclusion">
+                Crache la monnaie, mon gars ! Tu peux dépenser comme tu le veux !
+              </p>
+            </div>
+            <div class="avantages">
+              <h4>Vos avantages</h4>
+              <ul>
+                <li class="li-display">Garantie Guithub 3 an</li>
+                <li>Garantie 30 jours satisfait ou remboursé</li>
+                <li>Service de réparation</li>
+                <li>Conseils d'experts en la matière</li>
+                <li>Garantie satisfait ou remboursé</li>
+                <li>Le plus grand stock d'Europe</li>
+              </ul>
+            </div>
+            <div class="services">
+              <h4>Nos services</h4>
+              <ul>
+                <li>Frais de port et délais de livraison</li>
+                <li>Centre de service</li>
+                <li>Bons d'achat</li>
+                <li>Vente en magasin</li>
+                <li>Aperçu du service</li>
+                <li>Nous contacter</li>
+              </ul>
+            </div>
+          </div>
         </div>
+
+      </div>
+      <div class="footer-lower-container">
+        <div class="footer-lower-with-margins">
+          <div class="footer-lower-left-right">
+            <div class="footer-lower-left--">
+              <ul>
+                <li><a href="#">CGV / Infos légales</a></li>
+                <li><a href="#">Politique de confidentialité</a></li>
+                <li><a href="#">Paramètres de confidentialité</a></li>
+                <li><a href="#">Droit de rétractation du consommateur</a></li>
+                <li><a href="#">Processus de commande</a></li>
+                <li><a href="#">Garantie légale de conformité</a></li>
+              </ul>
+            </div>
+            <div class="footer-lower-right--">
+              <div class="reseaux-sociaux">
+                <div class="rs-row-1">
+                  <a href="#">
+                    <div class="icon-rs"><img src="/ressources_footer/instagram-svgrepo-com.svg" alt="Insta"></div>
+                  </a>
+                  <a href="#">
+                    <div class="icon-rs"><img src="/ressources_footer/pinterest-v2-svgrepo-com.svg" alt="Pinterest">
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="icon-rs"><img src="/ressources_footer/facebook-v2-svgrepo-com.svg" alt="Facebook"></div>
+                  </a>
+                </div>
+                <div class="rs-row-2">
+                  <a href="#">
+                    <div class="icon-rs"><img src="/ressources_footer/rockstar-games-svgrepo-com.svg" alt="Rockstar">
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="icon-rs"><img src="/ressources_footer/tesla-svgrepo-com.svg" alt="Tesla"></div>
+                  </a>
+                  <a href="#">
+                    <div class="icon-rs"><img src="/ressources_footer/sync-svgrepo-com.svg" alt="sync">
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <ul>
+                <li><a href="#">A propos</a></li>
+                <li><a href="#">Carrières et recrutement</a></li>
+                <li><a href="#">Petites annonces</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+
+            </div>
+            <div class="copyright">
+              <div class="stores">
+                <div class="store">
+                  <a href="#"><img src="/ressources_footer/apple_store_icon.svg" alt=""></a>
+                </div>
+                <div class="store">
+                  <a href="#"><img src="/ressources_footer/play_store_icon.svg" alt=""></a>
+                </div>
+              </div>
+              <div class="formulaire-newsletter">
+                <form action="" method="post">
+                  <label for="newsletter" class="label-newsletter">Recevoir la newsletter : </label>
+                  <input type="text" name="champ-mail" id="newsletter" placeholder="  jean.bonbeurre@email.com"
+                    class="input-newsletter">
+                  <button id="Envoyer" class="button-newsletter">Inscrivez-moi !</button>
+                </form>
+              </div>
+              <div class="conclusion">
+                <span>© OG Guithub content</span>
+                <span>Le HTML et CSS, c'est fantastique !</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
-</footer>
+  </footer>
   <script src="/js/scriptClose.js"></script>
+  <script src="/js/scriptFilterClose.js"></script>
 </body>
 
 </html>
