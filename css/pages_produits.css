@@ -236,7 +236,7 @@ h1 {
 
 
 /* Règles de responsive----------------------------------------------------*/
-@media screen and (max-width : 1080px) {
+@media screen and (max-width : 1080px) { 
 
     .photo_pages_produits {
         margin-left: 0;
@@ -300,4 +300,11 @@ h1 {
         font-size: 0.7rem;
     }
 
+}
+
+@media screen and (max-width : 650px){
+    
+    .fil_ariane{
+        display: none;
+    } 
 }
