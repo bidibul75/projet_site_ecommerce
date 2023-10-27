@@ -9,14 +9,35 @@ html body{
 }
 
 .filter-options-container{
-    width: 40vw;
-    height: 100vh;
+    width: 400px;
+    height:750px;
+    display:none;
+    position:fixed;
+    top:1px;
+    background-color: white;
+    z-index: 999;
+    border-top: 1px solid white;
+    overflow:scroll;
 }
+
 
 .filter-options-extra-container{
     margin-top:1rem;
     margin-left: 2rem ;
-    overflow: scroll;
+    height:80%;
+}
+
+.h3-close-menu{
+    display: flex;
+    margin-right: 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.style-button-close {
+    background: white;
+    border: none;
+    cursor: pointer;
 }
 
 .container-item-box{
@@ -155,6 +176,7 @@ input[type="checkbox"]:hover{
 .bloc-submit-reset{
     margin: 0.5rem 0;;
     margin-right: 0.5rem;
+    padding-bottom: 50px;
 }
 
 .valider-filtres,
@@ -187,7 +209,7 @@ input[type="checkbox"]:hover{
     opacity: 80%;
 }
 
-@media (width <= 375px){
+@media (width <= 650px){
     .filter-options-container {
         width: 100vw;
         height: 100vh;

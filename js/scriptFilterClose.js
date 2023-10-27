@@ -1,15 +1,24 @@
-function close(){
+var count = 0
+function filterClose(){
     console.log("Au revoir");
-    document.getElementById('to-close-menu').style.display="none";
+    document.getElementById('filter-component').style.display="none";
+    count = 0;
 }
 
-document.getElementById("button-close").addEventListener("click", function(){
-    close();});
+document.getElementById("button-filtre-close").addEventListener("click", function(){
+    filterClose();});
 
-function open(){
+function filterOpen(){
     console.log("Coucou")
-    document.getElementById('to-close-menu').style.display = "block";
+    if (count == 0){
+        document.getElementById('filter-component').style.display = "block";
+        count = 1;
+    }
+    else if (count == 1) {
+        filterClose();
+    }
+
 }
 
-document.getElementById("button-open").addEventListener("click", function(){
-    open();});
+document.getElementById("button-filtre-open").addEventListener("click", function(){
+    filterOpen();});
